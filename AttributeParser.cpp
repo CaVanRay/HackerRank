@@ -4,31 +4,39 @@
 using namespace std;
 
 int main() {
-    
+
+//************************************************************    
 // First you take in two integers, n = lines, q = queries    
     int n, q;
     cin>>n>>q;
-    cin.ignore();
-// make sure to clear the input buffer for getline() later    
+// make sure to clear the input buffer for getline() later  
+    cin.ignore();  
+//************************************************************ 
     
+    
+//************************************************************
 // next make a map inside a map
 // outer map = tag# lines
 // inner map = name to name, other to other       
     map<string, map<string, string>> hrml;
     string line, path = "";
-    
+//************************************************************
+
+
+//************************************************************    
+// While number of lines input equals more than 0
 // Take in the line of hrml code
     while (n-->0) {
         getline(cin, line);
         
-// break it into words in stringstream
+// break it into datastream in stringstream
         stringstream ss(line);
-        
-// first word, either <tag1> or </tag1>
+                
+// Stream string into character token
         string token;
         ss >> token;
-        
-// the [1] character in the word is tested to either be / or not
+     
+// the [1]st character in the word is tested to either be / or not
         if(token[1]=='/'){
             size_t pos = path.rfind('.');
             if(pos!=string::npos){
@@ -58,7 +66,11 @@ int main() {
             }
         }
     }
+//************************************************************
     
+    
+//************************************************************
+    // while queries equals more than 0
     while (q-->0) {
         getline(cin, line);
         size_t tilPos = line.find('~');
@@ -71,6 +83,6 @@ int main() {
             cout<<"Not Found!"<<endl;
         }
     }
-       
+//************************************************************ 
     return 0;
 }
