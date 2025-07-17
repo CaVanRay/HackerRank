@@ -4,38 +4,37 @@
 using namespace std;
 
 int main() {
-
-//************************************************************    
-// First you take in two integers, n = lines, q = queries    
+//***************************************************************************
+// First you take in two integers, n = lines, q = queries
     int n, q;
-    cin>>n>>q;
-// make sure to clear the input buffer for getline() later  
-    cin.ignore();  
-//************************************************************ 
-    
-    
-//************************************************************
+    cin >> n >> q;
+// make sure to clear the input buffer for getline() later
+    cin.ignore();
+//***************************************************************************
+
+
+//***************************************************************************
 // next make a map inside a map
 // outer map = tag# lines
-// inner map = name to name, other to other       
+// inner map = organized info, example: name to name, other to other
     map<string, map<string, string>> hrml;
     string line, path = "";
-//************************************************************
+//***************************************************************************
 
 
-//************************************************************    
+//***************************************************************************
 // While number of lines input equals more than 0
 // Take in the line of hrml code
     while (n-->0) {
         getline(cin, line);
-        
+            
 // break it into datastream in stringstream
         stringstream ss(line);
-                
-// Stream string into character token
+        
+// stream string into character token
         string token;
         ss >> token;
-     
+        
 // the [1]st character in the word is tested to either be / or not
         if(token[1]=='/'){
             size_t pos = path.rfind('.');
@@ -46,7 +45,7 @@ int main() {
             }
         }else{
             string tag = token.substr(1);
-            if(!tag.empty() && tag.back() == '>') tag.pop_back();
+            if(!tag.empty() && tag.back() == '>' ) tag.pop_back();
             
             if(!path.empty()){
                 path += "." + tag;
@@ -55,26 +54,27 @@ int main() {
             }
             
             string attr, eq, value;
-            while (ss >> attr >> eq >> value) {    
+            while (ss >> attr >> eq >> value) {
                 
                 if(value.front()=='"'){
-                    if(!value.empty() && value.back() == '>') value.pop_back();
+                    if(!value.empty() && value.back() == '>')
+                    value.pop_back();
                     value = value.substr(1, value.size() - 2);
                 }
-                 
+                
                 hrml[path][attr]=value;
             }
         }
     }
-//************************************************************
+//***************************************************************************
     
     
-//************************************************************
-    // while queries equals more than 0
+//***************************************************************************
+// while queries equals more than 0
     while (q-->0) {
         getline(cin, line);
         size_t tilPos = line.find('~');
-        string tagPath = line.substr(0,tilPos);
+        string tagPath = line.substr(0, tilPos);
         string attr = line.substr(tilPos + 1);
         
         if(hrml.count(tagPath) && hrml[tagPath].count(attr)){
@@ -82,7 +82,7 @@ int main() {
         }else{
             cout<<"Not Found!"<<endl;
         }
-    }
-//************************************************************ 
-    return 0;
+    }    
+  //***************************************************************************
+  return 0;
 }
