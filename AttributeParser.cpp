@@ -44,6 +44,7 @@ int main() {
                 path = "";
             }
         }else{
+            // remove the first character from token, example: <tag1 is now tag1
             string tag = token.substr(1);
             if(!tag.empty() && tag.back() == '>' ) tag.pop_back();
             
