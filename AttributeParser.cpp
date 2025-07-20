@@ -46,10 +46,15 @@ int main() {
         }else{
             // remove the first character from token, example: <tag1 is now tag1
             string tag = token.substr(1);
+            
+            // if tag is not empty & the last character in tag is ">" then remove the ">" form tag
             if(!tag.empty() && tag.back() == '>' ) tag.pop_back();
             
+            // if path is not empty, add "." & tag to the end of path 
             if(!path.empty()){
                 path += "." + tag;
+
+            // else if path is empty the set path to equal tag
             }else{
                 path = tag;
             }
