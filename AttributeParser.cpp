@@ -60,6 +60,7 @@ int main() {
             }
             
             string attr, eq, value;
+            // ss into the value to be saved, example: Name = Name ~ name is attr, = is eq, name is value
             while (ss >> attr >> eq >> value) {
                 
                 if(value.front()=='"'){
