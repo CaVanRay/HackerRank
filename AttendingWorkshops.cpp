@@ -1,10 +1,19 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
-
+//************************************************************************************************
 //Define the structs Workshops and Available_Workshops.
 //Implement the functions initialize and CalculateMaxWorkshops
 
+struct Workshops{
+
+};
+
+struct Available_Workshops{
+
+
+};
+//************************************************************************************************
 int main(int argc, char *argv[]) {
     int n; // number of workshops
     cin >> n;
