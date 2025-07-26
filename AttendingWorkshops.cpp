@@ -12,6 +12,7 @@ struct Workshops{
 struct Available_Workshops{
 
 
+
 };
 //************************************************************************************************
 int main(int argc, char *argv[]) {
