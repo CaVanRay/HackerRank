@@ -6,12 +6,12 @@ using namespace std;
 //Implement the functions initialize and CalculateMaxWorkshops
 
 struct Workshops{
+int StartTime, EndTime, DurTime;
 
 };
 
 struct Available_Workshops{
-
-
+int n;
 
 };
 //************************************************************************************************
