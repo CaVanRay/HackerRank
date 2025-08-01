@@ -1,25 +1,22 @@
 #include <iostream>
 using namespace std;
 
-class Box{
-    int length = 0, breadth = 0, height = 0, volume = 1;
+class Box(int l, int b, int h){
+    int l = 0, b = 0, h = 0, volume = 1;
     
     public:
     
     int getLength(){
-        return length;
+        return l;
     };
-    
     int getBreadth(){
-        return breadth;
+        return b;
     };
-    
     int getHeight(){
-        return height;
+        return h;
     };
-    
     long long CalculateVolume(){
-        volume = (length*breadth*height);
+        volume = (l*b*h);
         return volume;
     };
     
