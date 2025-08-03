@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 
 using namespace std;
 //************************************************************************************************
@@ -6,17 +6,12 @@ using namespace std;
 //Implement the functions initialize and CalculateMaxWorkshops
 
 struct Workshops{
-int StartTime, EndTime, DurTime;
-
+int Start, Dur, End;
 };
 
-struct Available_Workshops{
-int n;
+struct Available_Workshops(int start_time[], int duration[], int n){
 
-// It looks like Available_Workshop is the engine & Workshop is the storage.
-// These excersizes suck at explaining what they want you to do.
-// I think I'm supposed to store the start & duration times and then calculate how many classes can be taken at once
-// but they specifically want it done with arrays?
+Workshops Signedup[n];
 
 };
 //************************************************************************************************
