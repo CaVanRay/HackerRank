@@ -1,21 +1,37 @@
 #include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
 string ltrim(const string &);
 string rtrim(const string &);
 
-/*
- * Complete the 'findDigits' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts INTEGER n as parameter.
- */
+//*****************************************************************************
 
 int findDigits(int n) {
 
+    vector<int> digits;
+    int count = 0, number = n;
+    
+    if (number == 0) {
+        digits.push_back(0);
+    } else {
+        while (number > 0) {
+            int digit = number % 10;
+            digits.push_back(digit);
+            number /= 10;
+        }
+    }
+    int VSize = digits.size();
+    for(int i = 0; i < VSize; i++){
+        if(digits[i] != 0 && n % digits[i] == 0){
+            count++;
+        }
+    }
+    return count;
 }
-
+//*****************************************************************************
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
