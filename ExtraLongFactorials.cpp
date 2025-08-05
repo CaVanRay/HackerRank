@@ -1,25 +1,23 @@
 #include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 string ltrim(const string &);
 string rtrim(const string &);
 
-/***************************************************************************************
- * Complete the 'extraLongFactorials' function below.
- *
- * The function accepts INTEGER n as parameter.
- * Not sure how to store such large numbers, but we are here to learn
- */
+//***************************************************************************************
+
 
 void extraLongFactorials(int n) {
 unsigned long long int product = 1;
     for(int i = n; i > 0; i--){
     product = product*i;
     }
-    return product;
+    cout << product;
 }
 //***************************************************************************************
+
 int main()
 {
     string n_temp;
