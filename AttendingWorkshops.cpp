@@ -16,6 +16,8 @@ Workshops Signedup[n];
 };
 */
 
+// I need to run the following code by Claude, maybe he can help explain what is happening to me
+// also, maybe look into assembly, it could be useful
 
 struct Workshop{
     int starttime = 0 , duration = 0, endtime = 0;
