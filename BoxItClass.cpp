@@ -1,14 +1,15 @@
 #include <iostream>
 using namespace std;
 
+
 class Box{
     private:
-    int l, b, h;
-    long long volume = 1;
+    int l =0 , b = 0, h = 0;
+    // long long volume = 1;
     
     public:
     // Constructors
-    Box() : l(0), b(0), h(0) {}
+    Box() = default;
     Box(int l, int b, int h) : l(l), b(b), h(h) {}
     Box(const Box& box) : l(box.l), b(box.b), h(box.h) {}
     
@@ -26,12 +27,14 @@ class Box{
     
     // Calculate volume
     long long CalculateVolume(){
-        volume = (l*b*h);
-        return volume;
+       // took forever to figure out I needed to add "1LL *"
+       // turns out in test case 3 the value of l*b*h was too big
+        // 1LL == one long long
+        return (1LL*l*b*h);
     };
     
     // Operator overloading <
-    bool operator<(const Box& boox){
+    bool operator<( Box& boox){
         if (l < boox.l)
             return true;
         else if (l == boox.l && b < boox.b)
@@ -43,12 +46,11 @@ class Box{
     }
 
     // Operator overloading <<
-    friend ostream& operator<<(ostream& out, const Box& Boox) {
+    friend ostream& operator<<(ostream& out, Box& Boox) {
         out << Boox.l << " " << Boox.b << " " << Boox.h;
         return out;
     }
 };
-
 
 /* 
 Everything from here down is bs, this whole section was supposed to be included in the excersize but wasnt, I had to google it.
