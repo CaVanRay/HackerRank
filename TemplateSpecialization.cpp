@@ -7,3 +7,5 @@ template <typename T> struct Traits;
 
 // Define specializations for the Traits class template here.
 
+// skip day, but I'm getting up at 6am tomorrow and starting on this first thing
+
