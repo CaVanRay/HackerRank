@@ -7,8 +7,14 @@ template <typename T> struct Traits;
 
 // Define specializations for the Traits class template here.
 
-// skip day, but I'm getting up at 6am tomorrow and starting on this first thing
 
-// I did not in fact start at 6am in the morning...
+int main()
+{
+	int t = 0; std::cin >> t;
 
-// ok ok ok, I will learn about enumeration tomorrow at the office... I promise
+    for (int i=0; i!=t; ++i) {
+        int index1; std::cin >> index1;
+        int index2; std::cin >> index2;
+        cout << Traits<Color>::name(index1) << " ";
+        cout << Traits<Fruit>::name(index2) << "\n";
+    }
