@@ -11,3 +11,4 @@ template <typename T> struct Traits;
 
 // I did not in fact start at 6am in the morning...
 
+// ok ok ok, I will learn about enumeration tomorrow at the office... I promise
