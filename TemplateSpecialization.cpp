@@ -6,6 +6,8 @@ enum class Color { red, green, orange };
 template <typename T> struct Traits;
 
 // Define specializations for the Traits class template here.
+
+// I understand structs and switches, but I need to read up more on traits & templates
 template <>
 struct Traits<Color> {
     static string name(int index) {
