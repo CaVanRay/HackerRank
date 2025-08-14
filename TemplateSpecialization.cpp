@@ -8,6 +8,7 @@ template <typename T> struct Traits;
 // Define specializations for the Traits class template here.
 
 // I understand structs and switches, but I need to read up more on traits & templates
+// I also need to read up more on templates, I've got some info on them but still don't fully understand
 template <>
 struct Traits<Color> {
     static string name(int index) {
