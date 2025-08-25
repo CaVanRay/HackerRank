@@ -8,7 +8,7 @@ string rtrim(const string &);
 
 //***************************************************************************************
 // This one works, but is limited to smaller numbers
-// Look at Abacus file
+// Look at Abacus file https://github.com/CaVanRay/Abacus/blob/main/Abacus.cpp
 
 void extraLongFactorials(int n) {
 unsigned long long int product = 1;
