@@ -1,63 +1,76 @@
-#include <bits/stdc++.h>
 #include <iostream>
+#include <vector>
+#include <string>
 
 using namespace std;
 
-string ltrim(const string &);
-string rtrim(const string &);
-
-//***************************************************************************************
-// This one works, but is limited to smaller numbers
-// Look at Abacus https://github.com/CaVanRay/Abacus/blob/main/Abacus%20Notes
-
-void extraLongFactorials(int n) {
-    // put abacus derivative here
-    // input is 1 < N < 100, so it can initially be a int before multiplying
-
+int main() {
     
-}
+    int factInput;
+    cin >> factInput;
+    string toConvert;
+    vector<int> TopV, BotV, ProdV;
 
-/*
-void extraLongFactorials(int n) {
-unsigned long long int product = 1;
-    for(int i = n; i > 0; i--){
-    product = product*i;
+    // String/Digit Converter
+    toConvert = to_string(factInput);
+    for (char c : toConvert) { 
+        TopV.insert(TopV.begin(),(c - '0'));
     }
-    cout << product;
-}
-*/
-//***************************************************************************************
+    
+    int tempMult, carry = 0;
 
-int main()
-{
-    string n_temp;
-    getline(cin, n_temp);
+    for (int y = (factInput - 1); y >= 1; y--){
 
-    int n = stoi(ltrim(rtrim(n_temp)));
+        BotV.clear();
+        toConvert = to_string(y);
+        for (char c : toConvert) {
+            BotV.insert(BotV.begin(), (c - '0'));
+        }
 
-    extraLongFactorials(n);
+        ProdV.clear();
+        ProdV.resize(TopV.size() + BotV.size() + 1);
+        
+        for (size_t i = 0; i < TopV.size(); i++) {
+            int proLocation = i;
+            
+            for (size_t j = 0; j < BotV.size(); j++) {               
+                tempMult = (TopV[i] * BotV[j]);
+                
+                while(tempMult > 9){
+                    
+                    tempMult = tempMult - 10;
+                    carry = carry + 1;
+                }
+                
+            ProdV[proLocation] += tempMult;
+                while(ProdV[proLocation] > 9){
+                    ProdV[proLocation] -= 10;
+                    carry++;
+                }
+            ProdV[proLocation + 1] += carry;
+                while(ProdV[proLocation + 1] > 9){
+                    ProdV[proLocation + 1] -= 10;
+                    ProdV[proLocation + 2] += 1;
+                }                
+            carry = 0;
+                
+            proLocation++;
+            }
+        }
+        // I'm removing the leading zeros from the product
+        int newSize = ProdV.size();
+        while (newSize > 1 && ProdV[newSize - 1] == 0) {
+            newSize--;
+        }
+        ProdV.resize(newSize);
+        
+    TopV = ProdV; 
+    ProdV.clear();
 
+    }
+ //   cout << "Product = ";
+    for (int k = (TopV.size() - 1); k >= 0; k--){
+        cout << TopV[k];
+    } 
     return 0;
-}
-
-string ltrim(const string &str) {
-    string s(str);
-
-    s.erase(
-        s.begin(),
-        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
-    );
-
-    return s;
-}
-
-string rtrim(const string &str) {
-    string s(str);
-
-    s.erase(
-        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
-        s.end()
-    );
-
-    return s;
 }
