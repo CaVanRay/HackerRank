@@ -12,6 +12,9 @@ string rtrim(const string &);
 
 void extraLongFactorials(int n) {
     // put abacus derivative here
+    // input is 1 < N < 100, so it can initially be a int before multiplying
+
+    
 }
 
 /*
