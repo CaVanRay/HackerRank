@@ -31,6 +31,7 @@ string appendAndDelete(string s, string t, int k) {
     string initial = s;
     string desired = t;
     int availableActions = k;
+    int lastMatchPos = 0;
     
     // Take both sizes
     
@@ -38,16 +39,34 @@ string appendAndDelete(string s, string t, int k) {
     int desiredLength = desired.size();
     
     // Find last matching in a row
-
+    
+    for (int i = 0; i < initialLength; i++) {
+        char initChar = initial[i];
+        char desiChar = desired[i];
+        if (initChar == desiChar){
+            lastMatchPos = i;
+                }else {
+            break;
+                }
+    }
+    
     // Count Deletes
-
+    
+    int deletes = (initialLength - lastMatchPos);
+    
     // Count Adds
+
+    int adds = (desiredLength - lastMatchPos);
     
     // Compare to available actions
-
     // Less than or equal - return "Yes"
-    
     // More than - return "No"
+
+    if((delets + adds) <= availableActions){
+        return "Yes";
+    }else {
+        return "No";
+    }
 }
 //******************************************************
 int main()
