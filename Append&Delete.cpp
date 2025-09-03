@@ -44,7 +44,7 @@ string appendAndDelete(string s, string t, int k) {
         char initChar = initial[i];
         char desiChar = desired[i];
         if (initChar == desiChar){
-            lastMatchPos = i;
+            lastMatchPos = i + 1; // realized I was off by 1, positions start at 0
                 }else {
             break;
                 }
