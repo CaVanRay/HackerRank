@@ -60,10 +60,16 @@ string appendAndDelete(string s, string t, int k) {
     
     // Compare to available actions
     // Less than or equal - return "Yes"
-    // More than - return "No"
-
+    // More than - return "No" 
+    // If left over actions = Odd - return "No"
+    
     if((deletes + adds) <= availableActions){
+        int leftOver = (availableActions - (deletes + adds));
+        if (leftOver % 2 == 0 || availableActions == (initialLength + desiredLength + 1)){
         return "Yes";
+        }else {
+            return "No";
+        }
     }else {
         return "No";
     }
