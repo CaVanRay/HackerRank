@@ -28,11 +28,26 @@ string rtrim(const string &);
 
 string appendAndDelete(string s, string t, int k) {
 
+    string initial = s;
+    string desired = t;
+    int availableActions = k;
+    
+    // Take both sizes
+    
+    int initialLength = initial.size();
+    int desiredLength = desired.size();
+    
+    // Find last matching in a row
 
+    // Count Deletes
 
+    // Count Adds
+    
+    // Compare to available actions
 
-
-
+    // Less than or equal - return "Yes"
+    
+    // More than - return "No"
 }
 //******************************************************
 int main()
