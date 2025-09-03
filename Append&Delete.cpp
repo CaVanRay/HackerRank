@@ -21,7 +21,7 @@ string rtrim(const string &);
  * Returns
  * string: either Yes or No
  *
- * TLDR: Basicanly you can either remove or add letters to the string one item at a time
+ * TLDR: Basically you can either remove or add letters to the string one item at a time
  * within the given number of actions "K", can you turn string "S" into string "T"?
  * Return with answer "YES" or "NO"
  */
