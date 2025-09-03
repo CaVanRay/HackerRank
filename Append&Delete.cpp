@@ -62,7 +62,7 @@ string appendAndDelete(string s, string t, int k) {
     // Less than or equal - return "Yes"
     // More than - return "No"
 
-    if((delets + adds) <= availableActions){
+    if((deletes + adds) <= availableActions){
         return "Yes";
     }else {
         return "No";
