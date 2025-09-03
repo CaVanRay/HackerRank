@@ -65,7 +65,7 @@ string appendAndDelete(string s, string t, int k) {
     
     if((deletes + adds) <= availableActions){
         int leftOver = (availableActions - (deletes + adds));
-        if (leftOver % 2 == 0 || availableActions == (initialLength + desiredLength + 1)){
+        if (leftOver % 2 == 0 || availableActions >= (initialLength + desiredLength)){
         return "Yes";
         }else {
             return "No";
