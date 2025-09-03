@@ -14,6 +14,9 @@ string rtrim(const string &);
  *  1. STRING s
  *  2. STRING t
  *  3. INTEGER k
+ * The first line contains a string , the initial string.
+ * The second line contains a string , the desired final string.
+ * The third line contains an integer , the number of operations.
  */
 
 string appendAndDelete(string s, string t, int k) {
