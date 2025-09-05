@@ -15,15 +15,28 @@ vector<string> split(const string &);
  *  2. INTEGER b
  */
 
+//Start at a and go to b checking if each number is a perfect square
+//everytime it is you increment count by 1
+//at the end you return count
 
 
 
 
-//*****************************************************************************
 int squares(int a, int b) {
-
+int start = a;
+int end = b;
+int count = 0;
+    
+    for(int i = start; i <= end; i++) {
+        if(i =0){
+            count++;
+        }    
+    }
+    
+    return count;
 }
 
+//*****************************************************************************
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
