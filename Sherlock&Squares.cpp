@@ -29,7 +29,7 @@ int count = 0;
 
     // This is actually really easy, all I need is to write up a test for square roots
     for(int i = start; i <= end; i++) {
-        if(i =0){
+        if(i =0){ // I could just use a sqrt() type tool, or go with a logical argument if I wanna avoid using shortcuts
             count++;
         }    
     }
