@@ -26,7 +26,8 @@ int squares(int a, int b) {
 int start = a;
 int end = b;
 int count = 0;
-    
+
+    // This is actually really easy, all I need is to write up a test for square roots
     for(int i = start; i <= end; i++) {
         if(i =0){
             count++;
