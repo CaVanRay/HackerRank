@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+
+//***************************************************************************************
 // Enter your code for reversed_binary_value<bool...>()
 template<bool...bits>
 int reversed_binary_value(){
@@ -15,6 +17,8 @@ int reversed_binary_value(){
     
     return dec;
 }
+//***************************************************************************************
+
 
 template <int n, bool...digits>
 struct CheckValues {
