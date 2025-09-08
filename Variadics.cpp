@@ -4,6 +4,8 @@ using namespace std;
 
 //***************************************************************************************
 // Enter your code for reversed_binary_value<bool...>()
+// I havent changed anything yet but the program is already working in the hackerrank challenge?
+
 template<bool...bits>
 int reversed_binary_value(){
     
