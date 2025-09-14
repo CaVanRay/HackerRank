@@ -20,6 +20,7 @@ Each next number = (previous * P + Q) mod 2^31.
 
 Now, from the first N numbers you generate, just count how many are different and print that number.
 
+When the problem says “mod 2³¹”, it means you take the remainder after dividing by 231231.
 
 */
 
