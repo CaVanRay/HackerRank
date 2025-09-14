@@ -5,7 +5,6 @@
 #include <algorithm>
 using namespace std;
 
-// This one should be pretty easy, reading up on the logic now.
 /*
 I hate when they make questions more convoluted than they need to be on purpose. 
 Just because a question is easy to answer doesnt mean you should go out of your way to make it difficult to understand.
@@ -35,6 +34,8 @@ For example:
 It’s just a way of keeping all the numbers inside the range 0 … 2147483647 (like wrapping around once you hit the max).
 
 */
+
+// Jeeezus christ, ok, I think I have what I need to start.
 
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
