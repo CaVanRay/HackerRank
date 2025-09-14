@@ -26,7 +26,13 @@ When the problem says “mod 2³¹”, it means you take the remainder after div
 
 So “x mod 2³¹” means “the remainder when x is divided by 2147483648.”
 
+For example:
 
+5 mod 2^31 = 5 (because 5 is smaller).
+
+2147483649 mod 2^31 = 1.
+
+It’s just a way of keeping all the numbers inside the range 0 … 2147483647 (like wrapping around once you hit the max).
 
 */
 
