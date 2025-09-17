@@ -27,13 +27,14 @@ int start = a;
 int end = b;
 int count = 0;
 
-    // This is actually really easy, all I need is to write up a test for square roots
     for(int i = start; i <= end; i++) {
-        if(i =0){ // I could just use a sqrt() type tool, or go with a logical argument if I wanna avoid using shortcuts
-                  // btw sqrts follow the pattern of (+1 +2n) , 1*1=1 [this is (+1 +2(0))], 2*2=4 [this is initial 1 (+1 +2(1))], 3*3=9 [this is 4 (+1 +2(2))]...
-            
+        if(i = 0 || i = 1){ 
             count++;
-        }    
+        }else{double d = i
+             if(fmod(sqrt(d), 1.0) == 0.0){
+                    count++;
+                 }
+             }
     }
     
     return count;
