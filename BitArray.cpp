@@ -6,6 +6,11 @@
 using namespace std;
 
 /*
+
+*****
+9/16/25 - I'm focusing on the whole abacus multiplication thing tomorrow, but this is a close 2nd goal
+*****
+
 I hate when they make questions more convoluted than they need to be on purpose. 
 Just because a question is easy to answer doesnt mean you should go out of your way to make it difficult to understand.
 
