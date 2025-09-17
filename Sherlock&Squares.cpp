@@ -28,7 +28,7 @@ int end = b;
 int count = 0;
 
     for(int i = start; i <= end; i++) {
-        if(i = 0 || i = 1){ 
+        if(i == 0 || i == 1){ 
             count++;
         }else{double d = i
              if(fmod(sqrt(d), 1.0) == 0.0){
