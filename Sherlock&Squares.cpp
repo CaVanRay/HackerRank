@@ -13,6 +13,34 @@ vector<string> split(const string &);
  * The function accepts following parameters:
  *  1. INTEGER a
  *  2. INTEGER b
+
+
+ Learned something new yesterday that I havent had the chance to use yet but should work here.
+
+ceiling() & floor()
+
+    ceiling() returns the next hightest int
+        example: ceiling(2.4) = 3, ceiling(5.1) = 6, ceiling(7.0) = 7
+
+    floor() returns the next lowest int
+        example: floor(2.4) = 2, floor(5.1) = 5, floor(7.0) = 7
+
+    NOTE: the abreviations might be slightly off, but the definition stands.
+
+I can apparently use this in my sherlock squares challenge.
+If I need to find the amount of perfect squares between the numbers A & B, I just need to find the lowest and then the highest and count the number of whole int's between them
+
+so if     A = 5
+and       B = 19
+
+then      find the ceiliing of the square root of 5 and subtract it from the floor of the square root of 19, and then add 1
+
+        floor(sqrt(19))  = 4
+        ceiling(sqrt(5)) = 3
+
+                    4 - 3 + 1 = 2
+
+        Between the numbers of 5 & 19 are 2 perfect squares
  */
 
 //Start at a and go to b checking if each number is a perfect square
