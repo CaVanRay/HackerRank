@@ -47,8 +47,9 @@ then      find the ceiliing of the square root of 5 and subtract it from the flo
 //everytime it is you increment count by 1
 //at the end you return count
 
+/*
 
-
+The version below works, but it's massivly inefficiant and takes way too long
 
 int squares(int a, int b) {
 int start = a;
@@ -68,6 +69,10 @@ int count = 0;
     
     return count;
 }
+
+*/
+
+
 
 //*****************************************************************************
 int main()
