@@ -18,6 +18,12 @@ example:
 */
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    
+    int count;
+    cin >> count;
+    vector<int>sortingBin;
+    for(int i = 0; i < count; i++){
+        
+    }
     return 0;
 }
