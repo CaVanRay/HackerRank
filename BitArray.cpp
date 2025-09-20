@@ -8,6 +8,8 @@ using namespace std;
 /*
 
 I don't know why they call this a bit array, this is a series...
+
+Though, with the abacus array it probably makes this easier? maybe? even if that isnt the array they had in mind
 *****
 9/16/25 - I'm focusing on the whole abacus multiplication thing tomorrow, but this is a close 2nd goal
 *****
