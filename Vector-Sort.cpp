@@ -7,6 +7,14 @@ using namespace std;
 
 /*
 you are given N numbers, sort them and output
+
+example:
+
+5
+28563
+----
+23568
+
 */
 
 int main() {
