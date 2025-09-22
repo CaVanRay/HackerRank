@@ -16,6 +16,10 @@ vector<string> split(const string &);
  */
 
 //********************************************************
+// alright, run a loop that compares every possible pairing of numbers from the given set
+// try to find every pair that when added together cannot be divided by K 
+// at the end return the largest size of numbers collected that cannot be added with each other and divided by k
+
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
