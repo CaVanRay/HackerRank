@@ -15,9 +15,15 @@ vector<string> split(const string &);
  *  2. INTEGER_ARRAY s
  */
 
+//********************************************************
+
 int nonDivisibleSubset(int k, vector<int> s) {
 
+
+
 }
+
+//********************************************************
 
 int main()
 {
