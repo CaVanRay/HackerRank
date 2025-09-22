@@ -5,7 +5,7 @@ using namespace std;
 string ltrim(const string &);
 string rtrim(const string &);
 vector<string> split(const string &);
-//******************************************************************************************************************
+//****************************************************************************************************
 /*
  * Complete the 'libraryFine' function below.
  *
@@ -19,12 +19,35 @@ vector<string> split(const string &);
  *  6. INTEGER y2
  */
 
+// I really hate that I used this many if/else even if it isnt that much
+
 int libraryFine(int d1, int m1, int y1, int d2, int m2, int y2) {
 
+int fine;
+
+if(y1 < y2){
+    fine = 0;
+}else if(y1 > y2){
+    fine = 10000;   
+}else if(y1 == y2){
+    if(m1 < m2){
+        fine = 0;
+    }else if(m1 > m2){
+        fine = 500*(m1-m2);
+    }else if(m1 == m2){
+        if(d1 <= d2){
+            fine = 0;
+        }else if(d1 > d2){
+            fine = 15*(d1 - d2);
+        }
+    }
+}
+
+return fine;
 }
 
 
-//******************************************************************************************************************
+//****************************************************************************************************
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
