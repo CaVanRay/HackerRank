@@ -25,7 +25,19 @@ int main() {
         cin >> temp;
         Shrinky.push_back(temp);
     }
+    
     cin >> removeUno;
+    Shrinky.erase(Shrinky.begin() + (removeUno - 1));
+    
+    cin >> removeFrom >> removeTo;
+    Shrinky.erase(Shrinky.begin() + (removeFrom - 1), Shrinky.begin() + (removeTo - 1));
+    
+    cout << Shrinky.size() << endl;
+    
+    for(int i = 0; i < Shrinky.size(); i++){
+        cout << Shrinky[i] << " ";
+    }
+    
     
     return 0;
 }
