@@ -23,6 +23,13 @@ vector<string> split(const string &);
 // instead of removing what fails, what if I add what succeeds?
 // start with nothing and slowly build up
 
+//Test S[0] with each of the others
+//Then test the first to pass each round with each of the rest that passed
+//repeat until you reach the end
+//Save as "longest" vector
+//Start over testing starting with S[1], repeat steps until the end, testing final length against "longest"
+//Replace "longest" if another set proves longer
+
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
