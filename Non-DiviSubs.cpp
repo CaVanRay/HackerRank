@@ -35,7 +35,7 @@ vector<string> split(const string &);
 
 //    [ s[0]   ]  [ s[1]   ]  [ 2[2]   ]  [ 2[3]   ]  [ 2[4]   ]
 //    [ amount ]  [ amount ]  [ amount ]  [ amount ]  [ amount ]
-//    [ next ->]  [ next ->]  [ next ->]  [ next ->]  [ next ->]
+//    [ next ->]  [ next ->]  [ next ->]  [ next ->]  [ next ->] [Wraps back to s[0]]
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
