@@ -31,7 +31,11 @@ vector<string> split(const string &);
 //Replace "longest" if another set proves longer
 //I need to find a way to wrap around original set to minimize any duplicate sets
 
+//I'm probably overcomplicating things but what if each item was a struct with pointers connecting to the next item?
 
+//    [ s[0]   ]  [ s[1]   ]  [ 2[2]   ]  [ 2[3]   ]  [ 2[4]   ]
+//    [ amount ]  [ amount ]  [ amount ]  [ amount ]  [ amount ]
+//    [ next ->]  [ next ->]  [ next ->]  [ next ->]  [ next ->]
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
