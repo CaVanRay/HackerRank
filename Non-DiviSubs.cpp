@@ -29,6 +29,8 @@ vector<string> split(const string &);
 //Save as "longest" vector
 //Start over testing starting with S[1], repeat steps until the end, testing final length against "longest"
 //Replace "longest" if another set proves longer
+//I need to find a way to wrap around original set to minimize any duplicate sets
+
 
 
 int nonDivisibleSubset(int k, vector<int> s) {
