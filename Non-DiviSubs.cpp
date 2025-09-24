@@ -39,6 +39,7 @@ vector<string> split(const string &);
 
 // This is pissing me off
 // Fuck chatgpt, I'm not using their solution I want to find my own
+// even if it is massively overcomplicated
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
