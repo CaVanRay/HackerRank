@@ -37,6 +37,9 @@ vector<string> split(const string &);
 //    [ amount ]  [ amount ]  [ amount ]  [ amount ]  [ amount ]
 //    [ next ->]  [ next ->]  [ next ->]  [ next ->]  [ next ->] [Wraps back to s[0]]
 
+// This is pissing me off
+// Fuck chatgpt, I'm not using their solution I want to find my own
+
 int nonDivisibleSubset(int k, vector<int> s) {
 
     int longest = 0;
@@ -45,7 +48,6 @@ int nonDivisibleSubset(int k, vector<int> s) {
     for(int i = 0; i < size; i++){
         
         vector<int> setLength;
-        setLength.push_back(i);
         
        for(int j = 0; j < size; j++){
         
@@ -55,9 +57,14 @@ int nonDivisibleSubset(int k, vector<int> s) {
                     setLength.push_back(j);
                 }
             }
-        int tempLength = setLength.size();    
-        if(tempLength > longest){
-            longest = tempLength;
+        int kLength = setLength.size();
+        for(int k = 0; k < kLength; k++){
+            
+        }
+                
+//        int tempLength = setLength.size();    
+//        if(tempLength > longest){
+//            longest = tempLength;
         }
        }
  
