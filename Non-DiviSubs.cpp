@@ -50,7 +50,7 @@ int nonDivisibleSubset(int k, vector<int> s) {
                     setLength.push_back(j);
                 }
             }
-        if(setLength.size() > Longest){
+        if(setLength.size() > longest){
             Longest = setLength.size();
         }
        }
