@@ -33,7 +33,7 @@ vector<string> split(const string &);
 
 //I'm probably overcomplicating things but what if each item was a struct with pointers connecting to the next item?
 
-//    [ s[0]   ]  [ s[1]   ]  [ 2[2]   ]  [ 2[3]   ]  [ 2[4]   ]
+//    [ s[0]   ]  [ s[1]   ]  [ s[2]   ]  [ s[3]   ]  [ s[4]   ]
 //    [ amount ]  [ amount ]  [ amount ]  [ amount ]  [ amount ]
 //    [ next ->]  [ next ->]  [ next ->]  [ next ->]  [ next ->] [Wraps back to s[0]]
 
