@@ -39,15 +39,8 @@ vector<string> split(const string &);
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
-vector<int> pairResults;
-int pairCount;
-    
-for(int i = s.size(); i > 0; i--){
-    for(int j = i; j > 0; j--){
-        cout << i << " + " << j << " = " << (i+j) << endl;
-    }
-}
-return pairCount;
+
+return longest;
 }
 
 
