@@ -39,6 +39,16 @@ vector<string> split(const string &);
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
+    for(int i = 0; i < s.size(); i++){
+       for(int j = 0; j < s.size(); j++){
+                if(i == j){
+                    
+                }else if((s[i]+s[j])%k != 0){
+                    
+                }
+            }
+       }
+    } 
 
 return longest;
 }
