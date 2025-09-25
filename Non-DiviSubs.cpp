@@ -97,6 +97,8 @@ int nonDivisibleSubset(int k, vector<int> s) {
         // also, not sure where, but I may need to add some sort of backtracking
         // just to make sure i'm not screwing myself early by jumping on the first
         // item to work
+
+        // I think I need to use a matrix if I want to follow every possible path
         
         if(finalV.size() > longest){
             longest = finalV.size();
