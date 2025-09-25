@@ -44,29 +44,47 @@ vector<string> split(const string &);
 int nonDivisibleSubset(int k, vector<int> s) {
 
     int longest = 0;
-    int size = s.size();
      
-    for(int i = 0; i < size; i++){
+    for(int i = 0; i < s.size(); i++){
         
-        vector<int> setLength;
+        vector<int> finalV;
+        vector<int> works; 
+        vector<int> worksAlt;
         
-       for(int j = 0; j < size; j++){
+        int hos = s[i];
         
-                if(i == j){
-                    
-                }else if((s[i]+s[j])%k != 0){
-                    setLength.push_back(j);
+        copy(s.begin(), s.begin()+i, back_inserter(works));
+        copy(s.begin() + i + 1, s.end(), back_inserter(works));
+        
+        do{
+            
+            int firstTW;
+            int firstFlag = 0;
+            
+            for(int j = 0; j < works.size(); j++){
+                if((hos + works[i])%k != 0){
+                    if( firstFlag == 0){
+                        firstTW = works[i];
+                        firstFlag = 1;
+                    }else{
+                        worksAlt.push_back(works[i]);
+                    }
                 }
             }
-        int kLength = setLength.size();
-        for(int k = 0; k < kLength; k++){
             
+            finalV.push_back(hos);
+            hos = firstTW;
+            works = worksAlt;
+            worksAlt.clear();
+            
+        }while(!works.empty());
+        
+        // I need to add finalV items check here
+        
+        if(finalV.size() > longest){
+            longest = finalV.size();
         }
-                
-//        int tempLength = setLength.size();    
-//        if(tempLength > longest){
-//            longest = tempLength;
-        }
+        
        }
  
 
