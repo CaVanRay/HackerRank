@@ -98,6 +98,8 @@ int nonDivisibleSubset(int k, vector<int> s) {
         // just to make sure i'm not screwing myself early by jumping on the first
         // item to work
 
+        // chatgpt pointed out that this algorith is greedy and is missing possible paths that
+        // could have worked better further down the tree
         // I think I need to use a matrix if I want to follow every possible path
         
         if(finalV.size() > longest){
