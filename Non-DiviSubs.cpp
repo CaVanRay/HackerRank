@@ -41,6 +41,10 @@ vector<string> split(const string &);
 // Fuck chatgpt, I'm not using their solution I want to find my own
 // even if it is massively overcomplicated
 
+// Kind of works, but it still needs something more
+// chatgpt is no help, It keeps trying to get me to throw everything out and change the core of what i'm trying to do here
+// it says "all (my) algorithms are greedy", Fuck you chatgpt...
+
 int nonDivisibleSubset(int k, vector<int> s) {
 
     int longest = 0;
