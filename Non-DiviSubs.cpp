@@ -100,6 +100,9 @@ int nonDivisibleSubset(int k, vector<int> s) {
 
         // chatgpt pointed out that this algorith is greedy and is missing possible paths that
         // could have worked better further down the tree
+
+        // I can't just try swapping the hos (head of snake) out at the start for every item
+        // I need to follow every possible path and then return the length of the longest branch found
         // I think I need to use a matrix if I want to follow every possible path
         
         if(finalV.size() > longest){
