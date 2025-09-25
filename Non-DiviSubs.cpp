@@ -62,22 +62,32 @@ int nonDivisibleSubset(int k, vector<int> s) {
             int firstFlag = 0;
             
             for(int j = 0; j < works.size(); j++){
-                if((hos + works[i])%k != 0){
+                if((hos + works[j])%k != 0){
                     if( firstFlag == 0){
-                        firstTW = works[i];
+                        firstTW = works[j];
                         firstFlag = 1;
                     }else{
-                        worksAlt.push_back(works[i]);
+                        worksAlt.push_back(works[j]);
                     }
                 }
             }
             
             finalV.push_back(hos);
-            hos = firstTW;
-            works = worksAlt;
-            worksAlt.clear();
+            
+            if(firstFlag == 1){
+                 
+                hos = firstTW;
+                firstFlag = 0;
+                works = worksAlt;
+                worksAlt.clear();
+                } else {
+                    break;
+                }
+                
             
         }while(!works.empty());
+        
+        finalV.push_back(hos);
         
         // I need to add finalV items check here
         
