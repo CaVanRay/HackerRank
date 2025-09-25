@@ -94,6 +94,9 @@ int nonDivisibleSubset(int k, vector<int> s) {
         finalV.push_back(hos);
         
         // I need to add finalV items check here
+        // also, not sure where, but I may need to add some sort of backtracking
+        // just to make sure i'm not screwing myself early by jumping on the first
+        // item to work
         
         if(finalV.size() > longest){
             longest = finalV.size();
