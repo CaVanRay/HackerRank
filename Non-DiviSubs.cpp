@@ -46,6 +46,7 @@ vector<string> split(const string &);
 // it says "all (my) algorithms are greedy", Fuck you chatgpt...
 
 // I'm so fucking lost
+// it feels like banging my head against a wall
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
