@@ -10,6 +10,9 @@ Ex: v.erase(v.begin()+4); (erases the fifth element of the vector v)
 Removes the elements in the range from start to end inclusive of the start and exclusive of the end.
 Ex:v.erase(v.begin()+2,v.begin()+5);(erases all the elements from the third element to the fifth element.)
 
+
+I shouldve left a note, spent 10 minutes trying to figure out what was going on before I realized this was already completed
+
 */
 
 int main() {
