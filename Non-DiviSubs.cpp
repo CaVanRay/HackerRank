@@ -16,37 +16,6 @@ vector<string> split(const string &);
  */
 
 //********************************************************
-// alright, run a loop that compares every possible pairing of numbers from the given set
-// try to find every pair that when added together cannot be divided by K 
-// at the end return the largest size of numbers collected that cannot be added with each other and divided by k
-
-// instead of removing what fails, what if I add what succeeds?
-// start with nothing and slowly build up
-
-//Test S[0] with each of the others
-//Then test the first to pass each round with each of the rest that passed
-//repeat until you reach the end
-//Save as "longest" vector
-//Start over testing starting with S[1], repeat steps until the end, testing final length against "longest"
-//Replace "longest" if another set proves longer
-//I need to find a way to wrap around original set to minimize any duplicate sets
-
-//I'm probably overcomplicating things but what if each item was a struct with pointers connecting to the next item?
-
-//    [ s[0]   ]  [ s[1]   ]  [ s[2]   ]  [ s[3]   ]  [ s[4]   ]
-//    [ amount ]  [ amount ]  [ amount ]  [ amount ]  [ amount ]
-//    [ next ->]  [ next ->]  [ next ->]  [ next ->]  [ next ->] [Wraps back to s[0]]
-
-// This is pissing me off
-// Fuck chatgpt, I'm not using their solution I want to find my own
-// even if it is massively overcomplicated
-
-// Kind of works, but it still needs something more
-// chatgpt is no help, It keeps trying to get me to throw everything out and change the core of what i'm trying to do here
-// it says "all (my) algorithms are greedy", Fuck you chatgpt...
-
-// I'm so fucking lost
-// it feels like banging my head against a wall
 
 int nonDivisibleSubset(int k, vector<int> s) {
 
@@ -95,18 +64,6 @@ int nonDivisibleSubset(int k, vector<int> s) {
         }while(!works.empty());
         
         finalV.push_back(hos);
-        
-        // I need to add finalV items check here
-        // also, not sure where, but I may need to add some sort of backtracking
-        // just to make sure i'm not screwing myself early by jumping on the first
-        // item to work
-
-        // chatgpt pointed out that this algorith is greedy and is missing possible paths that
-        // could have worked better further down the tree
-
-        // I can't just try swapping the hos (head of snake) out at the start for every item
-        // I need to follow every possible path and then return the length of the longest branch found
-        // I think I need to use a matrix if I want to follow every possible path
         
         if(finalV.size() > longest){
             longest = finalV.size();
