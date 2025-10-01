@@ -17,6 +17,12 @@ for(Q) -> search for K
 */
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int N, Q, K, input;
+    vector<int> Nset;
+    cin >> N;
+    for(int i = N; i > 0; i--){
+        cin >> input;
+        Nset.push_back(input);
+        }
     return 0;
 }
