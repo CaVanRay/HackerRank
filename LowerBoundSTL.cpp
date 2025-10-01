@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <algorithim>
 using namespace std;
 
 /*
@@ -29,6 +30,13 @@ int main() {
     for(int j = 0; j < Q; j++){
         cin >> query;
         
+        auto Found = lower_bound(Nset.begin(), Nset.end(), query);
+
+        if(Found != Nset.end() && *Found == query) {
+            cout << "Yes " << (Found - Nset.begin() + 1) << endl;
+        } else {
+            cout << "No " << (Found - Nset.begin() + 1) << endl;
+        }
     }
     return 0;
 }
