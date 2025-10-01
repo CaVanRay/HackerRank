@@ -3,22 +3,8 @@
 #include <algorithm>
 using namespace std;
 
-/*
-
-input N
-for(N) -> array
-input Q
-for(Q) -> search for K
-    for(N)
-        if < k = keep going
-        if == k = "yes", output location, break
-        if > k = "No", output location, break
-        
-
-*/
-
 int main() {
-    int N, Q, K, input, query;
+    int N, Q, input, query;
     vector<int> Nset;
     cin >> N;
     for(int i = 0; i < N; i++){
