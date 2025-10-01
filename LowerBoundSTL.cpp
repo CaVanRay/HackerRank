@@ -1,6 +1,6 @@
 #include <vector>
 #include <iostream>
-#include <algorithim>
+#include <algorithm>
 using namespace std;
 
 /*
