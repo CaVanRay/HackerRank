@@ -20,21 +20,21 @@ int main() {
     int N, Q, K, input, query;
     vector<int> Nset;
     cin >> N;
-    for(int i = N; i > 0; i--){
+    for(int i = 0; i < N; i++){
         cin >> input;
         Nset.push_back(input);
     }
     cin >> Q;
-    for(int j = Q; j > 0; j--){
+    for(int j = 0; j < Q; j++){
         cin >> query;
-        for(int l = 1; l < N; l++){
+        for(int l = 0; l < N; l++){
             if(Nset[l] < query){}
             if(Nset[l] == query){
-                cout << "Yes " << l << endl;
+                cout << "Yes " << l+1 << endl;
                 break;
             }
             if(Nset[l] > query){
-                cout << "No " << l << endl;
+                cout << "No " << l+1 << endl;
                 break;
             }
         }
