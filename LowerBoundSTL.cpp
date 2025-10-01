@@ -24,20 +24,11 @@ int main() {
         cin >> input;
         Nset.push_back(input);
     }
+    
     cin >> Q;
     for(int j = 0; j < Q; j++){
         cin >> query;
-        for(int l = 0; l < N; l++){
-            if(Nset[l] < query){}
-            if(Nset[l] == query){
-                cout << "Yes " << l+1 << endl;
-                break;
-            }
-            if(Nset[l] > query){
-                cout << "No " << l+1 << endl;
-                break;
-            }
-        }
+        
     }
     return 0;
 }
