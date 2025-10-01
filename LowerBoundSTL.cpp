@@ -17,12 +17,27 @@ for(Q) -> search for K
 */
 
 int main() {
-    int N, Q, K, input;
+    int N, Q, K, input, query;
     vector<int> Nset;
     cin >> N;
     for(int i = N; i > 0; i--){
         cin >> input;
         Nset.push_back(input);
+    }
+    cin >> Q;
+    for(int j = Q; j > 0; j--){
+        cin >> query;
+        for(int l = 1; l < N; l++){
+            if(Nset[l] < query){}
+            if(Nset[l] == query){
+                cout << "Yes " << l << endl;
+                break;
+            }
+            if(Nset[l] > query){
+                cout << "No " << l << endl;
+                break;
+            }
         }
+    }
     return 0;
 }
