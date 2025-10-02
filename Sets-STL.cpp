@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-    int rounds, type, item;
+    int rounds, type, item, clue;
     set<int>S;
     
     cin >> rounds;
@@ -15,13 +15,18 @@ int main() {
         
         switch(type) {
             case 1: //Add
-                
+                S.insert(item);
                 break;
             case 2: //Delete
-            
+                S.erase(item);
                 break;
             case 3: //Search
-            
+                clue = S.find(item);
+                if(clue != S.end()){
+                    cout << "Yes";
+                }else{
+                    cout >> "No";
+                }
                 break;
         }
     }
