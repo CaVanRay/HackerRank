@@ -2,8 +2,28 @@
 #include <set>
 using namespace std;
 
-
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+
+int rounds, type, grade;
+string name;
+map<string, int> Students;
+
+cin >> rounds;
+    
+    while(rounds--){
+        cin >> type;
+        switch(type){
+            case 1: //Add
+
+            break;
+            case 2: //Delete
+
+            break;
+            case 3: //Search
+
+            break;
+        }
+    }
+    
     return 0;
 }
