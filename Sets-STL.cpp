@@ -16,10 +16,10 @@ int main() {
             case 1: //Add
                 
                 break;
-            case 2; //Delete
+            case 2: //Delete
             
                 break;
-            case 3; //Search
+            case 3: //Search
             
                 break;
         }
