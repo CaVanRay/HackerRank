@@ -24,9 +24,9 @@ int main() {
             case 3: //Search
                 clue = S.find(item);
                 if(clue != S.end()){
-                    cout << "Yes";
+                    cout << "Yes" << endl;
                 }else{
-                    cout << "No";
+                    cout << "No" << endl;
                 }
                 break;
         }
