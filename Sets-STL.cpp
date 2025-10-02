@@ -4,8 +4,9 @@ using namespace std;
 
 int main() {
 
-    int rounds, type, item, clue;
+    int rounds, type, item;
     set<int>S;
+    set<int>::iterator clue;
     
     cin >> rounds;
     
@@ -25,7 +26,7 @@ int main() {
                 if(clue != S.end()){
                     cout << "Yes";
                 }else{
-                    cout >> "No";
+                    cout << "No";
                 }
                 break;
         }
