@@ -14,16 +14,16 @@ int main() {
         
         // Strip, Hex notation, lowercase
         
-        out << A << endl;
+        cout << A << endl;
         
         // Scale to 2 decimal, precede with + or -, right justified & left padded
         // Printed result is exactly 15 characters wide total
         
-        out << B << endl;
+        cout << B << endl;
         
         // 9 decimal places, Scientific notation, Uppercase
         
-        out << C << endl;
+        cout << C << endl;
             
     }
     return 0;
