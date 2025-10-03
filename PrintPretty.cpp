@@ -9,12 +9,13 @@ int main() {
     cin >> rounds;
 
     while(rounds--){
-        double A, B, C;
+        int A;
+        double B, C, HoldingPen;
         cin >> A >> B >> C;
         
         // Strip, Hex notation, lowercase
         
-        cout << A << endl;
+        cout << hex << showbase << A << endl;
         
         // Scale to 2 decimal, precede with + or -, right justified & left padded
         // Printed result is exactly 15 characters wide total
