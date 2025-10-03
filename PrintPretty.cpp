@@ -4,6 +4,16 @@ using namespace std;
 
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    
+    int rounds;
+    cin >> rounds;
+
+    while(rounds--){
+        double float A, B, C;
+        cin >> A >> B >> C;
+        
+        
+            
+    }
     return 0;
 }
