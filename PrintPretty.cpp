@@ -9,9 +9,11 @@ int main() {
     cin >> rounds;
 
     while(rounds--){
+        
         int A;
-        double B, C, HoldingPen;
-        cin >> A >> B >> C;
+        double Adbl, B, C, HoldingPen;
+        cin >> Adbl >> B >> C;
+        A = Adbl;
         
         // Strip, Hex notation, lowercase
         
@@ -20,11 +22,11 @@ int main() {
         // Scale to 2 decimal, precede with + or -, right justified & left padded
         // Printed result is exactly 15 characters wide total
         
-        cout << B << endl;
+        cout << right << setfill('_') << showpos << setw(15) << fixed << setprecision(2) << B << endl;
         
         // 9 decimal places, Scientific notation, Uppercase
         
-        cout << C << endl;
+        cout << noshowpos << setprecision(9) << C << endl;
             
     }
     return 0;
