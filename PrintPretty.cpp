@@ -9,7 +9,7 @@ int main() {
     cin >> rounds;
 
     while(rounds--){
-        double float A, B, C;
+        double A, B, C;
         cin >> A >> B >> C;
         
         
