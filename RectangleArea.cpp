@@ -7,10 +7,16 @@ using namespace std;
 
 class Rectangle {
 
+    public:
+
 };
 
 class RectangleArea {
+    
+    public:
+        r_area{
 
+        }
 };
 
 int main()
