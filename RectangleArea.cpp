@@ -7,16 +7,26 @@ using namespace std;
 
 class Rectangle {
 
-    public:
+public:
 
+    display{
+
+    }
+    
 };
 
 class RectangleArea {
     
-    public:
-        r_area{
+public:
+    
+    read_input{
 
-        }
+    }
+
+    display{
+
+    }
+
 };
 
 int main()
