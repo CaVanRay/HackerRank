@@ -5,6 +5,13 @@ using namespace std;
  * Create classes Rectangle and RectangleArea
  */
 
+class Rectangle{
+
+}
+
+class RectangleArea{
+
+}
 
 int main()
 {
