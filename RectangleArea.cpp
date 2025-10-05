@@ -6,7 +6,6 @@ using namespace std;
  */
 
 class Rectangle {
-
 public:
 
     display{
@@ -15,8 +14,7 @@ public:
     
 };
 
-class RectangleArea {
-    
+class RectangleArea : public Rectangle {   
 public:
     
     read_input{
