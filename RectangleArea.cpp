@@ -8,21 +8,25 @@ using namespace std;
 class Rectangle {
 public:
 
-    display{
+    int width;
+    int height;
 
+    read_input{
+    cin >> width;
+    cin >> height;
+    }
+
+    display{
+    cout << width << " " << height << endl;
     }
     
 };
 
 class RectangleArea : public Rectangle {   
 public:
-    
-    read_input{
-
-    }
 
     display{
-
+    cout << width*height;
     }
 
 };
