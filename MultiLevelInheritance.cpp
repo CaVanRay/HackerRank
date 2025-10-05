@@ -1,8 +1,4 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
 class Triangle{
@@ -20,6 +16,13 @@ class Isosceles : public Triangle{
 };
 
 //Write your code here.
+
+class Equilateral : public Isosceles{
+    public:
+        void equilateral(){
+            cout<<"I am an equilateral triangle\n";
+        }
+};
 
 int main(){
   
