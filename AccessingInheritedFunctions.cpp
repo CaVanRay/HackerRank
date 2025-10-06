@@ -72,7 +72,7 @@ class C
         }
 };
 
-class D 
+class D : public A, public B, public C
 {
 
 	int val;
@@ -87,7 +87,7 @@ class D
 		 //Implement this function
 		 void update_val(int new_val)
 		 {
-
+            val = new_val;
 			
 		 }
 		 //For Checking Purpose
