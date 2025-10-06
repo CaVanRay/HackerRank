@@ -7,6 +7,13 @@
 using namespace std;
 
 /*Write the class AddElements here*/
+template <class T>
+class AddElements {
+  T element;
+  public:
+  AddElements (T arg) {element=arg;}
+  T add() {return element;}  
+};
 
 int main () {
   int n,i;
