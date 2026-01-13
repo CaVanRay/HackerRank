@@ -36,6 +36,8 @@ for(int i = 0; i <= commands; i++){
 
     if(temp[i] = 1){
         
+    }else if(temp[i] = 2){
+        
     }
     
     
