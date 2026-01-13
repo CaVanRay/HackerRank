@@ -21,6 +21,8 @@ vector<int> getMax(vector<string> operations) {
 
 // Operations processing handled in int vector Stack
 
+vector<int> Stack;
+
 // result will be saved in int vector RES
 
 vector<int> RES;
