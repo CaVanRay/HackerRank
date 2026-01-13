@@ -22,7 +22,12 @@ vector<int> getMax(vector<string> operations) {
 // Operations processing handled in int vector Stack
 
 // result will be saved in int vector RES
-    
+
+vector<int> RES;
+
+// vector RES will be the vector sent back with results
+
+return RES;
     
 }
 
