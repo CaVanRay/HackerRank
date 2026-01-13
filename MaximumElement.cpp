@@ -17,6 +17,10 @@ string rtrim(const string &);
 
 vector<int> getMax(vector<string> operations) {
 
+// initially handed string vector OPS
+
+
+    
 }
 
 //*********************************************************************
