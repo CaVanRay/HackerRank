@@ -5,6 +5,9 @@ using namespace std;
 string ltrim(const string &);
 string rtrim(const string &);
 
+
+//*********************************************************************
+
 /*
  * Complete the 'getMax' function below.
  *
@@ -15,6 +18,8 @@ string rtrim(const string &);
 vector<int> getMax(vector<string> operations) {
 
 }
+
+//*********************************************************************
 
 int main()
 {
