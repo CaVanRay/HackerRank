@@ -30,6 +30,9 @@ vector<int> RES;
 
 //Loop will happen here after declarations are made
 for(int i = 0; i <= commands; i++){
+
+    // for the first char of each string check if 1, 2, or 3
+    
     
 }
     
