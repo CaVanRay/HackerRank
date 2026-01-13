@@ -20,6 +20,7 @@ vector<int> getMax(vector<string> operations) {
 // initially handed string vector OPS (operations)
 // Take size of operation vector and use that to make input testing loop
 
+int commands;
     
 // Operations processing handled in int vector Stack
 
