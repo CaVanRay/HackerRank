@@ -29,6 +29,9 @@ vector<int> Stack;
 vector<int> RES;
 
 //Loop will happen here after declarations are made
+for(int i = 0; i <= commands; i++){
+    
+}
     
 // vector RES will be the vector sent back with results
 return RES;
