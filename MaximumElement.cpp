@@ -32,6 +32,7 @@ vector<int> RES;
 for(int i = 0; i <= commands; i++){
 
     // test the first char of each string, check if 1, 2, or 3
+    string temp = operations[i];
     
     
 }
