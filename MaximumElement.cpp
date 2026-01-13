@@ -38,6 +38,8 @@ for(int i = 0; i <= commands; i++){
         
     }else if(temp[i] = 2){
         
+    }else if(temp[3] = 3){
+        
     }
     
     
