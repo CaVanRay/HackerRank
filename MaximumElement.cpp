@@ -28,7 +28,7 @@ vector<int> Stack;
 // result will be saved in int vector RES
 vector<int> RES;
 
-
+//Loop will happen here after declarations are made
     
 // vector RES will be the vector sent back with results
 return RES;
