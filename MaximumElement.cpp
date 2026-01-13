@@ -23,15 +23,14 @@ vector<int> getMax(vector<string> operations) {
 size_t commands = operations.size();
     
 // Operations processing handled in int vector Stack
-
 vector<int> Stack;
 
 // result will be saved in int vector RES
-
 vector<int> RES;
 
-// vector RES will be the vector sent back with results
 
+    
+// vector RES will be the vector sent back with results
 return RES;
     
 }
