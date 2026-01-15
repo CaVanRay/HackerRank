@@ -23,7 +23,7 @@ vector<int> getMax(vector<string> operations) {
 size_t commands = operations.size();
     
 // Operations processing handled in int vector Stack
-vector<int> Stack;
+vector<int> dataStack;
 
 // result will be saved in int vector RES
 vector<int> RES;
@@ -35,10 +35,10 @@ for(size_t i = 0; i < commands; i++){
     string temp = operations[i];
 
     if(temp[0] == '1'){
-        // if the first char in the string is 1, we need to add the following number to top of vector Stack
+        // if the first char in the string is 1, we need to add the following number to top of vector dataStack
         
     }else if(temp[0] == '2'){
-        // if the first char in the string is 2, we need to remove the number currently at the top of the vector Stack
+        // if the first char in the string is 2, we need to remove the number currently at the top of the vector dataStack
         
     }else if(temp[0] == '3'){
         // if the first char in the string is 3, we need to take the largest number in the stack and add it to the vector RES
