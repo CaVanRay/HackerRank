@@ -38,6 +38,7 @@ for(int i = 0; i <= commands; i++){
         // if the first char in the string is 1, we need to add the following number to top of vector Stack
         
     }else if(temp[1] = 2){
+        // if the first char in the string is 2, we need to remove the number currently at the top of the vector Stack
         
     }else if(temp[1] = 3){
         
