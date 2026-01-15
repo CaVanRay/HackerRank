@@ -29,7 +29,7 @@ vector<int> Stack;
 vector<int> RES;
 
 //Loop will happen here after declarations are made
-for(int i = 0; i <= commands; i++){
+for(size_t i = 0; i < commands; i++){
 
     // test the first char of each string, check if 1, 2, or 3
     string temp = operations[i];
