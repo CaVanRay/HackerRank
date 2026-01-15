@@ -37,7 +37,7 @@ for(size_t i = 0; i < commands; i++){
     if(temp[0] == '1'){
         // if the first char in the string is 1, we need to add the following number to top of vector Stack
         
-    }else if(temp[0] == 2){
+    }else if(temp[0] == '2'){
         // if the first char in the string is 2, we need to remove the number currently at the top of the vector Stack
         
     }else if(temp[0] == 3){
