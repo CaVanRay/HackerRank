@@ -42,6 +42,7 @@ for(size_t i = 0; i < commands; i++){
         
     }else if(temp[0] == '3'){
         // if the first char in the string is 3, we need to take the largest number in the stack and add it to the vector RES
+        // track current largest number, it will be faster than searching for the largest number everytime
         
     }else if(temp.empty()) continue;
     
