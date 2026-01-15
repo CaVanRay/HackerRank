@@ -34,7 +34,7 @@ for(int i = 0; i <= commands; i++){
     // test the first char of each string, check if 1, 2, or 3
     string temp = operations[i];
 
-    if(temp[1] = 1){
+    if(temp[0] = 1){
         // if the first char in the string is 1, we need to add the following number to top of vector Stack
         
     }else if(temp[1] = 2){
