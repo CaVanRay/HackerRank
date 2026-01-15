@@ -34,7 +34,7 @@ for(int i = 0; i <= commands; i++){
     // test the first char of each string, check if 1, 2, or 3
     string temp = operations[i];
 
-    if(temp[i] = 1){
+    if(temp[1] = 1){
         
     }else if(temp[i] = 2){
         
