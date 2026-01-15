@@ -26,7 +26,7 @@ size_t commands = operations.size();
 vector<int> dataStack;
 
 // result will be saved in int vector RES
-vector<int> RES;
+vector<int> res;
 
 //Loop will happen here after declarations are made
 for(size_t i = 0; i < commands; i++){
@@ -41,7 +41,7 @@ for(size_t i = 0; i < commands; i++){
         // if the first char in the string is 2, we need to remove the number currently at the top of the vector dataStack
         
     }else if(temp[0] == '3'){
-        // if the first char in the string is 3, we need to take the largest number in the stack and add it to the vector RES
+        // if the first char in the string is 3, we need to take the largest number in the stack and add it to the vector res
         // track current largest number, it will be faster than searching for the largest number everytime
         
     }else if(temp.empty()) continue;
@@ -49,8 +49,8 @@ for(size_t i = 0; i < commands; i++){
     
 }
     
-// vector RES will be the vector sent back with results
-return RES;
+// vector res will be the vector sent back with results
+return res;
     
 }
 
