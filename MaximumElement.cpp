@@ -28,7 +28,7 @@ vector<int> dataStack;
 // result will be saved in int vector RES
 vector<int> res;
 
-// always keep the current max on standy to avoid searching through the list each time
+// always keep the current largest number on stand-by to avoid searching through the list each time
 size_t currentLargest;
 
 //Loop will happen here after declarations are made
