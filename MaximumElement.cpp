@@ -37,6 +37,7 @@ for(const string& op : operations){
         valueStack.push_back(value);
         
     }else if(type == 2){
+        valueStack.pop_back();
         
     }else if(type == 3){
         
