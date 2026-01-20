@@ -16,13 +16,9 @@ string rtrim(const string &);
  */
 
 vector<int> getMax(const vector<string>& operations) {
-    
-
 vector<int> valueStack;
 vector<int> maxStack;
 vector<int> result;
-
-
 
 for(const string& op : operations){
     if(op.empty()) continue;
@@ -32,34 +28,31 @@ for(const string& op : operations){
     iss >> type;
     
     if(type == 1){   
-        
         int value;
         iss >> value;
+        
         valueStack.push_back(value);
-        if(maxStack.empty()) maxStack.push_back(value);
-        else maxStack.push_back((value > maxStack.back()) ? value : maxStack.back());
+        
+        if(maxStack.empty()) {
+            maxStack.push_back(value);
+        } else {
+            maxStack.push_back(std::max(value, maxStack.back()));
+        }
         
     }else if(type == 2){
-
         if (!valueStack.empty()) {
             valueStack.pop_back();
             maxStack.pop_back();
         }
         
     }else if(type == 3){
-
         if (!maxStack.empty()) {
             result.push_back(maxStack.back());
         }
-    
-    }
-    
-    
+    }    
 }
-    
 
-return result;
-    
+return result;    
 }
 
 //*********************************************************************
