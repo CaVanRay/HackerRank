@@ -41,7 +41,7 @@ for(const string& op : operations){
     }else if(op[0] == '2'){
         // if the first char in the string is 2, we need to remove the number currently at the top of the vector dataStack
         
-    }else if(temp[0] == '3'){
+    }else if(op[0] == '3'){
         // if the first char in the string is 3, we need to take the largest number in the stack and add it to the vector res
         // track current largest number, it will be faster than searching for the largest number everytime
         
