@@ -38,7 +38,7 @@ for(const string& op : operations){
     if(op[0] == '1'){
         // if the first char in the string is 1, we need to add the following number to top of vector dataStack
         
-    }else if(temp[0] == '2'){
+    }else if(op[0] == '2'){
         // if the first char in the string is 2, we need to remove the number currently at the top of the vector dataStack
         
     }else if(temp[0] == '3'){
