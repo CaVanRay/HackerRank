@@ -17,9 +17,6 @@ string rtrim(const string &);
 
 vector<int> getMax(const vector<string>& operations) {
 
-// initially handed string vector OPS (operations)
-// Take size of operation vector and use that to make input testing loop
-
 size_t commands = operations.size();
     
 // Operations processing handled in int vector Stack
