@@ -40,10 +40,14 @@ for(const string& op : operations){
         else maxStack.push_back((value > maxStack.back()) ? value : maxStack.back())
         
     }else if(type == 2){
+        
         valueStack.pop_back();
+        maxStack.pop_back();
         
     }else if(type == 3){
-        
+
+        result.push_back(maxStack.back());
+    
     }
     
     
