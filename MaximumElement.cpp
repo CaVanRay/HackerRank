@@ -21,10 +21,8 @@ vector<int> getMax(const vector<string>& operations) {
 vector<int> valueStack;
 
 
-vector<int> res;
+vector<int> result;
 
-
-size_t currentLargest;
 
 
 for(const string& op : operations){
@@ -47,7 +45,7 @@ for(const string& op : operations){
 }
     
 
-return resultVector;
+return result;
     
 }
 
