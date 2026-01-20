@@ -17,37 +17,37 @@ string rtrim(const string &);
 
 vector<int> getMax(const vector<string>& operations) {
     
-// Operations processing handled in int vector Stack
+
 vector<int> valueStack;
 
-// result will be saved in int vector RES
+
 vector<int> res;
 
-// always keep the current largest number on stand-by to avoid searching through the list each time
+
 size_t currentLargest;
 
-//Loop will happen here after declarations are made
+
 for(const string& op : operations){
 
     if(op.empty()){
         continue;
+        
     }else if(op[0] == '1'){
-        // if the first char in the string is 1, we need to add the following number to top of vector dataStack
+        
         
     }else if(op[0] == '2'){
-        // if the first char in the string is 2, we need to remove the number currently at the top of the vector dataStack
+       
         
     }else if(op[0] == '3'){
-        // if the first char in the string is 3, we need to take the largest number in the stack and add it to the vector res
-        // track current largest number, it will be faster than searching for the largest number everytime
+        
         
     }
     
     
 }
     
-// vector res will be the vector sent back with results
-return res;
+
+return resultVector;
     
 }
 
