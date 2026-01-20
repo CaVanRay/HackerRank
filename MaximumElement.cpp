@@ -32,7 +32,7 @@ vector<int> res;
 size_t currentLargest;
 
 //Loop will happen here after declarations are made
-for(size_t i = 0; i < commands; i++){
+for(const string& op : operations){
 
     // test the first char of each string, check if 1, 2, or 3
     string temp = operations[i];
