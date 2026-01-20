@@ -33,7 +33,7 @@ for(const string& op : operations){
     
     if(type == 1){    
         
-    }else if(op[0] == '2'){
+    }else if(type == 2){
         
     }else if(op[0] == '3'){
         
