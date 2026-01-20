@@ -32,6 +32,8 @@ for(const string& op : operations){
     iss >> type;
     
     if(type == 1){    
+        int value;
+        iss >> value;
         
     }else if(type == 2){
         
