@@ -34,6 +34,7 @@ for(const string& op : operations){
     if(type == 1){    
         int value;
         iss >> value;
+        valueStack.push_back(value);
         
     }else if(type == 2){
         
