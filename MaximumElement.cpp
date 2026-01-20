@@ -31,10 +31,13 @@ for(const string& op : operations){
     int type;
     iss >> type;
     
-    if(type == 1){    
+    if(type == 1){   
+        
         int value;
         iss >> value;
         valueStack.push_back(value);
+        if(maxStack.empty()) maxStack.push_back(value);
+        else maxStack.push_back((value > maxStack.back()) ? value : maxStack.back())
         
     }else if(type == 2){
         valueStack.pop_back();
