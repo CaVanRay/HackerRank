@@ -19,8 +19,7 @@ vector<int> getMax(const vector<string>& operations) {
     
 
 vector<int> valueStack;
-
-
+vector<int> maxStack;
 vector<int> result;
 
 
