@@ -15,7 +15,7 @@ string rtrim(const string &);
  * The function accepts STRING_ARRAY operations as parameter.
  */
 
-vector<int> getMax(vector<string> operations) {
+vector<int> getMax(const vector<string>& operations) {
 
 // initially handed string vector OPS (operations)
 // Take size of operation vector and use that to make input testing loop
