@@ -18,7 +18,7 @@ string rtrim(const string &);
 vector<int> getMax(const vector<string>& operations) {
     
 // Operations processing handled in int vector Stack
-vector<int> dataStack;
+vector<int> valueStack;
 
 // result will be saved in int vector RES
 vector<int> res;
