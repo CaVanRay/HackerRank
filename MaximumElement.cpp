@@ -48,7 +48,9 @@ for(const string& op : operations){
         
     }else if(type == 3){
 
-        result.push_back(maxStack.back());
+        if (!maxStack.empty()) {
+            result.push_back(maxStack.back());
+        }
     
     }
     
