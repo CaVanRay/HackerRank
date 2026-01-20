@@ -25,18 +25,17 @@ vector<int> result;
 
 
 for(const string& op : operations){
+    if(op.empty()) continue;
 
-    if(op.empty()){
-        continue;
-        
-    }else if(op[0] == '1'){
-        
+    istringstream iss(op);
+    int type;
+    iss >> type;
+    
+    if(type == 1){    
         
     }else if(op[0] == '2'){
-       
         
     }else if(op[0] == '3'){
-        
         
     }
     
