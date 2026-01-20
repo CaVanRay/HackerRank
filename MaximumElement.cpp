@@ -29,8 +29,9 @@ size_t currentLargest;
 //Loop will happen here after declarations are made
 for(const string& op : operations){
 
-    // test the first char of each string, check if 1, 2, or 3
-    if(op[0] == '1'){
+    if(op.empty()){
+        continue;
+    }else if(op[0] == '1'){
         // if the first char in the string is 1, we need to add the following number to top of vector dataStack
         
     }else if(op[0] == '2'){
@@ -40,7 +41,7 @@ for(const string& op : operations){
         // if the first char in the string is 3, we need to take the largest number in the stack and add it to the vector res
         // track current largest number, it will be faster than searching for the largest number everytime
         
-    }else if(op.empty()) continue;
+    }
     
     
 }
