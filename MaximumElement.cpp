@@ -35,7 +35,7 @@ size_t currentLargest;
 for(const string& op : operations){
 
     // test the first char of each string, check if 1, 2, or 3
-    if(temp[0] == '1'){
+    if(op[0] == '1'){
         // if the first char in the string is 1, we need to add the following number to top of vector dataStack
         
     }else if(temp[0] == '2'){
