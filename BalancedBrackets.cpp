@@ -1,5 +1,5 @@
 //*********************************************************************
-string isBalanced(string s) {
+string isBalanced(const string& s) {
   string theAnswer;
   // Take s length, if balanced string is balanced then every opening bracket
   // - should have a matching closing bracket
