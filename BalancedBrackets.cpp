@@ -8,6 +8,7 @@
  */
 
 string isBalanced(string s) {
-
+  string theAnswer;
+  
   return theAnswer;
 } //*********************************************************************
