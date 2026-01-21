@@ -10,8 +10,8 @@
 string isBalanced(string s) {
   string theAnswer;
   // Take s length
-  // If legnth is odd - you're done, theAnswer = "No"
-  // If even - continue
+  // If length is odd - you're done, theAnswer = "No"
+  // If length even - continue
   //
   
   return theAnswer;
