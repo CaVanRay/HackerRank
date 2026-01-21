@@ -20,7 +20,7 @@ string isBalanced(const string& s) {
   // if you make it to the end of the string you check
   // are there any unmatched brackets left?
   // if yes - theAnswer = "No"
-  // 
+  // if no - theAnswer = "Yes"
   
   return theAnswer;
 } //*********************************************************************
