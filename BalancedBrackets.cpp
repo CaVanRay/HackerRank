@@ -9,7 +9,7 @@
 
 string isBalanced(string s) {
   string theAnswer;
-  // Take s length
+  // Take s length, if balanced string is balanced then every opening bracket
   // If length is odd - you're done, theAnswer = "No"
   // If length even - continue
   
