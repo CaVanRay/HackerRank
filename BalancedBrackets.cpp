@@ -21,6 +21,8 @@ string isBalanced(const string& s) {
   // are there any unmatched brackets left?
   // if yes - theAnswer = "No"
   // if no - theAnswer = "Yes"
+
+  /* NOTE: I need to find out if strings have to be exactly mirrored to count as balanced */
   
   return theAnswer;
 } //*********************************************************************
