@@ -8,7 +8,7 @@ string isBalanced(const string& s) {
   // If length even - continue
   
   // now at this point I'm thinking there should be a stack to show at each
-  // - step
+  // - step what kind of bracket last opened
   
   return theAnswer;
 } //*********************************************************************
