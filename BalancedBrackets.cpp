@@ -9,6 +9,7 @@
 
 string isBalanced(string s) {
   string theAnswer;
+  // Take s length
   
   return theAnswer;
 } //*********************************************************************
