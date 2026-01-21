@@ -9,6 +9,9 @@ string isBalanced(const string& s) {
   
   // now at this point I'm thinking there should be a stack to show at each
   // - step what kind of bracket last opened
+
+  // if at any point a closing bracket appears we compare it to the last 
+  // - opening bracket
   
   return theAnswer;
 } //*********************************************************************
