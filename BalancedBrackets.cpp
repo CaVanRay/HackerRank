@@ -16,6 +16,9 @@ string isBalanced(const string& s) {
   // if it doesnt match - you're done, theAnswer = "No"
   // if it does match - remove the last opening bracket added to the stack
   // - since it has a match, then continue
+
+  // if you make it to the end of the string you check
+  // 
   
   return theAnswer;
 } //*********************************************************************
