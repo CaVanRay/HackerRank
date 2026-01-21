@@ -12,7 +12,8 @@ string isBalanced(string s) {
   // Take s length
   // If length is odd - you're done, theAnswer = "No"
   // If length even - continue
-  //
+  
+  // now at this point I'm thinking there should be a stack
   
   return theAnswer;
 } //*********************************************************************
