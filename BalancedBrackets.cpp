@@ -12,6 +12,8 @@ string isBalanced(const string& s) {
 
   // if at any point a closing bracket appears we compare it to the last 
   // - opening bracket
+
+  // if it doesnt match - you're done, theAnswer = "No"
   
   return theAnswer;
 } //*********************************************************************
