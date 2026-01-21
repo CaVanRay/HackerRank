@@ -11,6 +11,7 @@ string isBalanced(string s) {
   string theAnswer;
   // Take s length
   // If odd - theAnswer = "No"
+  // If even - continue
   
   return theAnswer;
 } //*********************************************************************
