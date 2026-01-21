@@ -18,7 +18,7 @@ string isBalanced(const string& s) {
   // - since it has a match, then continue
 
   // if you make it to the end of the string you check
-  // 
+  // are there any unmatched brackets left?
   
   return theAnswer;
 } //*********************************************************************
