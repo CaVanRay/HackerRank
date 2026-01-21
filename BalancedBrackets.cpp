@@ -7,7 +7,8 @@ string isBalanced(const string& s) {
   // If length is odd - you're done, theAnswer = "No"
   // If length even - continue
   
-  // now at this point I'm thinking there should be a stack
+  // now at this point I'm thinking there should be a stack to show at each
+  // - step
   
   return theAnswer;
 } //*********************************************************************
