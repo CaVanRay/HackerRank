@@ -12,18 +12,18 @@ string isBalanced(const string& s) {
   for(int i = 0; i < std::s.length(); i++){
 
     if(i == 0){
-      std::bracketStack.push_back(s[i]);
+      bracketStack.push_back(s[i]);
     }else{
       char b = s[i];
       if(b == '(' || b == '{' || b == '['){
-        std::bracketStack.push_back(s[i]);
-        bSS = std::bracketStack.length();
+        bracketStack.push_back(s[i]);
+        bSS = bracketStack.length();
       } else if(b == ')'){
         
         if(bracketStack[bSS-1] != '('){
           return "No";
         } else {
-          std::bracketStack.pop_back();
+          bracketStack.pop_back();
         }
         
       } else if(b == '}'){
@@ -31,7 +31,7 @@ string isBalanced(const string& s) {
         if(bracketStack[bSS-1] != '{'){
           return "No";
         } else {
-          std::bracketStack.pop_back();
+          bracketStack.pop_back();
         }
         
       } else if(b == ']'){
@@ -39,7 +39,7 @@ string isBalanced(const string& s) {
         if(bracketStack[bSS-1] != '['){
           return "No";
         } else {
-          std::bracketStack.pop_back();
+          bracketStack.pop_back();
         } 
       } 
     }
