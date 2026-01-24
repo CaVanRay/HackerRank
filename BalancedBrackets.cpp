@@ -40,9 +40,9 @@ string isBalanced(const string& s) {
           return "No";
         } else {
           std::bracketStack.pop_back();
-        }
-        
+        } 
       } 
-      }
-      }
+    }
+  }
+  return (bracketStack == 0) ? "yes" : "No";
 } //*********************************************************************
