@@ -11,7 +11,7 @@ string isBalanced(const string& s) {
   // test each character in the string
   for(int i = 0; i < std::s.length(); i++){
 
-    if(i = 0){
+    if(i == 0){
       std::bracketStack.push_back(s[i]);
     }else{
       char b = s[i];
