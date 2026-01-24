@@ -11,7 +11,7 @@ string isBalanced(const string& s) {
   for(int i = 0; i < std::s.length(); i++){
 
     if(i = 0){
-      bracketStack.push_back(s[i]);
+      std::bracketStack.push_back(s[i]);
     }else{
       char b = s[i];
       if(b == '(' || b == '{' || b == '['){
