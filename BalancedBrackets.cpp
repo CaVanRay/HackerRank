@@ -2,6 +2,7 @@
 string isBalanced(const string& s) {
 
   std::string bracketStack;
+  int bSS;
   std::string theAnswer;
   
   // If the length is odd, the brackets are not balanced
@@ -16,6 +17,7 @@ string isBalanced(const string& s) {
       char b = s[i];
       if(b == '(' || b == '{' || b == '['){
         std::bracketStack.push_back(s[i]);
+        bSS = std::bracketStack.length();
       } else if(b == ')'){
         if(bracketStack[i-1] != '('){
           return "No";
