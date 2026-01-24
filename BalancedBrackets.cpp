@@ -16,8 +16,14 @@ string isBalanced(const string& s) {
       char b = s[i];
       if(b == '(' || b == '{' || b == '['){
         bracketStack.push_back(s[i]);
-      } else if(b == ')' || b == '}' || b == ']'){
+      } else if(b == ')'){
+        if()
+      } else if(b == '}'){
         
+      } else if(b == ']'){
+        
+      } else {
+        theAnswer = "No";
       }
       }
     }
