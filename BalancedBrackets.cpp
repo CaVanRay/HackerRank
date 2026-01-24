@@ -38,6 +38,8 @@ string isBalanced(const string& s) {
         
         if(bracketStack[bSS-1] != '['){
           return "No";
+        } else {
+          std::bracketStack.pop_back();
         }
         
       } else {
