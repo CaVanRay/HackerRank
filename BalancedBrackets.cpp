@@ -3,6 +3,8 @@ string isBalanced(const string& s) {
   string theAnswer;
   // Take s length, if balanced string is balanced then every opening bracket
   // - should have a matching closing bracket
+
+  if(s.length()%2!=0){theAnswer = "No"};
   
   // If length is odd - you're done, theAnswer = "No"
   // If length even - continue
