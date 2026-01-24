@@ -41,5 +41,5 @@ string isBalanced(const string& s) {
       } 
     }
   }
-  return (bracketStack == 0) ? "yes" : "No";
+  return (bracketStack.empty()) ? "Yes" : "No";
 } //*********************************************************************
