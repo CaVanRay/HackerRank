@@ -9,37 +9,44 @@ string isBalanced(const string& s) {
   // test each character in the string
   for(int i = 0; i < std::s.length(); i++){
 
-    if(i == 0){
+    char b = s[i];
+    if(b == '(' || b == '{' || b == '['){
       bracketStack.push_back(s[i]);
-    }else{
-      char b = s[i];
-      if(b == '(' || b == '{' || b == '['){
-        bracketStack.push_back(s[i]);
-      } else if(b == ')'){
-        
-        if(bracketStack.back() != '('){
+      
+    } else if(b == ')'){
+      if(bracketStack.back() != '('){
+        return "No";
+      } else {
+        if(bracketStack.empty()){ 
           return "No";
         } else {
           bracketStack.pop_back();
         }
-        
-      } else if(b == '}'){
-        
-        if(bracketStack.back() != '{'){
+      }
+      
+    } else if(b == '}'){    
+      if(bracketStack.back() != '{'){
+        return "No";
+      } else {
+        if(bracketStack.empty()){
           return "No";
         } else {
           bracketStack.pop_back();
         }
+      }
         
-      } else if(b == ']'){
-        
-        if(bracketStack.back() != '['){
-          return "No";
+    } else if(b == ']'){    
+      if(bracketStack.back() != '['){
+        return "No";
+      } else {
+        if(bracketStack.empty()){
+          return"No";
         } else {
-          bracketStack.pop_back();
-        } 
+        bracketStack.pop_back();
+        }
       } 
-    }
+    } 
   }
   return (bracketStack.empty()) ? "Yes" : "No";
-} //*********************************************************************
+} 
+//*********************************************************************
