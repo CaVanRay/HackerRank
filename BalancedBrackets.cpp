@@ -1,52 +1,33 @@
 //*********************************************************************
 string isBalanced(const string& s) {
+    string bracketStack;
 
-  std::string bracketStack;
-  
-  // If the length is odd, the brackets are not balanced
- if (s.length() % 2 != 0) return "No";
+    // Odd length strings can't be balanced
+    if (s.length() % 2 != 0) return "No";
 
-  // test each character in the string
-  for(int i = 0; i < std::s.length(); i++){
+    for (int i = 0; i < s.length(); i++) {
+        char b = s[i];
 
-    char b = s[i];
-    if(b == '(' || b == '{' || b == '['){
-      bracketStack.push_back(s[i]);
-      
-    } else if(b == ')'){
-      if(bracketStack.back() != '('){
-        return "No";
-      } else {
-        if(bracketStack.empty()){ 
-          return "No";
-        } else {
-          bracketStack.pop_back();
+        if (b == '(' || b == '{' || b == '[') {
+            bracketStack.push_back(b);
+        } 
+        else if (b == ')') {
+            if (bracketStack.empty() || bracketStack.back() != '(')
+                return "No";
+            bracketStack.pop_back();
+        } 
+        else if (b == '}') {
+            if (bracketStack.empty() || bracketStack.back() != '{')
+                return "No";
+            bracketStack.pop_back();
+        } 
+        else if (b == ']') {
+            if (bracketStack.empty() || bracketStack.back() != '[')
+                return "No";
+            bracketStack.pop_back();
         }
-      }
-      
-    } else if(b == '}'){    
-      if(bracketStack.back() != '{'){
-        return "No";
-      } else {
-        if(bracketStack.empty()){
-          return "No";
-        } else {
-          bracketStack.pop_back();
-        }
-      }
-        
-    } else if(b == ']'){    
-      if(bracketStack.back() != '['){
-        return "No";
-      } else {
-        if(bracketStack.empty()){
-          return"No";
-        } else {
-        bracketStack.pop_back();
-        }
-      } 
-    } 
-  }
-  return (bracketStack.empty()) ? "Yes" : "No";
-} 
+    }
+
+    return bracketStack.empty() ? "Yes" : "No";
+}
 //*********************************************************************
