@@ -6,7 +6,7 @@ string isBalanced(const string& s) {
   std::string theAnswer;
   
   // If the length is odd, the brackets are not balanced
-  if(std::s.length()%2!=0){return "No"};
+ if (s.length() % 2 != 0) return "No";
 
   // test each character in the string
   for(int i = 0; i < std::s.length(); i++){
