@@ -1,13 +1,11 @@
 //*********************************************************************
 string isBalanced(const string& s) {
   string theAnswer;
-  // Take s length, if balanced string is balanced then every opening bracket
-  // - should have a matching closing bracket
-
+  
+  // If the length is odd, the brackets are not balanced
   if(s.length()%2!=0){theAnswer = "No"};
   
-  // If length is odd - you're done, theAnswer = "No"
-  // If length even - continue
+
   
   // now at this point I'm thinking there should be a stack to show at each
   // - step what kind of bracket last opened
