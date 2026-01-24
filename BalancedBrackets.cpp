@@ -1,5 +1,7 @@
 //*********************************************************************
 string isBalanced(const string& s) {
+
+  string bracketStack;
   string theAnswer;
   
   // If the length is odd, the brackets are not balanced
