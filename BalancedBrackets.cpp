@@ -19,17 +19,25 @@ string isBalanced(const string& s) {
         std::bracketStack.push_back(s[i]);
         bSS = std::bracketStack.length();
       } else if(b == ')'){
+        
         if(bracketStack[bSS-1] != '('){
           return "No";
+        } else {
+          std::bracketStack.pop_back();
         }
+        
       } else if(b == '}'){
+        
         if(bracketStack[bSS-1] != '{'){
           return "No";
-        }        
+        }
+        
       } else if(b == ']'){
+        
         if(bracketStack[bSS-1] != '['){
           return "No";
         }
+        
       } else {
         return "No";
       }
