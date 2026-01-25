@@ -19,7 +19,16 @@ int equalStacks(vector<int> h1, vector<int> h2, vector<int> h3) {
   while(true){
     if(tH1 == tH2 && tH2 == tH3){
       return tH1;
-    } else
+    } else if (tH1 > tH2 && tH1 > tH3){
+      h1.pop_back;
+    } else if (tH2 > tH1 && tH2 > tH3){
+      h2.pop_back;
+    } else if (tH3 > tH1 && tH3 > tH2){
+      h3.pop_back;
+    }
+    tH1 = getSize(h1);
+    tH2 = getSize(h2);
+    tH3 = getSize(h3);
   }
 }
 //*********************************************************************
