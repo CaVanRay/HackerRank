@@ -1,7 +1,13 @@
 //*********************************************************************
 int getSize(const vector& cylinder){
-  int size = 0;
   
+  int size = 0;
+
+  for(std::size_t i = 0; i < cylinder.size(); i++){
+  
+  size = size + cylinder[i];
+    
+  }
 
   return size;
 }
