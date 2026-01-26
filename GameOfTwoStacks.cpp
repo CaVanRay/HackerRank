@@ -21,7 +21,8 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
   // here we slowly add items from 'b' and remove items from 'a' until either 
   // 1.) 'b' runs out 
   // 2.) or we exceed the maxSum after having already removed all of 'a'
-  while(i >= 0 && j < b.size()){
+  
+  while(j < b.size()){
     
   }
 
