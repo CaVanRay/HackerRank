@@ -6,6 +6,7 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
   int i = 0, j = 0; // made 'i' an int because when testing in the second 'while' loop it could possibly hit -1, 'j' is an int just because they match but I don't see it hitting -1
 
   // the first while loop is just to see how many can be pulled from 'a' alone without breaking the maxSum limit
+  
   while(sum < maxSum && i < a.size()){
     if((sum + a[i]) <= maxSum){
       sum = sum + a[i];
