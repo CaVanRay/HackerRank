@@ -14,6 +14,9 @@ class AddElements {
   AddElements (T arg) {element=arg;}
   T add() {return element;}  
 };
+
+template <>
+
 //****************************************************
 
 int main () {
