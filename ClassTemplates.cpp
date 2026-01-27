@@ -20,7 +20,7 @@ class AddElements {
 };
 
 template <>
-class AddElements {
+class AddElements<string> {
 
 };
 
