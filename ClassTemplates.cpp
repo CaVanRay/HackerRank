@@ -14,6 +14,7 @@ class AddElements {
   AddElements (T arg) {element=arg;}
   T add() {return element;}  
 };
+//****************************************************
 
 int main () {
   int n,i;
