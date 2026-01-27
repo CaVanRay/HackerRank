@@ -26,6 +26,7 @@ class AddElements<string> {
   AddElements (string a) {
     combinedWords = a;
   }
+  string concatenate(string )
 };
 
 //****************************************************
