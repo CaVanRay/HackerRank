@@ -21,7 +21,7 @@ class AddElements {
 
 template <>
 class AddElements<string> {
-  string combinedWords
+  string combinedWords;
   public:
   AddElements (string a) {
     combinedWords = a;
