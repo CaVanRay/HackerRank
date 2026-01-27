@@ -9,10 +9,14 @@ using namespace std;
 //****************************************************
 template <class dataType>
 class AddElements {
-  dataType element;
+  dataType sum;
   public:
-  AddElements (dataType arg) {element=arg;}
-  dataType add() {return element;}  
+  AddElements (dataType a) {
+    sum = a;
+  }
+  dataType add() {
+    return element;
+  }  
 };
 
 template <>
