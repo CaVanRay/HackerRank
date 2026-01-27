@@ -7,12 +7,12 @@
 using namespace std;
 
 //****************************************************
-template <class T>
+template <class dataType>
 class AddElements {
-  T element;
+  dataType element;
   public:
-  AddElements (T arg) {element=arg;}
-  T add() {return element;}  
+  AddElements (dataType arg) {element=arg;}
+  dataType add() {return element;}  
 };
 
 template <>
