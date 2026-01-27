@@ -28,6 +28,7 @@ class AddElements<string> {
   }
   string concatenate(string b){
     a.append(b);
+    return a;
   }
 };
 
