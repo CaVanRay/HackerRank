@@ -14,8 +14,8 @@ class AddElements {
   AddElements (dataType a) {
     sum = a;
   }
-  dataType add() {
-    return element;
+  dataType add(dataType b) {
+    return (sum+b);
   }  
 };
 
