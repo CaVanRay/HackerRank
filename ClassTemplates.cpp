@@ -27,8 +27,8 @@ class AddElements<string> {
     combinedWords = a;
   }
   string concatenate(string b){
-    a.append(b);
-    return a;
+    combinedWords.append(b);
+    return combinedWords;
   }
 };
 
