@@ -6,7 +6,7 @@
 #include <cassert>
 using namespace std;
 
-/*Write the class AddElements here*/
+//****************************************************
 template <class T>
 class AddElements {
   T element;
