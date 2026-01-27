@@ -16,6 +16,9 @@ class AddElements {
 };
 
 template <>
+class AddElements {
+
+};
 
 //****************************************************
 
