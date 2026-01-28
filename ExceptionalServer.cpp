@@ -20,6 +20,7 @@ public:
         if(B == 0) throw 0;
         real = (A/B)*real;
         int ans = v.at(B);
+        return real + A - B*ans;
     }
 }
 
