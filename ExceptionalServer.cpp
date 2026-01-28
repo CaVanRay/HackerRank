@@ -9,6 +9,8 @@ using namespace std;
 class Server {
 private:
     static int load;
+public:
+    
 }
 
 int main() {
