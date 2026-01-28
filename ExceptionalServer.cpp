@@ -12,7 +12,9 @@ private:
 public:
     static int compute(long long A, long long B) {
         load += 1;
-        if(A < 0) {}
+        if(A < 0) {
+            throw std::invalid_argument("A is negative");
+        }
     }
 }
 
