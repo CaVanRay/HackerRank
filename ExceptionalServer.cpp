@@ -19,6 +19,7 @@ public:
         int real = -1, cmplx = sqrt(-1);
         if(B == 0) throw 0;
         real = (A/B)*real;
+        int ans = v.at(B);
     }
 }
 
