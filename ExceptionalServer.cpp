@@ -16,6 +16,7 @@ public:
             throw std::invalid_argument("A is negative");
         }
         vector<int> v(A, 0);
+        int real = -1, cmplx = sqrt(-1);
     }
 }
 
