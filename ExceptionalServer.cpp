@@ -17,6 +17,7 @@ public:
         }
         vector<int> v(A, 0);
         int real = -1, cmplx = sqrt(-1);
+        if(B == 0) throw 0;
     }
 }
 
