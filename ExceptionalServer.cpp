@@ -25,9 +25,11 @@ public:
 	static int getLoad() {
 		return load;
 	}
-}
+};
+int Server::load = 0;
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    return 0;
-}
+	int T; cin >> T;
+	while(T--) {
+		long long A, B;
+		cin >> A >> B;
