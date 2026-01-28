@@ -22,6 +22,9 @@ public:
         int ans = v.at(B);
         return real + A - B*ans;
     }
+	static int getLoad() {
+		return load;
+	}
 }
 
 int main() {
