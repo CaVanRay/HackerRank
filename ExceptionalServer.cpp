@@ -12,6 +12,7 @@ private:
 public:
     static int compute(long long A, long long B) {
         load += 1;
+        if(A < 0) {}
     }
 }
 
