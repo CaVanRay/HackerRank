@@ -10,7 +10,9 @@ class Server {
 private:
     static int load;
 public:
-    static int compute(long long A, long long B) {}
+    static int compute(long long A, long long B) {
+        load += 1;
+    }
 }
 
 int main() {
