@@ -15,6 +15,7 @@ public:
         if(A < 0) {
             throw std::invalid_argument("A is negative");
         }
+        vector<int> v(A, 0);
     }
 }
 
