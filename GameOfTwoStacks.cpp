@@ -12,14 +12,13 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
       sum += a[i];
       aP = a[i];
       maxRemove = i;
+      // Step 2.) Record maxremovals
     }else{
       break;
     }
       i++;
   }
-  i--;
-  // Step 2.) Count Removals
-  
+  i--;  
   // Step 3.) Check if there are still B's
   while(i >= 0 || j < b.size()){
     
