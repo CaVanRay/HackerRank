@@ -18,8 +18,9 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
       i++;
   }
 
-  //Step 2.) Count Removals
-  //Step 3.) Check if there are still B's
+  // Step 2.) Count Removals
+  // Step 3.) Check if there are still B's
+  // Step 4.) Add a B
 
 }
 //***************************************************************************
