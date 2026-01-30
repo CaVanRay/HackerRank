@@ -19,11 +19,14 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
   }
 
   // Step 2.) Count Removals
+
   // Step 3.) Check if there are still B's
+  while(i > 0){
   // Step 4.) Add a B
   // Step 5.) is there space? Yes -> Record Max -> goto step 3.) | No -> Continue
   // Step 6.) is Sum over Max? No -> Record Max -> goto step 3.) | Yes -> Continue
   // Step 7.) Does Sum contain A's? Yes -> Remove an A -> goto step 5.) | No -> Return Max Removals
+  }
   
 }
 //***************************************************************************
