@@ -23,7 +23,7 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
   // Step 4.) Add a B
   // Step 5.) is there space? Yes -> Record Max -> goto step 3.) | No -> Continue
   // Step 6.) is Sum over Max? No -> Record Max -> goto step 3.) | Yes -> Continue
-  // Step 7.) Does Sum contain A's?
+  // Step 7.) Does Sum contain A's? Yes -> Remove an A -> goto step 5.) |
   
 }
 //***************************************************************************
