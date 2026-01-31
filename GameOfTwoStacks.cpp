@@ -27,9 +27,17 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
   // Step 5.) is there space? Yes -> Record Max -> goto step 3.) | No -> Continue
   if(sum < maxSum){
     maxRemove = i + j + 2;
-  }else
+  }else{
   // Step 6.) is Sum over Max? No -> Record Max -> goto step 3.) | Yes -> Continue
+    if(!(sum > maxSum)){
+      maxRemove = i + j + 2;
+    }else{
   // Step 7.) Does Sum contain A's? Yes -> Remove an A -> goto step 5.) | No -> Return Max Removals
+      if(i >= 0){
+        
+      }
+    }
+  }
   }
   
 }
