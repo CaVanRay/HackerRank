@@ -11,7 +11,7 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
     if((sum + a[i]) <= maxSum){
       sum += a[i];
       aP = a[i];
-      maxRemove = i;
+      maxRemove = i + 1;
       // Step 2.) Record maxremovals
     }else{
       break;
