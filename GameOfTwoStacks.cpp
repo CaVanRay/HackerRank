@@ -22,7 +22,7 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
     sum += b[j];
     j++;
     while(sum > maxSum){
-      sum -= a[i];
+      sum = sum - a[i];
       i--;
     }
     if((i+j) > maxRemove){
