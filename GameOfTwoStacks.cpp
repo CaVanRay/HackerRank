@@ -7,7 +7,7 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
   // First the A's ********************************
   while(sum < maxSum && i < a.size()){
     if((sum + a[i]) <= maxSum){
-      sum += a[i];
+      sum = sum + a[i];
       aP = a[i];
       maxRemove = i + 1;
       i++;
