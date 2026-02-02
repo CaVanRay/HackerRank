@@ -17,7 +17,6 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
   }
   //***********************************************
 
-  
   // Second the swap with B's**********************
   while(i >= 0 || j < b.size()){
     sum += b[j];
@@ -26,12 +25,12 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
       sum -= a[i];
       i--;
     }
-    
+    if((i+j+2) > maxRemove){
+      maxRemove = (i+j+2);
+    }
         
   }
   //***********************************************
-
-
 
   return maxRemove
 }
