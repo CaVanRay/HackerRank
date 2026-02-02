@@ -9,8 +9,8 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
     if((sum + a[i]) <= maxSum){
       sum = sum + a[i];
       aP = a[i];
-      maxRemove = i;
       i++;
+      maxRemove = i;
     }else{
       break;
     }
