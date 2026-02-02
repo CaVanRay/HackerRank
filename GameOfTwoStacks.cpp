@@ -39,6 +39,6 @@ int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
   }
   //***********************************************
 
-  return maxRemove
+  return maxRemove;
 }
 //***************************************************************************
