@@ -1,37 +1,26 @@
 //***************************************************************************
-int twoStacks(const int& maxSum,const vector<int>& a,const vector<int>& b) {
+int twoStacks(int maxSum,const vector<int>& a,const vector<int>& b) {
 
-  std::size_t sum = 0, maxRemove = 0; 
-  int i = 0, j = 0; 
+  int i = 0, j = 0, sum = 0, maxRemove = 0; 
+   
 
   // First the A's ********************************
-  while(sum < maxSum && i < a.size()){
-    if((sum + a[i]) <= maxSum){
-      sum = sum + a[i];
-      i++;
-      maxRemove = i;
-    }else{
-      break;
-    }
+  while(i < a.size() && sum + a[i] <= maxSum){
+    sum += a[i];
+    i++;
+    maxRemove = i;
   }
   //***********************************************
 
   // Second the swap with B's**********************
-  while(i >= 0 && j < b.size()){
-    if(j >= 0 && j <= b.size()){
-      sum = sum + b[j];
+  while(j < b.size()){
+      sum += b[j];
       j++;
-    }else{
-      break;
-    }
-    while(sum > maxSum){
+    while(sum > maxSum && i > 0){
       i--;
-      if(i >= 0){
-        sum = sum - a[i];
-      }else{
-        break;
-      }
+      sum -= a[i];
     }
+    if(sum > maxSum) break;
     if((i+j) > maxRemove){
       maxRemove = (i+j);
     }
