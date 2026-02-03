@@ -19,17 +19,16 @@ long largestRectangle(const vector<int>& h) {
     }
 
     if(i < h.size()){
-      for(int j = i + 1; j <= h.size() ; j++){
+      for(int j = i + 1; j < h.size() ; j++){
         if(h[j] <= h[i]){
           count++;
         }else break;
       }    
     }
 
-    largestRect = std::max((count + 1), largestRect);
-    
+    largestRect = std::max((count + 1), largestRect); 
   }
-
+  
   return largestRect;
 }
 
