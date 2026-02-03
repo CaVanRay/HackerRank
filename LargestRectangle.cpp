@@ -9,7 +9,17 @@ long largestRectangle(const vector<int>& h) {
   
     size = h[i];
     count = 0;
-  
+
+    if(i > 0){
+      
+    }
+
+    if(i < h.size()){
+      
+    }
+
+    largestRect = std::max((count + 1), largestRect);
+    
   }
 
   return largestRect;
