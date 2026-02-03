@@ -12,21 +12,21 @@ long largestRectangle(const vector<int>& h) {
 
     if(i > 0){ 
       for(int j = i - 1; j >= 0; j--){
-        if(h[j] <= h[i]){
+        if(h[j] >= h[i]){
           count++;
         }else break;
       } 
     }
 
-    if(i < h.size()){
+    if(i < h.size() - 1){
       for(int j = i + 1; j < h.size() ; j++){
-        if(h[j] <= h[i]){
+        if(h[j] >= h[i]){
           count++;
         }else break;
       }    
     }
 
-    largestRect = std::max((count + 1), largestRect); 
+    largestRect = std::max((count + 1)*size, largestRect); 
   }
   
   return largestRect;
