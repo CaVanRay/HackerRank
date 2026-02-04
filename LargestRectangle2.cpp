@@ -42,7 +42,10 @@ long largestRectangle(const vector<int>& h) {
     index = bIndex.back();
     nIndex = i;
     if(bIndex.size() >= 2){
-      
+      secondToLast = bIndex.size() - 2;
+      pIndex = bIndex[secondToLast];
+    }else{
+      pIndex = -1;
     }
     
   }
