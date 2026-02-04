@@ -47,6 +47,12 @@ long largestRectangle(const vector<int>& h) {
       pIndex = -1;
     }
     width = nIndex - pIndex - 1;
+    area = width*height;
+    if(area > largerRect){
+      largerRect = area;
+    }
+    bHeight.pop_back();
+    bIndex.pop_back();
   }
   
   return largerRect;
