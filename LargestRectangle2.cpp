@@ -12,6 +12,7 @@ long largestRectangle(const vector<int>& h) {
     while(!bHeight.empty() && bHeight.back() > h[i]){
       height = bHeight.back();
       index = bIndex.back();
+      nIndex = i;
       
     }
   }
