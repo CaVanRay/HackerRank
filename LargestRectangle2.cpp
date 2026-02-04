@@ -7,6 +7,9 @@ long largestRectangle(const vector<int>& h) {
   int height, width, area, index, pIndex, nIndex, secondToLast, size = h.size();
   vector <int> bHeight;
   vector <int> bIndex;
+
+  // First section is for running through vector h, populating the stack,
+  // and removing items when drops occurr
   
   for(int i = 0; i < size; i++){
     while(!bHeight.empty() && bHeight.back() > h[i]){
@@ -30,6 +33,8 @@ long largestRectangle(const vector<int>& h) {
     bHeight.push_back(h[i]);
     bIndex.push_back(i+1);
   }
+
+  // Second section is for cleaning up the items still in the stack
   
   return largerRect;
 }
