@@ -46,7 +46,7 @@ long largestRectangle(const vector<int>& h) {
     }else{
       pIndex = -1;
     }
-    width
+    width = nIndex - pIndex - 1;
   }
   
   return largerRect;
