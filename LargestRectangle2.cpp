@@ -27,6 +27,8 @@ long largestRectangle(const vector<int>& h) {
       bHeight.pop_back();
       bIndex.pop_back();
     }
+    bHeight.push_back(h[i]);
+    bIndex.push_back(i+1);
   }
   
   return largerRect;
