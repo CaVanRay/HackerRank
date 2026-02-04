@@ -4,7 +4,7 @@
 long largestRectangle(const vector<int>& h) {
   
   long int largerRect = 0;
-  int height, width, area, index, pIndex, nIndex, size = h.size();
+  int height, width, area, index, pIndex, nIndex, secondToLast, size = h.size();
   vector <int> bHeight;
   vector <int> bIndex;
   
@@ -13,6 +13,12 @@ long largestRectangle(const vector<int>& h) {
       height = bHeight.back();
       index = bIndex.back();
       nIndex = i;
+      if(bIndex.size() > = 2){
+        secondToLast = bIndex.size() - 2;
+        pIndex = bIndex[secondToLast];
+      }else{
+        pIndex = -1;
+      }
       
     }
   }
