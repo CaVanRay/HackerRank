@@ -14,7 +14,7 @@ long largestRectangle(const vector<int>& h) {
     while(!stack.empty() && h[stack.back()] > h[i]){
       height = h[stack.back()];
       nextIndex = stack.size();
-      prevIndex = stack.empty() ? -1 : stack.back()
+      prevIndex = stack.empty() ? -1 : stack.back() - 2;
       width = nextIndex - prevIndex - 1;
       area = width*height;
       if(area > largerRect){
@@ -28,20 +28,14 @@ long largestRectangle(const vector<int>& h) {
   // Second section is for cleaning up the items still in the stack
 
   while(!bHeight.empty()){
-    height = bHeight.back();
-    nIndex = size;
-    if(stack.size() >= 2){
-      secondToLast = stack.size() - 2;
-      pIndex = bIndex[secondToLast];
-    }else{
-      pIndex = -1;
-    }
-    width = nIndex - pIndex - 1;
+    height = h[stack.back()];
+    nextIndex = stack.size();
+    prevIndex = stack.empty() ? -1 : stack.back() - 2;
+    width = nextIndex - prevIndex - 1;
     area = width*height;
     if(area > largerRect){
       largerRect = area;
     }
-    bHeight.pop_back();
     stack.pop_back();
   }
   
