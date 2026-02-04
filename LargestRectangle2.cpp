@@ -37,7 +37,6 @@ long largestRectangle(const vector<int>& h) {
   // Second section is for cleaning up the items still in the stack
 
   while(!bHeight.empty()){
-    
     height = bHeight.back();
     index = bIndex.back();
     nIndex = i;
@@ -47,7 +46,7 @@ long largestRectangle(const vector<int>& h) {
     }else{
       pIndex = -1;
     }
-    
+    width
   }
   
   return largerRect;
