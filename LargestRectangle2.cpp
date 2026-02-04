@@ -3,7 +3,7 @@
 
 long largestRectangle(const vector<int>& h) {
   
-  long int largestRect = 0;
+  long int largerRect = 0;
   int height, width, area, index, Pindex, Nindex, size = h.size();
   vector <int> Bheight;
   vector <int> Bindex;
@@ -12,7 +12,7 @@ long largestRectangle(const vector<int>& h) {
   
   }
   
-  return largestRect;
+  return largerRect;
 }
 
 //****************************************************************
