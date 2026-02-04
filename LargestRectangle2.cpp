@@ -35,6 +35,12 @@ long largestRectangle(const vector<int>& h) {
   }
 
   // Second section is for cleaning up the items still in the stack
+
+  while(!bHeight.empty()){
+    
+    height = bHeight.back();
+    
+  }
   
   return largerRect;
 }
