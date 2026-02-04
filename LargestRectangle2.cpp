@@ -9,7 +9,7 @@ long largestRectangle(const vector<int>& h) {
   vector <int> bIndex;
   
   for(int i = 0; i < size; i++){
-    while(!bHeight){
+    while(!bHeight.empty() && bHeight.back() > h[i]){
       
     }
   }
