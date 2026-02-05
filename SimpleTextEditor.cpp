@@ -23,7 +23,7 @@ void print(std::string current){
     std::cout << letterToPrint << std::endl;
 }
 
-void undo(std::string& current, vector<string>&pastStates){
+void undo(std::string& current, std::vector<std::string>&pastStates){
     if(!pastStates.empty()){
         current = pastStates.back();
         pastStates.pop_back();
