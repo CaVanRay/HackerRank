@@ -4,6 +4,10 @@ int poisonousPlants(vector<int> plants) {
   int daysToStasis, numberOfPlants = plants.size();
   vector<int>stack;
 
+  for(int i = 0; i < numberOfPlants; i++){
+    
+  }
+  
   return daysToStasis;
 }
 
