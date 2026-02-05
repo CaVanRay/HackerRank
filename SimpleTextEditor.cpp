@@ -1,3 +1,4 @@
+#include <string>
 #include <vector>
 #include <iostream>
 
@@ -15,7 +16,7 @@ void deleteText(std::string& current){
     }
 }
 
-void print(std::string& current){
+void print(std::string current){
     int toPrint;
     std::cin >> toPrint;
     char letterToPrint = current[toPrint -1];
