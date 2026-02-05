@@ -6,5 +6,5 @@
  */
 
 int poisonousPlants(vector<int> p) {
-
+int daysToStasis;
 }
