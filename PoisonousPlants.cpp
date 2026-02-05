@@ -6,5 +6,7 @@
  */
 
 int poisonousPlants(vector<int> p) {
-int daysToStasis;
+  int daysToStasis;
+
+  return daysToStasis;
 }
