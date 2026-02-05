@@ -1,9 +1,5 @@
-#include <cmath>
-#include <cstdio>
 #include <vector>
 #include <iostream>
-#include <algorithm>
-using namespace std;
 
 void append(std::string& current){
     std::string addThis;
