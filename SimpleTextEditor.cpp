@@ -5,28 +5,32 @@
 #include <algorithm>
 using namespace std;
 
-void append(std::string current){
+void append(std::string& current){
     std::string addThis;
     std::cin >> addThis;
     current.append(addThis);
 }
 
-void delete(std::string current){
+void deleteText(std::string& current){
     int toRemove;
     std::cin >> toRemove;
-    current.erase(current.length() - toRemove, toRemove);
+    if(toRemove <= current.length()){
+        current.erase(current.length() - toRemove, toRemove);
+    }
 }
 
-void print(std::string current){
+void print(std::string& current){
     int toPrint;
     std::cin >> toPrint;
-    char letterToPrint = current[toPrint];
+    char letterToPrint = current[toPrint -1];
     std::cout << letterToPrint << std::endl;
 }
 
-void undo(std::string current, vector<string>pastStates){
-    current = pastStates.back();
-    pastStates.pop_back();
+void undo(std::string& current, vector<string>&pastStates){
+    if(!pastStates.empty()){
+        current = pastStates.back();
+        pastStates.pop_back();
+    }
 }
     
 int main() {
@@ -37,7 +41,7 @@ int main() {
 
     std::cin >> numberOfActions; 
 
-    for<int i = 0; i < numberOfActions; i++){
+    for(int i = 0; i < numberOfActions; i++){
 
         std::cin >> thisAction;
 
@@ -49,7 +53,7 @@ int main() {
             
             case 2 :
             pastStates.push_back(current);
-            delete(current);
+            deleteText(current);
             break;
 
             case 3 :
