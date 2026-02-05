@@ -6,7 +6,7 @@
  */
 
 int poisonousPlants(vector<int> plants) {
-  int daysToStasis, numberOfFlowers = plants.size();
+  int daysToStasis, numberOfPlants = plants.size();
   vector<int>stack;
 
   return daysToStasis;
