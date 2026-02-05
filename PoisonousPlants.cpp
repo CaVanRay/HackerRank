@@ -1,15 +1,17 @@
 //**********************************************************
 
 int poisonousPlants(vector<int> plants) {
-  int daysToStasis, numberOfPlants = plants.size();
+  int popsInARow = 0, daysToStasis, numberOfPlants = plants.size();
   vector<int>stack;
 
   for(int i = plants.size() - 1; i >= 0; i--){
     
-    while(!stack.empty() && plants[i] > stack.back()){
-      
+    while(!stack.empty() && plants[i] > plants[stack.back()]){
+      // pop item at stack.back()
+      // daysToStasis will equal maximum number of succsesive pops in a row
+      // when pops stop and a push occurrs, the count starts over
     }
-    
+    stack.push_back(i);
     
   }
   
