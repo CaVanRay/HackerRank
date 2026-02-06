@@ -16,6 +16,7 @@ int poisonousPlants(vector<int> plants) {
   // build up incrementing death days
   // if the preceeding plant is larger, death day +1
   // then pop preceeding
+  // test against new preceeding
 
   
   return daysToStasis;
