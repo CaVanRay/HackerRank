@@ -12,6 +12,7 @@ int poisonousPlants(vector<int> plants) {
   // right wall continues to move
   // death days snowball (I think)
   // I think I got it
+  // it's a game of "how tall can I stack the blocks
 
   
   return daysToStasis;
