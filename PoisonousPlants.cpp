@@ -10,7 +10,7 @@ int poisonousPlants(vector<int> plants) {
   // only keep plants between walls
   // left wall is the last imortal plant found
   // right wall continues to move
-  // death days snowball 
+  // death days snowball (I think)
 
   
   return daysToStasis;
