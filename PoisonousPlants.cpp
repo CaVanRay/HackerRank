@@ -15,7 +15,7 @@ int poisonousPlants(vector<int> plants) {
   // it's a game of "how tall can I stack the blocks"
   // build up incrementing death days
   // if the preceeding plant is larger, death day +1
-  
+  // then pop preceeding
 
   
   return daysToStasis;
