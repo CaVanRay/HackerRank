@@ -9,6 +9,7 @@ int poisonousPlants(vector<int> plants) {
   // anything that lives forever wipes the stacks
   // only keep plants between walls
   // left wall is the last imortal plant found
+  // right wall continues to move
 
   
   return daysToStasis;
