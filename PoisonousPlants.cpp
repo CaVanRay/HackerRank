@@ -10,7 +10,7 @@ int poisonousPlants(vector<int> plants) {
       // pop item at stack.back()
       // daysToStasis will equal maximum number of succsesive pops in a row
       // when pops stop and a push occurrs, the count starts over
-      
+      daysToStasis = (popsInARow > daysToStasis) ? popsInARow : daysToStasis;
     }
     stack.push_back(i);
     popsInARow = 0;
