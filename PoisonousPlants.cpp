@@ -12,6 +12,7 @@ int poisonousPlants(vector<int> plants) {
       // when pops stop and a push occurrs, the count starts over
     }
     stack.push_back(i);
+    popsInARow = 0;
     
   }
   
