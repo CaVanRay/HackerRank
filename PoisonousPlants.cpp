@@ -1,7 +1,7 @@
 //**********************************************************
 
 int poisonousPlants(vector<int> plants) {
-  int popsInARow = 0, daysToStasis = 0, numberOfPlants = plants.size();
+  int daysToStasis = 0, numberOfPlants = plants.size();
   vector<int>stack;
 
   // I need to only allow 1 pop per match-up
