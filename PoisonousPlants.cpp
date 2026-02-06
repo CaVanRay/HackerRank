@@ -7,6 +7,7 @@ int poisonousPlants(vector<int> plants) {
   // re-doing this from scratch, I need to account for temporal drift
   // track both poisonLVL & death day
   // anything that lives forever wipes the stacks
+  // only keep plants between walls
 
   
   return daysToStasis;
