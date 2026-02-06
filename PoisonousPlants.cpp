@@ -5,6 +5,7 @@ int poisonousPlants(vector<int> plants) {
   vector<int>stack;
 
   // I need to only allow 1 pop per match-up
+  // then track the number of rounds it takes
   
   
   for(int i = plants.size() - 1; i >= 0; i--){
