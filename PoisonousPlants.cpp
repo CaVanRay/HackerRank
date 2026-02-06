@@ -17,6 +17,8 @@ int poisonousPlants(vector<int> plants) {
   // if the preceeding plant is larger, death day +1
   // then pop preceeding
   // test against new preceeding
+  // if the preceeding plant is smaller, stop
+  // left neighbor exist, death day + 1
 
   
   return daysToStasis;
