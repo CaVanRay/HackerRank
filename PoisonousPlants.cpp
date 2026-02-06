@@ -12,7 +12,10 @@ int poisonousPlants(vector<int> plants) {
   // right wall continues to move
   // death days snowball (I think)
   // I think I got it
-  // it's a game of "how tall can I stack the blocks
+  // it's a game of "how tall can I stack the blocks"
+  // build up incrementing death days
+  // if the preceeding plant is larger, death day +1
+  
 
   
   return daysToStasis;
