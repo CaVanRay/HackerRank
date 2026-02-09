@@ -59,7 +59,7 @@ int poisonousPlants(vector<int> plants) {
   for(int i = 0; i < stack.size(); i++){
     stack.pop_back();
     maxDays = max(deathDay.back(), maxDays);
-    deathDay.popback();
+    deathDay.pop_back();
   }
   
   
