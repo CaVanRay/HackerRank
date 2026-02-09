@@ -25,6 +25,8 @@ int poisonousPlants(vector<int> plants) {
     // if the plant in question is < the left barrier, it becomes the new left barrier
     // if the plant is > the left barrier, it gets added to the stack with a death day of 1
     // if the plant is > the prev item, it gets a death day of 1
+    // if the plant is < the prev item, check it against the next item on the list with a death day + 1
+    // keep going down the list till it reaches the left barrier
     
   }
   
