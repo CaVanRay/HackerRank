@@ -53,7 +53,7 @@ int poisonousPlants(vector<int> plants) {
   }
 
   /*
-  all that is left is to clean up what is left in the stack
+  all that is left is to clean up what is left in the stack and record the highest death day
   */
   
   return maxDays;
