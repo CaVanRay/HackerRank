@@ -16,9 +16,9 @@ int poisonousPlants(vector<int> plants) {
   vector<int>stack;
 
   // we run through every plant in the initial array
-
-  
-
+  for(int i = 0; i < numberOfPlants; i++){
+    
+  }
   
   return daysToStasis;
 }
