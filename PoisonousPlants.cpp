@@ -12,14 +12,14 @@ Output: int, This will be the maximum amount of days till no more plants die
 */
 
 int poisonousPlants(vector<int> plants) {
-  int maxDays = 0, currentDays, numberOfPlants = plants.size();
+  int maxDays = 0, currentDays;
 
   // we need to track both the pesticide levels & the death days for each plant
   vector<int>stack;
   vector<int>deathDay;
 
   // we run through every plant in the initial array
-  for(int i = 0; i < numberOfPlants; i++){
+  for(int i = 0; i < plants.size(); i++){
 
     // we need to reset the current plant's days each time
     currentDays = 0;
