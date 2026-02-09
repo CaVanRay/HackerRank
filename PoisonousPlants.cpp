@@ -22,12 +22,11 @@ int poisonousPlants(vector<int> plants) {
   for(int i = 0; i < numberOfPlants; i++){
 
     // we need to reset the current plant's days each time
-    currentDays = 1;
+    currentDays = 0;
     
     // here we check if the previous item is larger than the current plant
     while(!stack.empty() && stack.back() >= plants[i]){
         stack.pop_back();
-        maxDays = max(deathDay.back(), maxDays);
         currentDays = max(deathDay.back() + 1, currentDays);
         deathDay.pop_back();
     }
@@ -43,6 +42,8 @@ int poisonousPlants(vector<int> plants) {
     */
 
     if(!stack.empty()){
+      currentDays++;
+      maxDay = max(currentDays, maxDays);
       stack.push_back(plants[i]);
       deathDay.push_back(currentDays);
     }else{
