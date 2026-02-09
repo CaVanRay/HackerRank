@@ -21,7 +21,7 @@ int poisonousPlants(vector<int> plants) {
   // we run through every plant in the initial array
   for(int i = 0; i < numberOfPlants; i++){
 
-    // if 
+    // if the stack is empty the plant in question becomes the new left barrier
     
   }
   
