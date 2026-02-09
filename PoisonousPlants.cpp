@@ -26,9 +26,9 @@ int poisonousPlants(vector<int> plants) {
     
     // here we check if the previous item is larger than the current plant
     while(!stack.empty() && stack.back() >= plants[i]){
-        stack.pop_back();
-        currentDays = max(deathDay.back(), currentDays);
-        deathDay.pop_back();
+      currentDays = max(deathDay.back(), currentDays);
+      stack.pop_back();
+      deathDay.pop_back();
     }
 
     /*
@@ -43,13 +43,14 @@ int poisonousPlants(vector<int> plants) {
 
     if(!stack.empty()){
       currentDays++;
-      maxDay = max(currentDays, maxDays);
       stack.push_back(plants[i]);
       deathDay.push_back(currentDays);
     }else{
       stack.push_back(plants[i]);
       deathDay.push_back(0);
     }
+    
+      maxDays = max(currentDays, maxDays);
     
   }
 
