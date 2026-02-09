@@ -53,17 +53,6 @@ int poisonousPlants(vector<int> plants) {
     
   }
 
-  /*
-  all that is left is to clean up what is left in the stack and record the highest death day.
-  we will use a for loop to compare each death day to the max before popping.
-  */
-  for(int i = 0; i < stack.size(); i++){
-    stack.pop_back();
-    maxDays = max(deathDay.back(), maxDays);
-    deathDay.pop_back();
-  }
-  
-  
   return maxDays;
 }
 
