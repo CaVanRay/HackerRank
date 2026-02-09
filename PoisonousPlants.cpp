@@ -13,7 +13,9 @@ Output: int, This will be the maximum amount of days till no more plants die
 
 int poisonousPlants(vector<int> plants) {
   int daysToStasis = 0, numberOfPlants = plants.size();
-  vector<int>stack;
+
+  // we need to track both the pesticide levels & the death days for each plant
+  vector<int>index;
 
   // we run through every plant in the initial array
   for(int i = 0; i < numberOfPlants; i++){
