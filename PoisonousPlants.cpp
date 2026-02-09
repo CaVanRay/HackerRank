@@ -15,11 +15,13 @@ int poisonousPlants(vector<int> plants) {
   int daysToStasis = 0, numberOfPlants = plants.size();
 
   // we need to track both the pesticide levels & the death days for each plant
-  vector<int>index;
+  vector<int>stack;
   vector<int>deathDay;
 
   // we run through every plant in the initial array
   for(int i = 0; i < numberOfPlants; i++){
+
+    // if 
     
   }
   
