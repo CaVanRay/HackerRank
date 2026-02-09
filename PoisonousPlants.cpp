@@ -15,8 +15,7 @@ int poisonousPlants(vector<int> plants) {
   int maxDays = 0, currentDays;
 
   // we need to track both the pesticide levels & the death days for each plant
-  vector<int>stack;
-  vector<int>deathDay;
+  vector<pair<int, int>> stack;
 
   // we run through every plant in the initial array
   for(int i = 0; i < plants.size(); i++){
@@ -25,10 +24,9 @@ int poisonousPlants(vector<int> plants) {
     currentDays = 0;
     
     // here we check if the previous item is larger than the current plant
-    while(!stack.empty() && stack.back() >= plants[i]){
-      currentDays = max(deathDay.back(), currentDays);
+    while(!stack.empty() && stack.back().first >= plants[i]){
+      currentDays = max(stack.back().second, currentDays);
       stack.pop_back();
-      deathDay.pop_back();
     }
 
     /*
@@ -43,11 +41,9 @@ int poisonousPlants(vector<int> plants) {
 
     if(!stack.empty()){
       currentDays++;
-      stack.push_back(plants[i]);
-      deathDay.push_back(currentDays);
+      stack.push_back({plants[i], currentDays});
     }else{
-      stack.push_back(plants[i]);
-      deathDay.push_back(0);
+      stack.push_back({plants[i], 0});
     }
     
       maxDays = max(currentDays, maxDays);
