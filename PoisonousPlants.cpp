@@ -2,7 +2,7 @@
 /*
 Title: Poisonous Plants
 Author: Cavan Theiss
-Description: 
+Description: Calculate the maximum number of days until no more plants will die
 
 */
 
