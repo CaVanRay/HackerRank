@@ -36,6 +36,8 @@ int andXorOr(vector<int> a) {
 
     /*
     when a number is larger than the last, push the new number
+    But at this point any stack that makes it past the previous while loop
+    can only be empty or contain something smaller than the new number
     */
     
     if(!stack.empty()){
