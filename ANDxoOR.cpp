@@ -9,9 +9,14 @@ Output: returns an integer
 */
 
 int andXorOr(vector<int> a) {
-  int maxPossibleValue = 0;
+  int maxPossibleValue = 0, bitwiseResult;
+  vector<int> stack;
 
-
+  for(int i = 0; i < a.size(); i++){
+    while(!stack.empty() && stack.back() >= a[i]){
+      
+    }
+  }
   
   return maxPossibleValue;
 }
