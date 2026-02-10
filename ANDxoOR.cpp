@@ -18,6 +18,7 @@ int andXorOr(vector<int> a) {
   when a number is larger than the last, push the new number
   
   when a number is smaller or equal to the last, pop the last number
+  repeat until previous number is smaller than the new number
   then push the new number
   */
   
