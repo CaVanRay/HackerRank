@@ -14,11 +14,6 @@ int andXorOr(vector<int> a) {
 
   /*
   We run through the entire given vector "a" once
-  
-  when a number is larger than the last, push the new number
-  
-  compare previous number and new number everytime, including when 
-  previous number is popped and another new previous is presented
   */
   
   for(int i = 0; i < a.size(); i++){
