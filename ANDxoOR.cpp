@@ -42,6 +42,7 @@ int andXorOr(vector<int> a) {
     /*
     and finally push the new number into the stack
     */
+    
     stack.push_back(a[i]);
     
   }
