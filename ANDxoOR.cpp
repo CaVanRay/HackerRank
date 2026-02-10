@@ -26,6 +26,13 @@ int andXorOr(vector<int> a) {
   */
   
   for(int i = 0; i < a.size(); i++){
+
+    /*
+    when a number is smaller or equal to the last, pop the last number
+    repeat until previous number is smaller than the new number
+    then push the new number
+    */
+    
     while(!stack.empty() && stack.back() >= a[i]){
       maxPossibleValue = max((stack.back() & a[i]) ^ (stack.back() | a[i]), maxPossibleValue);
       stack.pop_back();
