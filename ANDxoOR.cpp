@@ -37,10 +37,11 @@ int andXorOr(vector<int> a) {
     
     if(!stack.empty()){
       maxPossibleValue = max((stack.back() & a[i]) ^ (stack.back() | a[i]), maxPossibleValue);
-      stack.push_back(a[i]);
-    }else{
-      stack.push_back(a[i]);
     }
+
+    
+    stack.push_back(a[i]);
+    
   }
   
   return maxPossibleValue;
