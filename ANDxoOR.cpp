@@ -32,14 +32,16 @@ int andXorOr(vector<int> a) {
     /*
     At this point any stack that makes it past the previous while loop
     can only be empty or contain something smaller than the new number
-    so we just test for max and then push the new number
+    so we just test for max
     */
     
     if(!stack.empty()){
       maxPossibleValue = max((stack.back() & a[i]) ^ (stack.back() | a[i]), maxPossibleValue);
     }
 
-    
+    /*
+    and finally push the new number into the stack
+    */
     stack.push_back(a[i]);
     
   }
