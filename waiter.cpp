@@ -12,6 +12,12 @@ Output: vector of integers
 
 vector<int> waiter(vector<int> number, int q) {
 
+
+ 
+/*
+
+*/
+ 
 }
 
 //**********************************************************************
