@@ -26,6 +26,9 @@ to the pending vector
 
 each subsequent iteration goes through the pending items
 again
+
+when the iterations run out, any items still in the 
+pending vector are then added to the answer vector
 */
  
 }
