@@ -3,7 +3,8 @@
 /*
 Title: ANDxorOR
 Author: Cavan Ray Theiss
-Description: Print the value of maximum possible value of S[i]
+Description: Return maximum possible value of f(x, y) = (x & y) ^ (x | y) , using the provided vector but
+only considering pairs where one is the nearest greater neighbor
 Input: vector of integers
 Output: returns an integer
 */
