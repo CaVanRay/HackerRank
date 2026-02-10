@@ -1,6 +1,7 @@
 //**********************************************************************
 
 /*
+Title: waiter
  * Complete the 'waiter' function below.
  *
  * The function is expected to return an INTEGER_ARRAY.
