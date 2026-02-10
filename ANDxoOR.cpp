@@ -32,7 +32,13 @@ int andXorOr(vector<int> a) {
     while(!stack.empty() && stack.back() >= a[i]){
       maxPossibleValue = max((stack.back() & a[i]) ^ (stack.back() | a[i]), maxPossibleValue);
       stack.pop_back();
-    }if(!stack.empty()){
+    }
+
+    /*
+    when a number is larger than the last, push the new number
+    */
+    
+    if(!stack.empty()){
       maxPossibleValue = max((stack.back() & a[i]) ^ (stack.back() | a[i]), maxPossibleValue);
       stack.push_back(a[i]);
     }else{
