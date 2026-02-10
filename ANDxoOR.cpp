@@ -9,8 +9,10 @@ Output: returns an integer
 */
 
 int andXorOr(vector<int> a) {
-  int maxPossibleValue;
+  int maxPossibleValue = 0;
 
+
+  
   return maxPossibleValue;
 }
 
