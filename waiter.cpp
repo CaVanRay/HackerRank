@@ -30,7 +30,8 @@ again
 when the iterations run out, any items still in the 
 pending vector are then added to the answer vector
 */
- 
+
+ return answer;
 }
 
 //**********************************************************************
