@@ -4,12 +4,10 @@
 Title: waiter
 Author: Cavan Ray Theiss
 Description:
- * Complete the 'waiter' function below.
- *
- * The function is expected to return an INTEGER_ARRAY.
- * The function accepts following parameters:
- *  1. INTEGER_ARRAY number
- *  2. INTEGER q
+Input: 
+  * vector of integers "number"
+  * integer "q"
+Output: vector of integers
  */
 
 vector<int> waiter(vector<int> number, int q) {
