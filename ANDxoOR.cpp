@@ -12,6 +12,14 @@ int andXorOr(vector<int> a) {
   int maxPossibleValue = 0, bitwiseResult;
   vector<int> stack;
 
+  /*
+  We run through the entire given vector "a" once
+  
+  when a number is larger than the last, push the new number
+  
+  when a number is smaller or equal to the last, pop the last number
+  then push the new number
+  */
   for(int i = 0; i < a.size(); i++){
     while(!stack.empty() && stack.back() >= a[i]){
       
