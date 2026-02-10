@@ -2,6 +2,7 @@
 
 /*
 Title: ANDxorOR
+Author: Cavan Ray Theiss
 */
 
 /*
