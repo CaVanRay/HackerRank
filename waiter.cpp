@@ -69,8 +69,8 @@ each subsequent iteration goes through pileA again
 }
  
 /*
-when the iterations run out, any items still in the 
-pending vector are then added to the answer vector
+when the iterations run out, any items still in 
+pileA are then added to the answer vector
 */
 
  return answer;
