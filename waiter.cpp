@@ -57,9 +57,9 @@ the series
   
 /*
 the first iteration goes through the provided vector
-and any items divisible by that iteration's prime number
-are added to the answer vector while the rest are added 
-to the pending vector
+and any items evenly divisible by that iteration's prime number
+are added to the pileB vector while the rest are added 
+to the pileA vector
 */
  
 /*
