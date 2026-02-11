@@ -54,6 +54,8 @@ the series
   while(!isPrime(primeDivisor)){
    primeDivisor++;
   }
+
+//********* 
   
 /*
 the first iteration goes through the provided vector
@@ -69,17 +71,14 @@ if(i = 1){
    }else{
     pileA.push_back(number[j]);
    }
-  }
+  }  // after each iteration, move pileB to answer vector
+ while(!pileB.empty()){
+  answer.push_back(pileB.back());
+  pileB.pop_back();
+ }
 }
-  
-/*
-after each iteration, move pileB to answer vector
-*/
-  
-while(!pileB.empty()){
- answer.push_back(pileB.back());
- pileB.pop_back();
-}
+
+//********* 
   
 /*
 each subsequent iteration goes through pileA again
@@ -91,9 +90,13 @@ if(i > 1){
    pileB.push_back(pileA[k]);
    pileA.erase(pileA.begin() + k);
   }
+ }  // after each iteration, move pileB to answer vector
+ while(!pileB.empty()){
+  answer.push_back(pileB.back());
+  pileB.pop_back();
  }
 }
-  
+//********* 
 }
  
 /*
