@@ -75,10 +75,12 @@ if(i = 1){
 /*
 after each iteration, move pileB to answer vector
 */
+  
 while(!pileB.empty()){
  answer.push_back(pileB.back());
  pileB.pop_back();
 }
+  
 /*
 each subsequent iteration goes through pileA again
 */
