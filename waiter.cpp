@@ -13,6 +13,7 @@ Output: vector of integers
 vector<int> waiter(vector<int> number, int q) {
 
 vector<int> answer, pileA, pileB;
+int primeDivisor;
  
 /*
 q is the number of iterations we have to go through
