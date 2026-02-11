@@ -77,7 +77,7 @@ after each iteration, move pileB to answer vector
 */
 for(int k = 0; k < pileB.size(); k++){
  answer.push_back(pileB.back());
- 
+ pileB.pop_back();
 }
 /*
 each subsequent iteration goes through pileA again
