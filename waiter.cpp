@@ -75,7 +75,7 @@ if(i = 1){
 /*
 after each iteration, move pileB to answer vector
 */
-for(int k = 0; k < pileB.size(); k++){
+while(!pileB.empty()){
  answer.push_back(pileB.back());
  pileB.pop_back();
 }
