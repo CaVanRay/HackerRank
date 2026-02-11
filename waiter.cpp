@@ -84,6 +84,10 @@ while(!pileB.empty()){
 /*
 each subsequent iteration goes through pileA again
 */
+
+if(i > 1){
+ 
+}
   
 }
  
