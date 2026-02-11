@@ -62,7 +62,9 @@ are added to the pileB vector while the rest are added
 to the pileA vector
 */
 
- for(int j = 0; i < number.size(); j++)
+ for(int j = 0; i < number.size(); j++){
+  
+ }
   
 /*
 each subsequent iteration goes through pileA again
