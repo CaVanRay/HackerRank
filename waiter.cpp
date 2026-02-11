@@ -12,7 +12,7 @@ Output: vector of integers
 
 vector<int> waiter(vector<int> number, int q) {
 
-vector<int> answer, pending;
+vector<int> answer, pileA, pileB;
  
 /*
 q is the number of iterations we have to go through
