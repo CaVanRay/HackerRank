@@ -61,7 +61,9 @@ and any items evenly divisible by that iteration's prime number
 are added to the pileB vector while the rest are added 
 to the pileA vector
 */
- 
+
+ for(int j)
+  
 /*
 each subsequent iteration goes through pileA again
 */
