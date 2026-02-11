@@ -72,9 +72,9 @@ if(i = 1){
   }
 }
   
- /*
- after each iteration, move pileB to answer vector
- */
+/*
+after each iteration, move pileB to answer vector
+*/
   
 /*
 each subsequent iteration goes through pileA again
