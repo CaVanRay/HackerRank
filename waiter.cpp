@@ -61,15 +61,17 @@ and any items evenly divisible by that iteration's prime number
 are added to the pileB vector while the rest are added 
 to the pileA vector
 */
-
- for(int j = 0; j < number.size(); j++){
-  if((number[j] % primeDivisor) == 0){
-   pileB.push_back(number[j]);
-  }else{
-   pileA.push_back(number[j]);
+  
+if(i = 1){
+  for(int j = 0; j < number.size(); j++){
+   if((number[j] % primeDivisor) == 0){
+    pileB.push_back(number[j]);
+   }else{
+    pileA.push_back(number[j]);
+   }
   }
- }
-
+}
+  
  /*
  after each iteration, move pileB to answer vector
  */
