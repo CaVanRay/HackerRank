@@ -22,6 +22,14 @@ at 2 going up
 */
  
  for(int i = 0; i < q; i++){
+
+/*
+at the start primeDivisor is set to the first prime
+for each subsequent loop the whole process starts with
+a prime number iterator using a while statement that wont 
+move on until it reaches the next prime number in 
+the series
+*/
   
 /*
 the first iteration goes through the provided vector
