@@ -75,7 +75,9 @@ if(i = 1){
 /*
 after each iteration, move pileB to answer vector
 */
-  
+for(int k = 0; k < pileB.size(); k++){
+ 
+}
 /*
 each subsequent iteration goes through pileA again
 */
