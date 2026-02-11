@@ -86,7 +86,9 @@ each subsequent iteration goes through pileA again
 */
 
 if(i > 1){
- 
+ for(int k = 0; k < pileA.size(); k++){
+  
+ }
 }
   
 }
