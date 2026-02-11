@@ -3,12 +3,21 @@
 /*
 Title: waiter
 Author: Cavan Ray Theiss
-Description:
+Description: sorting a provided vector of numbers 
 Input: 
   * vector of integers "number"
   * integer "q"
 Output: vector of integers
  */
+
+/*
+For the sake of not saving a list of every prime number
+between 1 & 1200, we will be implementing a function 
+called isPrime(), it will test each number till we find
+the next prime needed for that interations
+*/
+
+
 
 vector<int> waiter(vector<int> number, int q) {
 
@@ -30,6 +39,7 @@ a prime number iterator using a while statement that wont
 move on until it reaches the next prime number in 
 the series
 */
+  while
   
 /*
 the first iteration goes through the provided vector
