@@ -17,6 +17,18 @@ called isPrime(), it will test each number till we find
 the next prime needed for that interations
 */
 
+bool isPrim(int number){
+ if(number <= 1){
+  return false;
+ }else if(number = 2 || number = 3){
+  return true;
+ }else for(int divi = 2; divi <= sqrt(number); divi++){
+   if(number % divi == 0){
+    return false
+   }
+ }
+ return true;
+}
 
 
 vector<int> waiter(vector<int> number, int q) {
@@ -39,7 +51,9 @@ a prime number iterator using a while statement that wont
 move on until it reaches the next prime number in 
 the series
 */
-  while
+  while(!isPrime(primeDivisor)){
+   primeDivisor++;
+  }
   
 /*
 the first iteration goes through the provided vector
