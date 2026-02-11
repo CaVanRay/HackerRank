@@ -63,8 +63,7 @@ to the pileA vector
 */
  
 /*
-each subsequent iteration goes through the pending items
-again
+each subsequent iteration goes through pileA again
 */
   
 }
