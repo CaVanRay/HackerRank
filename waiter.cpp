@@ -20,6 +20,8 @@ each iteration is based on a prime number starting
 at 2 going up
 */
  
+ for(int i = 0; i < q; i++){
+  
 /*
 the first iteration goes through the provided vector
 and any items divisible by that iteration's prime number
@@ -31,6 +33,8 @@ to the pending vector
 each subsequent iteration goes through the pending items
 again
 */
+  
+}
  
 /*
 when the iterations run out, any items still in the 
