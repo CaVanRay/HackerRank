@@ -69,6 +69,10 @@ to the pileA vector
    pileA.push_back(number[j]);
   }
  }
+
+ /*
+ after each iteration, move pileB to answer vector
+ */
   
 /*
 each subsequent iteration goes through pileA again
