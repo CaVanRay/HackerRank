@@ -95,7 +95,7 @@ to the pileA vector
 we then increment our primeDivisor forward by one
 if it's prime the next iteration will use it, if
 it's not prime, our while loop at the start will
-increase it continually till it is prim
+increase it continually till it is prime
 */
 
  primeDivisor++;
