@@ -99,7 +99,7 @@ number vector
 
 if(i > 0){
  for(int k = tempA.size(); k > 0; k--){
-  if((tempA[k] % primeDivisor) == 0){
+  if((tempA.back() % primeDivisor) == 0){
    pileB.push_back(tempA.back());
    tempA.pop_back();
   }else{
