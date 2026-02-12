@@ -98,10 +98,13 @@ number vector
 */
 
 if(i > 0){
- for(int k = 0; k < pileA.size(); k++){
-  if((pileA[k] % primeDivisor) == 0){
-   pileB.push_back(pileA[k]);
-   pileA.erase(pileA.begin() + k);
+ for(int k = tempA.size; k > 0; k--){
+  if((tempA[k] % primeDivisor) == 0){
+   pileB.push_back(tempA.back);
+   tempA.pop_back();
+  }else{
+   pileA.push_back(tempA.back);
+   tempA.pop_back();
   }
  }  // after each iteration, move pileB to answer vector
  while(!pileB.empty()){
