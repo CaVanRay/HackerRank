@@ -107,6 +107,10 @@ if(i > 0){
  while(!pileB.empty()){
   answer.push_back(pileB.back());
   pileB.pop_back();
+ } // after each iteration, re-designate pileA to tempA
+ if(!pileA.empty()){
+  tempA = pileA;
+  pileA.clear();
  }
 }
 //********* 
