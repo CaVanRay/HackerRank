@@ -71,11 +71,22 @@ if(i == 0){
    }else{
     pileA.push_back(number[j]);
    }
-  }  // after each iteration, move pileB to answer vector 
-     // and move pileA to tempA vector
+  }  
+ 
+ /* 
+ after each iteration, move pileB to answer vector 
+ using LIFO method, however pileA is copied to tempA
+ and then cleared as the whole stack is redesignated 
+ before the next iteration
+ */
+ 
  while(!pileB.empty()){
   answer.push_back(pileB.back());
   pileB.pop_back();
+ }
+ if(!pileA.empty()){
+  tempA = pileA;
+  pileA.clear();
  }
 }
 
