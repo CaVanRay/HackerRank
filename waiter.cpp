@@ -131,12 +131,12 @@ increase it continually till it is prim
 //********* 
 /*
 when the iterations run out, any items still in 
-pileA are then added to the answer vector
+tempA are then added to the answer vector
 */
 
-while(!pileA.empty()){
- answer.push_back(pileA.back());
- pileA.pop_back();
+while(!tempA.empty()){
+ answer.push_back(tempA.back());
+ tempA.pop_back();
 }
  
  return answer;
