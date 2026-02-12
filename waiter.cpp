@@ -24,7 +24,7 @@ bool isPrim(int number){
   return true;
  }else for(int divi = 2; divi <= sqrt(number); divi++){
    if(number % divi == 0){
-    return false
+    return false;
    }
  }
  return true;
