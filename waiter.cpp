@@ -104,6 +104,11 @@ when the iterations run out, any items still in
 pileA are then added to the answer vector
 */
 
+while(!pileA.empty()){
+ answer.push_back(pileA.back());
+ pileA.pop_back();
+}
+ 
  return answer;
 }
 
