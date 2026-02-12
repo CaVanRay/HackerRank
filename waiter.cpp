@@ -71,7 +71,8 @@ if(i == 0){
    }else{
     pileA.push_back(number[j]);
    }
-  }  // after each iteration, move pileB to answer vector
+  }  // after each iteration, move pileB to answer vector 
+     // and move pileA to tempA vector
  while(!pileB.empty()){
   answer.push_back(pileB.back());
   pileB.pop_back();
@@ -81,7 +82,8 @@ if(i == 0){
 //********* 
   
 /*
-each subsequent iteration goes through pileA again
+each subsequent iteration goes through tempA again instead of
+number vector
 */
 
 if(i > 0){
