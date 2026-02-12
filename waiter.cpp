@@ -98,7 +98,17 @@ if(i > 0){
 }
 //********* 
 }
- 
+
+/* 
+we then increment our primeDivisor forward by one
+if it's prime the next iteration will use it, if
+it's not prime, our while loop at the start will
+increase it continually till it is prim
+*/
+
+ primeDivisor++;
+
+//********* 
 /*
 when the iterations run out, any items still in 
 pileA are then added to the answer vector
