@@ -33,7 +33,7 @@ bool isPrime(int number){
 
 vector<int> waiter(vector<int> number, int q) {
 
-vector<int> answer, tempA, pileA, pileB;
+vector<int> answer, pileA, pileB, tempA = number;
 int primeDivisor = 2;
  
 /*
@@ -56,24 +56,25 @@ the series
   }
 
 //********* 
-  
+   
 /*
-the first iteration goes through the provided vector
-and any items evenly divisible by that iteration's prime number
+each iteration goes through tempA and any items 
+evenly divisible by that iteration's prime number
 are added to the pileB vector while the rest are added 
 to the pileA vector
 */
-  
-if(i == 0){
-  for(int j = number.size() - 1; j >= 0; j--){
-   if((number[j] % primeDivisor) == 0){
-    pileB.push_back(number[j]);
-   }else{
-    pileA.push_back(number[j]);
-   }
-  }  
- 
- /* 
+
+ while(!tempA.empty()){
+  if((tempA.back() % primeDivisor) == 0){
+   pileB.push_back(tempA.back());
+   tempA.pop_back();
+  }else{
+   pileA.push_back(tempA.back());
+   tempA.pop_back();
+  }
+ }  
+
+  /* 
  after each iteration, move pileB to answer vector 
  using LIFO method, however pileA is copied to tempA
  and then cleared as the whole stack is redesignated 
@@ -88,34 +89,6 @@ if(i == 0){
   tempA = pileA;
   pileA.clear();
  }
-}
-
-//********* 
-  
-/*
-each subsequent iteration goes through tempA again instead of
-number vector
-*/
-
-if(i > 0){
- while(!tempA.empty()){
-  if((tempA.back() % primeDivisor) == 0){
-   pileB.push_back(tempA.back());
-   tempA.pop_back();
-  }else{
-   pileA.push_back(tempA.back());
-   tempA.pop_back();
-  }
- }  // after each iteration, move pileB to answer vector
- while(!pileB.empty()){
-  answer.push_back(pileB.back());
-  pileB.pop_back();
- } // after each iteration, re-designate pileA to tempA
- if(!pileA.empty()){
-  tempA = pileA;
-  pileA.clear();
- }
-}
 //********* 
 
 /* 
