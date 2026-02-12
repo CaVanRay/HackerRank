@@ -98,7 +98,7 @@ number vector
 */
 
 if(i > 0){
- for(int k = tempA.size(); k > 0; k--){
+ while(!tempA.empty()){
   if((tempA.back() % primeDivisor) == 0){
    pileB.push_back(tempA.back());
    tempA.pop_back();
