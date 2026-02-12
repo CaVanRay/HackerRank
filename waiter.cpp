@@ -65,7 +65,7 @@ to the pileA vector
 */
   
 if(i == 0){
-  for(int j = 0; j < number.size(); j++){
+  for(int j = number.size() - 1; j >= 0; j--){
    if((number[j] % primeDivisor) == 0){
     pileB.push_back(number[j]);
    }else{
