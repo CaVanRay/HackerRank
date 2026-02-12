@@ -64,7 +64,7 @@ are added to the pileB vector while the rest are added
 to the pileA vector
 */
   
-if(i = 1){
+if(i == 1){
   for(int j = 0; j < number.size(); j++){
    if((number[j] % primeDivisor) == 0){
     pileB.push_back(number[j]);
@@ -86,7 +86,7 @@ each subsequent iteration goes through pileA again
 
 if(i > 1){
  for(int k = 0; k < pileA.size(); k++){
-  if(pileA[k] % primeDivisor) == 0){
+  if((pileA[k] % primeDivisor) == 0){
    pileB.push_back(pileA[k]);
    pileA.erase(pileA.begin() + k);
   }
