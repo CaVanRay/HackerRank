@@ -117,7 +117,6 @@ if(i > 0){
  }
 }
 //********* 
-}
 
 /* 
 we then increment our primeDivisor forward by one
@@ -128,6 +127,7 @@ increase it continually till it is prim
 
  primeDivisor++;
 
+}
 //********* 
 /*
 when the iterations run out, any items still in 
