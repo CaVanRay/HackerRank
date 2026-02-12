@@ -33,7 +33,7 @@ bool isPrime(int number){
 
 vector<int> waiter(vector<int> number, int q) {
 
-vector<int> answer, pileA, pileB;
+vector<int> answer, tempA, pileA, pileB;
 int primeDivisor = 2;
  
 /*
