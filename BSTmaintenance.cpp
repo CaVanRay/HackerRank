@@ -2,6 +2,7 @@
 
 /*
 Title: BST maintenance
+Author: Cavan Ray Theiss
  */
 
 vector<int> solve(vector<int> arr) {
