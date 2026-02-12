@@ -17,7 +17,7 @@ called isPrime(), it will test each number till we find
 the next prime needed for that interations
 */
 
-bool isPrim(int number){
+bool isPrime(int number){
  if(number <= 1){
   return false;
  }else if(number == 2 || number == 3){
