@@ -17,6 +17,8 @@ asking for a walkthrough of the logic needed for this problem gave chatgpt an an
 
 I'm going to pen & paper for the rest of the day, work on the logic in my freetime & 
 hopefully have an idea of how I'm gonna do this tomorrow morning
+
+I think this is a monotonic stack problem
 */  
 }
 
