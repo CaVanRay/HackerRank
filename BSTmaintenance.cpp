@@ -19,6 +19,8 @@ I'm going to pen & paper for the rest of the day, work on the logic in my freeti
 hopefully have an idea of how I'm gonna do this tomorrow morning
 
 I think this is a monotonic stack problem, but I still can't work out the logic
+
+I'm gonna try to figure it out tonight after work
 */  
 }
 
