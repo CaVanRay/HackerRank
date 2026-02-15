@@ -23,6 +23,11 @@ I think this is a monotonic stack problem, but I still can't work out the logic
 I'm gonna try to figure it out tonight after work, but i might also just go to sleep
 worst case scenario I'll work on it tomorrow
 */  
+
+/*
+Example: 
+input - 4, 7, 3, 1, 8, 2, 6, 5
+*/
 }
 
 //***********************************************************************************
