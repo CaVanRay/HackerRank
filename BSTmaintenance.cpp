@@ -47,6 +47,8 @@ total = 0 + 1 = 1
 /*
 input = 3
 depth = 1
+branches = 2
+total = 1 + 3 = 4
 */
   
 }
