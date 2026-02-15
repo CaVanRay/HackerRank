@@ -68,6 +68,8 @@ total = 10 + 10 = 20
 /*
 input = 2
 depth = 3
+branches = 2
+total = 20 + 15 = 35
 */
   
 }
