@@ -75,6 +75,8 @@ total = 20 + 15 = 35
 /*
 input = 6
 depth = 2
+branches = 3
+total = 35 + 17 = 52
 */
   
 }
