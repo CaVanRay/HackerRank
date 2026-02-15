@@ -26,7 +26,8 @@ worst case scenario I'll work on it tomorrow
 
 /*
 Example: 
-input - 4, 7, 3, 1, 8, 2, 6, 5
+input  - 4, 7, 3,  1,  8,  2,  6,  5
+output - 0, 1, 4, 10, 20, 35, 52, 76
 */
 }
 
