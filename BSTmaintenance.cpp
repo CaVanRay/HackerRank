@@ -33,6 +33,8 @@ output - 0, 1, 4, 10, 20, 35, 52, 76
 /*
 input = 4
 depth = 0
+branches = 1
+total = 0
 */
   
 }
