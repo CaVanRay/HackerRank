@@ -40,6 +40,8 @@ total = 0
 /*
 input = 7
 depth = 1
+branches = 1
+total = 0 + 1 = 1
 */
   
 }
