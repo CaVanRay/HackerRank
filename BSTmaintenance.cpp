@@ -14,6 +14,9 @@ vector<int> solve(vector<int> arr) {
 
 /* 
 I think I found finger-hold
+
+in a simple 2 leg tree the total length increases at a regular predictable rate
+
 */
   
 }
