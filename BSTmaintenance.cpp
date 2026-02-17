@@ -19,6 +19,9 @@ in a simple 2 leg tree the total length increases at a regular predictable rate
 
 total starts at 0
 
+each succesive addition increases by 1
+
+
 */
   
 }
