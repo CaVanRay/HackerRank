@@ -2,6 +2,7 @@
 
 /*
 Title: Simple Array Sum
+Author: Cavan Ray Theiss
  */
 
 int simpleArraySum(vector<int> ar) {
