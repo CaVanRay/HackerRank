@@ -5,8 +5,8 @@
  Author: Cavan Ray Theiss
  Description: given an array of very large numbers, add them 
  all together & return the total sum
- * The function is expected to return a LONG_INTEGER.
- * The function accepts LONG_INTEGER_ARRAY ar as parameter.
+ Input: and array of type Long integers
+ 
  */
 
 long aVeryBigSum(vector<long> ar) {
