@@ -3,9 +3,9 @@
 /*
 Title: Diagonal Difference
 Author: Cavan Ray Theiss
-Description: given a 3X3 array of numbers calculate the absolute
+Description: given a 2D array of numbers calculate the absolute
 difference of sums for the 2 diagonals
-Input: a 3X3 array of integers
+Input: a 2D array of integers of various sizes
               #  #  #
               #  #  #
               #  #  #
