@@ -10,7 +10,10 @@ Output: 1 integer array of 2 items
 */
 
 vector<int> compareTriplets(vector<int> a, vector<int> b) {
+vector<int> scores (0, 0);
+  for
 
+  
 }
 
 //**********************************************************************
