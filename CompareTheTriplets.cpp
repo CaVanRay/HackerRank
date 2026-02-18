@@ -2,6 +2,7 @@
 
 /*
 Title: Compare The Triplets
+Author: Cavan Ray Theiss
 */
 
 /*
