@@ -4,6 +4,7 @@
 Title: Compare The Triplets
 Author: Cavan Ray Theiss
 Description:
+Input: 2 integer arrays
 */
 
 /*
