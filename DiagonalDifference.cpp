@@ -14,7 +14,11 @@ Output: an integer
 */
 
 int diagonalDifference(vector<vector<int>> arr) {
-
+  int diagonalA = 0, diagonalB = 0, absoluteDifference;
+  diagonalA += (arr[0][0] + arr[1][1] + arr[2][2]);
+  diagonalB += (arr[0][2] + arr[1][1] + arr[2][0]);
+  absoluteDifference = abs(diagonalA - diagonalB);
+  return absoluteDifference;
 }
 
 //**********************************************************************
