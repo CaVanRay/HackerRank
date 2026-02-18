@@ -20,7 +20,7 @@ float positives = 0, negatives = 0, zeros = 0;
     }else if(arr[i] < 0){
       negatives++;
     }else{
-      zeros++
+      zeros++;
     }
   }
 
