@@ -8,7 +8,9 @@
  */
 
 int simpleArraySum(vector<int> ar) {
+  int totalSum = 0;
 
+  return totalSum;
 }
 
 //***************************************************************
