@@ -14,8 +14,8 @@ Output: an integer
 */
 
 int diagonalDifference(vector<vector<int>> arr) {
-  int columns = sizeof(arr[0])/sizeof(arr[0][0]), diagA = 0, diagB = 0, totalDiff;
-  for(int i = 0, j = columns; i < columns; i++, j--){
+  int columns = arr.size(), diagA = 0, diagB = 0, totalDiff;
+  for(int i = 0, j = columns - 1; i < columns; i++, j--){
     diagA += arr[i][i];
     diagB += arr[i][j];
   }
