@@ -14,11 +14,13 @@ Output: an integer
 */
 
 int diagonalDifference(vector<vector<int>> arr) {
-  int diagonalA = 0, diagonalB = 0, absoluteDifference;
-  diagonalA += (arr[0][0] + arr[1][1] + arr[2][2]);
-  diagonalB += (arr[0][2] + arr[1][1] + arr[2][0]);
-  absoluteDifference = abs(diagonalA - diagonalB);
-  return absoluteDifference;
+  int columns = sizeof(arr[0])/sizeof(arr[0][0]), diagA = 0, diagB = 0, totalDiff;
+  for(int i = 0, j = columns; i < columns; i++, j--){
+    diagA += arr[i][i];
+    diagB += arr[i][j];
+  }
+  totalDiff = abs(diagA - diagB);
+  return totalDiff;
 }
 
 //**********************************************************************
