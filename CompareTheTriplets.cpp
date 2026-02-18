@@ -1,6 +1,10 @@
 //**********************************************************************
 
 /*
+Title: Compare The Triplets
+*/
+
+/*
  * Complete the 'compareTriplets' function below.
  *
  * The function is expected to return an INTEGER_ARRAY.
