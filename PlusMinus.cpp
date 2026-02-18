@@ -1,8 +1,6 @@
 /*
- * Complete the 'plusMinus' function below.
- *
- * The function accepts INTEGER_ARRAY arr as parameter.
- */
+Titla: Plus Minus 
+*/
 
 void plusMinus(vector<int> arr) {
 
