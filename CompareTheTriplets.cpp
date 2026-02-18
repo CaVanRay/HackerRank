@@ -1,3 +1,5 @@
+//**********************************************************************
+
 /*
  * Complete the 'compareTriplets' function below.
  *
@@ -10,3 +12,5 @@
 vector<int> compareTriplets(vector<int> a, vector<int> b) {
 
 }
+
+//**********************************************************************
