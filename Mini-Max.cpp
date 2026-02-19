@@ -14,11 +14,11 @@ Output: print 2 integers on the screen
 
 void miniMaxSum(vector<int> arr) {
   long long totalSum = 0, smallest = arr[0], largest = arr[0];
-  for(int i = 0; i < arr.size(); i++){
-    totalSum += arr[i];
-    smallest = min(smallest, arr[i]);
-    largest = max(largest, arr[i]);
-  }
+    for (int num : arr) {
+        totalSum += num;
+        smallest = min(smallest, (long long)num);
+        largest = max(largest, (long long)num);
+    }
   cout << (totalSum - largest) << " " << (totalSum - smallest);
 
 }
