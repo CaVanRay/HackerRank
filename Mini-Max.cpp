@@ -13,7 +13,7 @@ Output: print 2 integers on the screen
 */
 
 void miniMaxSum(vector<int> arr) {
-  int totalSum = 0, smallest = arr[0], largest = arr[0];
+  long long totalSum = 0, smallest = arr[0], largest = arr[0];
   for(int i = 0; i < arr.size(); i++){
     totalSum += arr[i];
     smallest = min(smallest, arr[i]);
