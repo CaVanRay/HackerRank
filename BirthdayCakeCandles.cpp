@@ -15,7 +15,7 @@ long long tallestFound = 0, matchingTallest = 0;
   for(int height : candles){
     if(height > tallestFound){
       tallestFound = height;
-      matchingTallest = 0;
+      matchingTallest = 1;
     } else if (height == tallestFound){
       matchingTallest++;
     }
