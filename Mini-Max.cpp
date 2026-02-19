@@ -2,6 +2,7 @@
 
 /*
 Title: Mini-Max
+Author: Cavan Ray Theiss
 */
 
 void miniMaxSum(vector<int> arr) {
