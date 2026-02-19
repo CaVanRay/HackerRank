@@ -9,7 +9,7 @@ the smallest & the largest sum we can get using 4 of the 5 integers
 and then print those sums on the screen
 
 Input: an array of 5 integers
-
+Output: print 2 integers on the screen
 */
 
 void miniMaxSum(vector<int> arr) {
