@@ -10,5 +10,11 @@ Input: integer array
 Output: integer
 */
 
+int birthdayCakeCandles(vector<int> candles) {
+int tallestFound = 0, matchingTallest = 0;
+  for(int height : candles){
+    
+  }
+}
 
 //*********************************************************************
