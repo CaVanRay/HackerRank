@@ -11,10 +11,16 @@ Output: integer
 */
 
 int birthdayCakeCandles(vector<int> candles) {
-int tallestFound = 0, matchingTallest = 0;
+long long tallestFound = 0, matchingTallest = 0;
   for(int height : candles){
-    
+    if(height > tallestFound){
+      tallestFound = height;
+      matchingTallest = 0;
+    } else if (height == tallestFound){
+      matchingTallest++;
+    }
   }
+  return matchingTallest;
 }
 
 //*********************************************************************
