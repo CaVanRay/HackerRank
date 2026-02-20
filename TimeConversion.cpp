@@ -11,7 +11,17 @@ Output: a single string
 */
 
 string timeConversion(string s) {
-
+    string hoursString = s.substr(0, 2);
+    string amORpm = s.substr(8, 2);
+    string militaryTime = s.substr(0, 8);
+    if(amORpm == "AM" && hoursString == "12"){
+        militaryTime.replace(0, 2, "00");
+    }else{
+        int hours = stoi(s);
+        hours = hours + 12;
+        militaryTime.replace(0, 2, to_string(hours));
+    }
+    return militaryTime;
 }
 
 //**********************************************************
