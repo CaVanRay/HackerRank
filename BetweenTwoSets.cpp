@@ -4,7 +4,9 @@
 Title: Between Two Sets
 Author: Cavan Ray Theiss
 
-Description:
+Description: given two sets of integers we need to calculate
+how many numbers have all the numbers from set A as factors while at
+the same time are themselves factors for all the numbers in set B
 
 Input: we are given 2 integer arrays
 Output: we return a single integer
