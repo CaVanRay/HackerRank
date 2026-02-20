@@ -16,8 +16,8 @@ string timeConversion(string s) {
     string militaryTime = s.substr(0, 8);
     if(amORpm == "AM" && hoursString == "12"){
         militaryTime.replace(0, 2, "00");
-    }else{
-        int hours = stoi(s);
+    }else if(amORpm == "PM"){
+        int hours = stoi(hoursString);
         hours = hours + 12;
         militaryTime.replace(0, 2, to_string(hours));
     }
