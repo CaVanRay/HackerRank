@@ -14,6 +14,8 @@ Output: we return a single integer
 
 int getTotalX(vector<int> a, vector<int> b) {
 
+vector<int> inBetweens;
+  
 for(int requiredFactor : a){
   
 }
