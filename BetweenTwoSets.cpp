@@ -18,7 +18,6 @@ vector<int> inBetweens;
 Vector<int> tempInBetweensA;
 vector<int> tempInBetweensB;
   
-  
 for(int requiredFactor : a){
   
 }
