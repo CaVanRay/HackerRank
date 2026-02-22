@@ -31,8 +31,8 @@ vector<int> tempInBetweens;
   a[] is removed
   */
   
-  for(factor : a){
-    for(canidate : inBetweens){
+  for(int factor : a){
+    for(int canidate : inBetweens){
       if(canidate % factor == 0)
         tempInBetweens.push_back(canidate);
     }
@@ -47,8 +47,8 @@ b[], only now we have to make sure each item from b[]
 can be evenly divided by each inBetween, or that inBetween
 item is removed
 */
-  for(multiple : b){
-    for(canidate : inBetweens){
+  for(int multiple : b){
+    for(int canidate : inBetweens){
       if(multiple % canidate == 0){
         tempInBetweens.push_back(canidate);
       }
