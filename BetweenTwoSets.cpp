@@ -15,9 +15,9 @@ Output: we return a single integer
 int getTotalX(vector<int> a, vector<int> b) {
 
 vector<int> inBetweens;
-  
-for(int requiredFactor : a){
-  
+
+for(int i = 0; a[0] * i <= b[0]; i++){
+  inBetweens.push_back(a[0] * i);  
 }
   
 }
