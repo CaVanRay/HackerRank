@@ -26,7 +26,9 @@ vector<int> tempInBetweens;
   }
 
   /*
-  
+  Next we compare everything on the baseline list to 
+  every other a[], anything that can't be factored by
+  a[] is removed
   */
   
   for(factor : a){
