@@ -23,12 +23,18 @@ vector<int> tempInBetweens;
 
   for(factor : a){
     for(canidate : inBetweens){
-      if(factor % canidate == 0)
-        tempInBetweens.push_back(canidate)
+      if(canidate % factor == 0)
+        tempInBetweens.push_back(canidate);
     }
     inBetweens.clear();
     inBetweens = tempInBetweens;
     tempInBetweens.clear();
+  }
+  for(multiple : b){
+    for(canidate : inBetweens){}
+      if(multiple % canidate == 0){
+        tempInBetweens.push_back(canidate);
+      }
   }
 }
 
