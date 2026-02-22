@@ -21,7 +21,15 @@ for(int i = 0; a[0] * i <= b[0]; i++){
   inBetweens.push_back(a[0] * i);  
 }
 
-for( : )
+for(factor : a){
+  for(canidate : inBetweens){
+    if(factor % canidate == 0)
+      tempInBetweens.push_back(canidate)
+  }
+  inBetweens.clear();
+  inBetweens = tempInBetweens;
+  tempInBetweens.clear();
+}
   
 }
 
