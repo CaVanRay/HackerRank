@@ -17,6 +17,7 @@ int getTotalX(vector<int> a, vector<int> b) {
 vector<int> inBetweens;
 vector<int> tempInBetweens;
 
+  
   for(int i = 0; a[0] * i <= b[0]; i++){
   inBetweens.push_back(a[0] * i);  
   }
@@ -31,11 +32,16 @@ vector<int> tempInBetweens;
     tempInBetweens.clear();
   }
   for(multiple : b){
-    for(canidate : inBetweens){}
+    for(canidate : inBetweens){
       if(multiple % canidate == 0){
         tempInBetweens.push_back(canidate);
       }
+    }
+    inBetweens.clear();
+    inBetweens = tempInBetweens;
+    tempInBetweens.clear();
   }
+
 }
 
 //**********************************************************************
