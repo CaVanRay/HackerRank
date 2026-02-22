@@ -63,6 +63,8 @@ all that is left at the end of this process is to
 return the size of the inBetween list
 */
 
+return inBetweens.size();
+
 }
 
 //**********************************************************************
