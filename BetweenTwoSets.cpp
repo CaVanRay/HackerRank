@@ -40,6 +40,13 @@ vector<int> tempInBetweens;
     inBetweens = tempInBetweens;
     tempInBetweens.clear();
   }
+
+/*
+after we are done with list a[], we compare with list
+b[], only now we have to make sure each item from b[]
+can be evenly divided by each inBetween, or that inBetween
+item is removed
+*/
   for(multiple : b){
     for(canidate : inBetweens){
       if(multiple % canidate == 0){
