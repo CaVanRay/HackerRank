@@ -1,11 +1,6 @@
 //**********************************************************************
 
 /*
-I'm currently looking into LCM - least common multiple & GCD - greatest common divisor
-I may re-write this whole thing tomorrow
-*/
-
-/*
 Title: Between Two Sets
 Author: Cavan Ray Theiss
 
