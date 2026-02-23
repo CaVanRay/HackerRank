@@ -26,7 +26,12 @@ vector<int> breakingRecords(vector<int> scores) {
   int recordLowestScore = scores[0], recordHighestScore = scores[0], lowRecordBrokenCount = 0, highRecordBrokenCount;
 
   /*
-  
+  We then run through the scores for every game and compare the current score to the 
+  records for highest & lowest scores
+
+  when the current score is higher or lower than the record, we replace the record
+  score with the current score and then increase the associated broken record count
+  by 1
   */
   
   for(int currentScore : scores){
@@ -39,6 +44,8 @@ vector<int> breakingRecords(vector<int> scores) {
       lowRecordBrokenCount++;
     }
   }
+
+  
   recordsBroken.push_back(highRecordBrokenCount);
   recordsBroken.push_back(lowRecordBrokenCount);
   return recordsBroken;
