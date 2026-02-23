@@ -30,7 +30,7 @@ int birthday(vector<int> s, int d, int m) {
   sectionToShare.push_back(chunkOfChocolate);
   sumOfSection += chunkOfChocolate);
   if(sectionToShare.size() > m){
-   
+   sectionToShare.erase(sectionToShare.begin());
   }
   
  }
