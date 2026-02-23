@@ -45,6 +45,11 @@ vector<int> breakingRecords(vector<int> scores) {
     }
   }
 
+  /*
+  after we finish running through all the scores provided we push the broken record
+  counts for both highest & lowest scores to the vector array recordsBroken to then be 
+  returned to main()
+  */
   
   recordsBroken.push_back(highRecordBrokenCount);
   recordsBroken.push_back(lowRecordBrokenCount);
