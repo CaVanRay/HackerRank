@@ -23,6 +23,9 @@ vector<int> breakingRecords(vector<int> scores) {
       recordHighestScore = currentScore;
       highRecordBrokenCount++;
     }
+    if(currentScore < recordLowestScore){
+      
+    }
   } 
   return recordsBroken;
 }
