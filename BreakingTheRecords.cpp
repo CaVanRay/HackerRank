@@ -17,7 +17,7 @@ broken for Highest score in a game & Lowest score in a game
 
 vector<int> breakingRecords(vector<int> scores) {
   vector<int> recordsBroken;
-  int recordLowestScore = scores[0], recordHighestScore = scores[0], lowRecordBrokenCount = 0;
+  int recordLowestScore = scores[0], recordHighestScore = scores[0], lowRecordBrokenCount = 0, highRecordBrokenCount;
   for(int currentScore : scores){
     if(currentScore > recordHighestScore){
       recordHighestScore = currentScore;
