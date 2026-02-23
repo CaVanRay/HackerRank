@@ -27,7 +27,9 @@ vector<int> breakingRecords(vector<int> scores) {
       recordLowestScore = currentScore;
       lowRecordBrokenCount++;
     }
-  } 
+  }
+  recordsBroken.push_back(highRecordBrokenCount);
+  recordsbroken.push_back(lowRecordBrokenCount);
   return recordsBroken;
 }
 
