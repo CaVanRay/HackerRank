@@ -26,11 +26,9 @@ int birthday(vector<int> s, int d, int m) {
  
  if(s.size < m){return 0;}
 
- for(int i = 0; i < m; i++){
-  sectionToShare.push_back(s[i]);
-  sumOfSection += s[i];
+ for(int chunkOfChocolate : s){
+  sectionToShare.push_back(chunkOfChocolate);
  }
- 
 }
 
 //**********************************************************************
