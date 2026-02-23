@@ -20,9 +20,12 @@
 // length will equal birth Month
 
 int birthday(vector<int> s, int d, int m) {
+ 
  vector<int> sectionToShare;
- int totalSum = 0;
+ int sumOfSection = 0;
+ 
  if(s.size < m){return 0;}
+
  for(int i = 0; i < m; i++){
   sectionToShare.push_back(s[i]);
  }
