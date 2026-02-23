@@ -14,6 +14,7 @@ Input: A vector array of integers
 */
 
 vector<int> breakingRecords(vector<int> scores) {
+  vector<int> recordsBroken;
 
 }
 
