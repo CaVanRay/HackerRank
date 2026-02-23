@@ -19,7 +19,10 @@ vector<int> breakingRecords(vector<int> scores) {
   vector<int> recordsBroken;
   int recordLowestScore = scores[0], recordHighestScore = [0]; 
   for(int currentScore : scores){
-    if(){}
+    if(currentScore > recordHighestScore){
+      recordHighestScore = currentScore;
+      
+    }
   } 
   return recordsBroken;
 }
