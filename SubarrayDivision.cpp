@@ -22,7 +22,7 @@
 int birthday(vector<int> s, int d, int m) {
  
  vector<int> sectionToShare;
- int sumOfSection = 0;
+ int sumOfSection = 0, numberOfSolutions = 0;
  
  if(s.size < m){return 0;}
 
