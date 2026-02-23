@@ -15,16 +15,18 @@ Output: A vector array of 2 integers, the number of times the records have been
 broken for Highest score in a game & Lowest score in a game
 */
 
-vector<int> breakingRecords(vector<int> scores) {
+vector<int> breakingRecords(const vector<int>& scores) {
 
+  // incase the provided vector is empty
+  if (scores.empty()) return {0, 0};
+  
   /*
   first we set the current record for highest and lowest score to that of the first game and we 
   set the number of times either score has been broken to equal 0
   */
   
-  vector<int> recordsBroken;
-  int recordLowestScore = scores[0], recordHighestScore = scores[0], lowRecordBrokenCount = 0, highRecordBrokenCount;
-
+  int recordLowestScore = scores[0], recordHighestScore = scores[0], lowRecordBrokenCount = 0, highRecordBrokenCount = 0;
+  
   /*
   We then run through the scores for every game and compare the current score to the 
   records for highest & lowest scores
@@ -46,14 +48,11 @@ vector<int> breakingRecords(vector<int> scores) {
   }
 
   /*
-  after we finish running through all the scores provided we push the broken record
-  counts for both highest & lowest scores to the vector array recordsBroken to then be 
-  returned to main()
+  after we finish running through all the scores provided the record
+  counts for both highest & lowest scores are returned to main()
   */
   
-  recordsBroken.push_back(highRecordBrokenCount);
-  recordsBroken.push_back(lowRecordBrokenCount);
-  return recordsBroken;
+  return {highRecordBrokenCount, lowRecordBrokenCount};
 }
 
 //**************************************************************************************
