@@ -29,7 +29,7 @@ vector<int> breakingRecords(vector<int> scores) {
     }
   }
   recordsBroken.push_back(highRecordBrokenCount);
-  recordsbroken.push_back(lowRecordBrokenCount);
+  recordsBroken.push_back(lowRecordBrokenCount);
   return recordsBroken;
 }
 
