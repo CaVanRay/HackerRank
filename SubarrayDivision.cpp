@@ -16,6 +16,9 @@
  divide up the chocolate bar that fits the presented requirements 
 */
 
+// sum needs to equal birth Day
+// length will equal birth Month
+
 int birthday(vector<int> s, int d, int m) {
  vector<int> sectionToShare;
  int totalSum = 0;
