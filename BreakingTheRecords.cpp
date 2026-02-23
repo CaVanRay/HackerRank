@@ -10,7 +10,9 @@ track how often those records are broken, once we are done working our way
 through the list we will return a vector array containing how often the records
 for Highest & Lowest scores were broken
 
-Input: A vector array of integers representing scores
+Input: A vector array of integers representing scores 
+Output: A vector array of 2 integers, the number of times the records have been 
+broken for Highest score in a game & Lowest score in a game
 */
 
 vector<int> breakingRecords(vector<int> scores) {
