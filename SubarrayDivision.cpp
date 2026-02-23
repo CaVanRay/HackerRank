@@ -19,7 +19,6 @@
 int birthday(vector<int> s, int d, int m) {
  vector<int> sectionToShare;
  int totalSum = 0;
- 
 }
 
 //**********************************************************************
