@@ -17,7 +17,7 @@
 */
 
 int birthday(vector<int> s, int d, int m) {
-
+vector<int> sectionToShare;
 }
 
 //**********************************************************************
