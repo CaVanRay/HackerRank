@@ -28,12 +28,16 @@ int birthday(vector<int> s, int d, int m) {
 
  for(int chunkOfChocolate : s){
   sectionToShare.push_back(chunkOfChocolate);
-  sumOfSection += chunkOfChocolate);
+  sumOfSection += chunkOfChocolate;
   if(sectionToShare.size() > m){
+   sumOfSection -= sectionToShare.front();
    sectionToShare.erase(sectionToShare.begin());
   }
-  
+  if(sectionToShare.size() == m && sumOfSection == d)
+   numberOfSolutions++;
  }
+
+ return numberOfSolutions;
 }
 
 //**********************************************************************
