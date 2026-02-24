@@ -14,6 +14,8 @@ string dayOfProgrammer(int year) {
 
 /*
 This one should be really easy, but also really fucking annoying, I'mma have to look up so much shit
+
+oh well, I've already completed like 3 other programs today
 */
   
 }
