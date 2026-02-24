@@ -13,7 +13,7 @@ Output: a single string
 string dayOfProgrammer(int year) {
 
 /*
-This one should be really easy
+This one should be really easy, but also really fucking annoying
 */
   
 }
