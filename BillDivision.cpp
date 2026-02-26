@@ -6,13 +6,7 @@ Author: Cavan Ray Theiss
 Description:
 
 Input: an array of integers, and 2 individual integers
-
-
-
- * The function accepts following parameters:
- *  1. INTEGER_ARRAY bill
- *  2. INTEGER k
- *  3. INTEGER b
+Output:
  */
 
 void bonAppetit(vector<int> bill, int k, int b) {
