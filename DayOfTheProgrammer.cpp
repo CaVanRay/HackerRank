@@ -14,6 +14,8 @@ string dayOfProgrammer(int year) {
 
   // return in the form of dd.mm.yyyy
   // dd & mm will always be either 12.09 or 13.09
+  // we can append the provided year at the end
+  
   string commonYearProgrammersDay = ;
   string leapYearProgrammersDay = ;
 
