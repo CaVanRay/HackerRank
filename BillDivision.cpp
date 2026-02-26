@@ -3,10 +3,14 @@
 /*
 Title: Bill Division
 Author: Cavan Ray Theiss
-Description:
+
+Description: Two friends (Brad & Anna) are splitting a dinner bill, based on the list of items ordered, an item
+not eaten by Anna, & the amount paid by Anna to Brad, we will calculate whether or not Anna has over-paid Brad
+
+(Bill Total - item K not eaten) / 2  == B ?
 
 Input: an array of integers representing the cost of each item ordered, and 2 individual integers
-- k: the item from the bill not eaten, & - b: the amount paid
+- k: the item from the bill not eaten by Anna, & - b: the amount paid to Brad by Anna
 Output: either print the amount to refund or if correct amount paid print "Bon Appetit"
  */
 
