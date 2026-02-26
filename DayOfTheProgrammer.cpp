@@ -19,7 +19,11 @@ string dayOfProgrammer(int year) {
   string commonYearProgrammersDay = string("13.09.") + year;
   string leapYearProgrammersDay = string("12.09.") + year;
 
-  
+  if( year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
+    return leapYearProgrammersDay;
+  }else{
+    return commonYearProgrammersDay; 
+  }  
 }
 
 //***************************************************************************
