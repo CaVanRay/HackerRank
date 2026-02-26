@@ -12,6 +12,7 @@ Output: a single string
 
 string dayOfProgrammer(int year) {
 
+  // return in the form of dd.mm.yyyy
   string commonYearProgrammersDay = ;
   string leapYearProgrammersDay = ;
 
