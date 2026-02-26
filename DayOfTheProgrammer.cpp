@@ -16,14 +16,29 @@ string dayOfProgrammer(int year) {
   // dd & mm will always be either 12.09 or 13.09
   // we can append the provided year at the end
   
-  string commonYearProgrammersDay = string("13.09.") + year;
-  string leapYearProgrammersDay = string("12.09.") + year;
+  string commonYearProgrammersDay = string("13.09.") + to_string(year);
+  string leapYearProgrammersDay = string("12.09.") + to_string(year);
 
-  if( year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
-    return leapYearProgrammersDay;
-  }else{
-    return commonYearProgrammersDay; 
-  }  
+    // Julian years
+    if(year < 1918){
+        if(year % 4 == 0){
+           return leapYearProgrammersDay; 
+        }else{
+           return commonYearProgrammersDay;
+        }
+    }
+
+    // the year of conversion 1918
+    if(year == 1918){
+        return "26.09.1918";
+    }
+    
+    // Gregorian years
+    if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
+        return leapYearProgrammersDay;
+    }else{
+        return commonYearProgrammersDay;
+    }
 }
 
 //***************************************************************************
