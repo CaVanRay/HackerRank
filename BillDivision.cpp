@@ -2,6 +2,9 @@
 
 /*
 Title: Bill Division
+Author: Cavan Ray Theiss
+
+
 
  * The function accepts following parameters:
  *  1. INTEGER_ARRAY bill
