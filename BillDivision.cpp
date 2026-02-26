@@ -1,6 +1,6 @@
 /*
- * Complete the 'bonAppetit' function below.
- *
+Title: Bill Division
+
  * The function accepts following parameters:
  *  1. INTEGER_ARRAY bill
  *  2. INTEGER k
