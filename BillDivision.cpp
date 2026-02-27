@@ -20,6 +20,7 @@ void bonAppetit(vector<int> bill, int k, int b) {
   for(int item : bill){
     totalBill += item;
   }
+  totalBill -= bill[k];
 
 }
 
