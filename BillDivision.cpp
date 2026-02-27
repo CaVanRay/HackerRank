@@ -15,6 +15,7 @@ Output: either print the amount to refund or if correct amount paid print "Bon A
  */
 
 void bonAppetit(vector<int> bill, int k, int b) {
+  int totalBill = 0;
 
 }
 
