@@ -6,15 +6,9 @@
 
  Description:
 
- 
+ Input: a single integer n, and an array of integers
 
-
- 
- * The function is expected to return an INTEGER.
- * The function accepts following parameters:
- *  1. INTEGER n
- *  2. INTEGER_ARRAY ar
- */
+*/
 
 int sockMerchant(int n, vector<int> ar) {
 
