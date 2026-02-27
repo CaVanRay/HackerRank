@@ -2,6 +2,9 @@
 
 /*
  Title: Sales By Match
+ Author: Cavan Ray Theiss
+
+
  
  * The function is expected to return an INTEGER.
  * The function accepts following parameters:
