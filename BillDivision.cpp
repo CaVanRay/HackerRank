@@ -22,7 +22,7 @@ void bonAppetit(vector<int> bill, int k, int b) {
   }
   totalBill -= bill[k];
 
-  if(b == (totalBill / 2){
+  if(b == (totalBill / 2)){
     cout << "Bon Appetit";
   }else{
     cout << b - (totalBill / 2);
