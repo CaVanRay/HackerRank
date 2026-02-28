@@ -14,7 +14,7 @@
 */
 
 int sockMerchant(int n, vector<int> ar) {
-int pairsFound;
+int pairsFound = 0;
 bool matchWasFound = false;
 vector<int> pendingMatches, tempPile;
 
@@ -39,15 +39,16 @@ vector<int> pendingMatches, tempPile;
      // if both the current sock matches the sock on top of the pending 
      // matches pile and the match found flag is still false, then the 
      // matching sock is removed from the pile and we mark this sock as
-     // having found its match
+     // having found its match as well as increment the pairsFound counter
      if(sock == pendingMatches.back() && !matchWasFound){
       pendingMatches.pop_back();
       matchWasFound = true;
+      pairsFound++;
      }else{
       // it either the current sock doesnt match the top of the pile
       // or we have already found a match, then the current top of the 
       // pile is moved to the temp pile
-      tempPile.push_back(pendingMatches.back())
+      tempPile.push_back(pendingMatches.back());
       pendingMatches.pop_back();
      }
     }
