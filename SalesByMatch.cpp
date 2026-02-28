@@ -16,19 +16,8 @@
 int sockMerchant(int n, vector<int> ar) {
 int pairsFound;
 vector<int> pendingMatches, tempPile;
- 
- for(int i = 0; i < n.size(); i++){
-  while(!pendingMatches.empty()){
-   if(pendingMatches.back() ==)
 
-   /*
-   NOTE TO FUTURE SELF:  I'm really fucking tired, but this will be a double stack, if a match is found it is removed
-   and the pairsFound counter goes up, everything else resets, otherwise everything in temp is moved back to pendingMatches
-   along with the new sock
-   */
-    
-  }
- }
+ 
  
 }
 
