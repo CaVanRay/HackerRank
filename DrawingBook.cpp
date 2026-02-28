@@ -6,7 +6,7 @@ Author: Cavan Ray Theiss
 
 Description:
 
-
+Input: 2 individual integers
 */
 
 /*
