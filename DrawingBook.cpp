@@ -1,6 +1,10 @@
 //********************************************************************
 
 /*
+Title: Drawing Book
+*/
+
+/*
  * Complete the 'pageCount' function below.
  *
  * The function is expected to return an INTEGER.
