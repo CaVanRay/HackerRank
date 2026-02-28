@@ -35,14 +35,26 @@ vector<int> pendingMatches, tempPile;
     
     // we continuously run through pending matches until the pile is empty
     while(!pendingMatches.empty()){
+
+     // if both the current sock matches the sock on top of the pending 
+     // matches pile and the match found flag is still false, then the 
+     // matching sock is removed from the pile and we mark this sock as
+     // having found its match
      if(sock == pendingMatches.back() && !matchWasFound){
       pendingMatches.pop_back();
       matchWasFound = true;
      }else{
+      // it either the current sock doesnt match the top of the pile
+      // or we have already found a match, then the current top of the 
+      // pile is moved to the temp pile
       tempPile.push_back(pendingMatches.back())
       pendingMatches.pop_back();
      }
     }
+    // if we made it to the end of the pile and the current sock's match
+    // found flag is still false, then we add the current sock to the temp pile
+    // along with the rest of the socks pending matches
+    
    }
   
  }
