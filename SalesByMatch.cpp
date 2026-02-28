@@ -20,7 +20,7 @@ vector<int> pendingMatches, tempPile;
 
  // ok I'm gonna walk my way through this
  // we start by testing each sock
- for(int sock : n){
+ for(int sock : ar){
   
    // if there are no pending matches, we 
    // add the current sock to pending matches
