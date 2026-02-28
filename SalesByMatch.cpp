@@ -14,7 +14,9 @@
 */
 
 int sockMerchant(int n, vector<int> ar) {
-
+int pairsFound;
+vector<int> pendingMatches;
+ 
  for(int sock : n){
   
  }
