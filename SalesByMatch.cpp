@@ -17,8 +17,19 @@ int sockMerchant(int n, vector<int> ar) {
 int pairsFound;
 vector<int> pendingMatches, tempPile;
 
- 
- 
+ // ok I'm gonna walk my way through this
+ // we start by testing each sock
+ for(int sock : n){
+  
+   // if there are no pending matches, we 
+   // add the current sock to pending matches
+   if(pendingMatches.empty()){
+    pendingMatches.push_back(sock);
+   }else{
+    // if there are pending matches we the
+   }
+  
+ }
 }
 
 //******************************************************************************
