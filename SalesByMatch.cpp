@@ -55,10 +55,16 @@ vector<int> pendingMatches, tempPile;
     // if we made it to the end of the pile and the current sock's match
     // found flag is still false, then we add the current sock to the temp pile
     // along with the rest of the socks pending matches
-    
+    if(!matchWasFound){
+     tempPile.push_back(sock);
+    }
+   // before we roll over to the next sock we reset the stacks
+    pendingMatches = tempPile;
+    tempPile.clear();
    }
-  
  }
+ // after running through everything we return the pairsFound count
+ return pairsFound;
 }
 
 //******************************************************************************
