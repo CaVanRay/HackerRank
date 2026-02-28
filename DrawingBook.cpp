@@ -9,8 +9,9 @@ must be turned in order to arrive at requested page
 
 Input: 2 individual integers, n = numbers of pages in the book, p = the
 page we are asked to find
-Output: 1 individual integer, it will represent the number of pages that 
-must be turned to reach the requested page
+Output: 1 individual integer, it will represent the minimum number of pages that 
+must be turned to reach the requested page if we start from either the 1st 
+or last page of the book
 */
 
 int pageCount(int n, int p) {
