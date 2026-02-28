@@ -10,7 +10,7 @@
  Input: a single integer n representing how many socks are in the pile, and an 
  array of integers representing the colors of each sock
  
- Output: a single integer
+ Output: a single integer representing the number of matching pairs in the pile
 */
 
 int sockMerchant(int n, vector<int> ar) {
