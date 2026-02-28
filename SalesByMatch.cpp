@@ -29,7 +29,11 @@ vector<int> pendingMatches, tempPile;
    }else{
     // if there are pending matches we then check until we find a match with 
     // the current sock or we run out
+
+    // we reset the match found flag
     matchWasFound = false;
+    
+    // we continuously run through pending matches until the pile is empty
     while(!pendingMatches.empty()){
      if(sock == pendingMatches.back() && !matchWasFound){
       pendingMatches.pop_back();
