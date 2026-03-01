@@ -16,6 +16,7 @@ Output: returns a single integer representing the number of valleys traveled thr
 
 int countingValleys(int steps, string path) {
     int numberOfValleys = 0;
+    bool belowSeaLevel = false;
     
     for(char angle : path){
         
