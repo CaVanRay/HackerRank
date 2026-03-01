@@ -18,11 +18,21 @@ int countingValleys(int steps, string path) {
     int currentAltitude = 0, numberOfValleys = 0;
     bool belowSeaLevel = false;
     
-    
     for(char angle : path){
-        
+        if(angle == "D"){
+            currentAltitude--;
+            if(currentAltitude < 0){
+                belowSeaLevel = true;
+            }
+        }else{
+            currentAltitude++
+            if(belowSeaLevel == true && currentAltitude >= 0){
+                numberOfValleys++;
+                belowSeaLevel = false;
+            }
+        }    
     }
-    
+    return numberOfValleys;
 }
 
 //******************************************************************************************
