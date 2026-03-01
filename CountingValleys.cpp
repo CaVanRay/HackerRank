@@ -6,7 +6,9 @@ Author: Cavan Ray Theiss
 
 Description:
 
-Input: a single integer and a string
+Input: a single integer count of the steps in the provided string, and a string comprised of
+U & D, for uphill and downhill
+
 Output: returns a single integer
 */
 
