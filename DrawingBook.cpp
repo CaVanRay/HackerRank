@@ -16,6 +16,11 @@ or last page of the book
 
 int pageCount(int n, int p) {
 
+  // we first check if the page we are looking for is closer to the front
+  // or closer to the back
+
+  
+
 }
 
 //********************************************************************
