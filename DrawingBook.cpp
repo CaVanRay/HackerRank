@@ -21,11 +21,11 @@ int pageCount(int n, int p) {
 
   if(n < (p/2)){
 
-
+  return ((n - 1) / 2);
     
   }else{
 
-
+  return ((p - (n + 1)) / 2);
     
   }
 
