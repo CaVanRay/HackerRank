@@ -15,24 +15,9 @@ or last page of the book
 */
 
 int pageCount(int n, int p) {
-
-  // we first check if the page we are looking for is closer to the front
-  // or closer to the back
-
-  if(p < (n/2)){
-    if(p % 2 == 0){
-        return (p/2);
-    }else{
-        return ((p - 1) / 2);
-    }
-  }else{
-    if(n % 2 == 0){
-        return((n - p) / 2);
-    }else{
-        return(((n - p) - 1) / 2);
-    }
-  }
-
+    int fromFront = p / 2;
+    int fromBack = (n % 2 == 0) ? (n - p + 1) / 2 : (n - p) / 2;
+    return min(fromFront, fromBack);
 }
 
 //********************************************************************
