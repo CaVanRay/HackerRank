@@ -4,6 +4,9 @@
 Title: Counting Valleys
 Author: Cavan Ray Theiss
 
+Description:
+
+
  * The function is expected to return an INTEGER.
  * The function accepts following parameters:
  *  1. INTEGER steps
