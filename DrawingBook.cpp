@@ -19,7 +19,15 @@ int pageCount(int n, int p) {
   // we first check if the page we are looking for is closer to the front
   // or closer to the back
 
-  
+  if(n < (p/2)){
+
+
+    
+  }else{
+
+
+    
+  }
 
 }
 
