@@ -1,8 +1,8 @@
 //******************************************************************************************
 
 /*
- * Complete the 'countingValleys' function below.
- *
+Title: Counting Valleys
+
  * The function is expected to return an INTEGER.
  * The function accepts following parameters:
  *  1. INTEGER steps
