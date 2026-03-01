@@ -27,9 +27,9 @@ int pageCount(int n, int p) {
     }
   }else{
     if(n % 2 == 0){
-        return();
+        return((n - p) / 2);
     }else{
-        return();
+        return(((n - p) - 1) / 2);
     }
   }
 
