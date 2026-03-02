@@ -17,8 +17,16 @@ return that integer
 
 int getMoneySpent(vector<int> keyboards, vector<int> drives, int b) {
     
-    // Start here
-    
+    int highestPrice = 0;
+
+    for(int keyboardPrice : keyboards){
+        for(int drivePrice : drives){
+            if(keyboardPrice + drivePrice <= b){
+                highestPrice = max(highestPrice, (keyboardPrice + drivePrice));
+            }
+        }
+    }
+    return highestPrice;
 }
 
 //******************************************************************************
