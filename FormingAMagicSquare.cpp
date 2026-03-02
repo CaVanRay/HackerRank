@@ -4,7 +4,9 @@
 Title: Forming a magic square
 Author: Cavan Ray Theiss
 
-Description: 
+Description: given an 2D array of numbers we need to convert
+it into a magic square, basically every row, column, & diagonal
+should each add up to the same number
 
 Input: a vector of integer vectors
 Output: an integer
