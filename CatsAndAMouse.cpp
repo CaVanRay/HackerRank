@@ -19,8 +19,8 @@ or "Mouse C"
 string catAndMouse(int x, int y, int z) {
   string catA = "Cat A", catB = "Cat B", mouse = "Mouse C";
 
-  if abs(z - x) < abs(z - y) return catA;
-  abs(z - x) > abs(z - y) ? return catB : return mouse;
+  if (abs(z - x) < abs(z - y)) return catA;
+  return (abs(z - x) > abs(z - y)) ? catB : mouse;
 
 }
 
