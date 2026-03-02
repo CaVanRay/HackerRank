@@ -2,6 +2,7 @@
 
 /*
 Title: Cats and a Mouse
+Author: Cavan Ray Theiss
 
 */
 
