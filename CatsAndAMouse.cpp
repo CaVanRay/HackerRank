@@ -8,7 +8,7 @@ Description:
 
 Input: 3 solitary integers
 
-Output:
+Output: a string
 */
 
 // Complete the catAndMouse function below.
