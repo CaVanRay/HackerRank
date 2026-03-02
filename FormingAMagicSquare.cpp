@@ -1,6 +1,11 @@
 //***************************************************************************
 
 /*
+Title: Forming a magic square
+Author: Cavan Ray Theiss
+
+Description: 
+
  * Complete the 'formingMagicSquare' function below.
  *
  * The function is expected to return an INTEGER.
