@@ -6,11 +6,9 @@ Author: Cavan Ray Theiss
 
 Description: 
 
- * Complete the 'formingMagicSquare' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts 2D_INTEGER_ARRAY s as parameter.
- */
+Input: a vector of integer vectors
+Output: an integer
+*/
 
 int formingMagicSquare(vector<vector<int>> s) {
 
