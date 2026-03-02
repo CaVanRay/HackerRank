@@ -8,7 +8,9 @@ Description: provided with a budget, an array of keyboard costs, & an array of
 usb drive costs, we need to return an integer price of the most expensive items
 we can afford
 
-Input:
+Input: 2 arrays of integers representing the prices of keyboards & drives, and a 
+single integer representing your budget
+
 Output:
 */
 
