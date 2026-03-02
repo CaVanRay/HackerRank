@@ -6,7 +6,9 @@ Author: Cavan Ray Theiss
 
 Description:
 
+Input: 3 solitary integers
 
+Output:
 */
 
 // Complete the catAndMouse function below.
