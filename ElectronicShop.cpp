@@ -15,7 +15,7 @@ Output: find the highest amount that we can pay without going over budget and
 return that integer
 */
 
-int getMoneySpent(vector<int> keyboards, vector<int> drives, int b) {
+int getMoneySpent(const vector<int> keyboards,const vector<int> drives, int b) {
     
     int highestPrice = 0;
 
@@ -26,6 +26,7 @@ int getMoneySpent(vector<int> keyboards, vector<int> drives, int b) {
             }
         }
     }
+    if(highestPrice == 0) return -1; 
     return highestPrice;
 }
 
