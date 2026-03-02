@@ -11,7 +11,8 @@ we can afford
 Input: 2 arrays of integers representing the prices of keyboards & drives, and a 
 single integer representing your budget
 
-Output:
+Output: find the highest amount that we can pay without going over budget and 
+return that integer
 */
 
 int getMoneySpent(vector<int> keyboards, vector<int> drives, int b) {
