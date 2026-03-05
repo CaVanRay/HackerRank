@@ -18,7 +18,7 @@ int formingMagicSquare(vector<vector<int>> s) {
 
   // Calculate all 8 combinations
   // (0,0) (0,1) (0,2)
-  // (1,0)
+  // (1,0) (0,2) 
 }
 
 //***************************************************************************
