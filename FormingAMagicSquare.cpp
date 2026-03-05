@@ -14,6 +14,8 @@ Output: an integer
 
 int formingMagicSquare(vector<vector<int>> s) {
 
+  // This will be a brute force solve
+
 }
 
 //***************************************************************************
