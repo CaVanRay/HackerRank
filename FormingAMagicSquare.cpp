@@ -29,7 +29,7 @@ int formingMagicSquare(vector<vector<int>> s) {
   // (0,2) (1,2) (3,2)
 
   // Diagonals
-  //
+  // (0,0) (1,1) (2,2)
   //
   
 }
