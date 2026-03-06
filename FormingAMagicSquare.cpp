@@ -17,6 +17,7 @@ int formingMagicSquare(vector<vector<int>> s) {
   /*
   ok, we are going back to brute forcing
   
+  every row, column, & diagnal needs to equal 15
   */
   
   return cost;
