@@ -16,6 +16,7 @@ int formingMagicSquare(vector<vector<int>> s) {
 
   // I just realized we don't have to actually "precisely" solve the magic square
   // all inputs are between 1 & 9
+  // when everything is correct each row, column, & diagnal should equal 15
   
 }
 
