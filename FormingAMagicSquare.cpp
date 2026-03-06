@@ -27,7 +27,7 @@ int formingMagicSquare(vector<vector<int>> s) {
       total += s[i][j];
     }
   }
-  
+  return (abs(total - 45));
 }
 
 //***************************************************************************
