@@ -18,7 +18,8 @@ int formingMagicSquare(vector<vector<int>> s) {
     for(int j = 0; j < s[i].size(); j++){
       total += s[i][j];
     }
-    
+    cost += abs(total - 15);
+    total = 0;
   }
   return cost;
 }
