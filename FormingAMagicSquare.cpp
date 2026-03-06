@@ -21,8 +21,10 @@ int formingMagicSquare(vector<vector<int>> s) {
   // all we are asked to return is the cost to change the current square to a perfect square
   // The cost is just another word for difference
   // so find the current sum, and subract it from the goal sum, then return the absolute value
-int total = 0, cost = 0;
-  
+  int total = 0, cost = 0;
+  for(int i = 0; i < s.size(); i++){
+    
+  }
   
 }
 
