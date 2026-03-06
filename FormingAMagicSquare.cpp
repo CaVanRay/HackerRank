@@ -12,15 +12,13 @@ Output: an integer
 */
 
 int formingMagicSquare(vector<vector<int>> s) {
-
   int total = 0, cost = 0;
-  for(int i = 0; i < s.size(); i++){
-    for(int j = 0; j < s[i].size(); j++){
-      total += s[i][j];
-    }
-    cost += abs(total - 15);
-    total = 0;
-  }
+
+  /*
+  ok, we are going back to brute forcing
+  
+  */
+  
   return cost;
 }
 
