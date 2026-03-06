@@ -23,7 +23,9 @@ int formingMagicSquare(vector<vector<int>> s) {
   // so find the current sum, and subract it from the goal sum, then return the absolute value
   int total = 0, cost = 0;
   for(int i = 0; i < s.size(); i++){
-    
+    for(int j = 0; j < s[i].size(); j++){
+      
+    }
   }
   
 }
