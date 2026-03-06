@@ -15,6 +15,7 @@ Output: an integer
 int formingMagicSquare(vector<vector<int>> s) {
 
   // I just realized we don't have to actually "precisely" solve the magic square
+  // all inputs are between 1 & 9
   
 }
 
