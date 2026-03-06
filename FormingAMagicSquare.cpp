@@ -13,13 +13,14 @@ Output: an integer
 
 int formingMagicSquare(vector<vector<int>> s) {
 
-  int total = 0;
+  int total = 0, cost = 0;
   for(int i = 0; i < s.size(); i++){
     for(int j = 0; j < s[i].size(); j++){
       total += s[i][j];
     }
+    
   }
-  return (abs(total - 45));
+  return cost;
 }
 
 //***************************************************************************
