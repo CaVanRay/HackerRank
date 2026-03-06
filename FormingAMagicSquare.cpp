@@ -24,6 +24,8 @@ int formingMagicSquare(vector<vector<int>> s) {
   123, 456, 789
   each row, column, & diagnal takes only one from each group
   */
+
+  // I'll finish this at home tonight
   
   return cost;
 }
