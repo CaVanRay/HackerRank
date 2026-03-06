@@ -19,6 +19,7 @@ int formingMagicSquare(vector<vector<int>> s) {
   // when everything is correct each row, column, & diagnal should equal 15
   // and the total sum should equal 45
   // all we are asked to return is the cost to change the current square to a perfect square
+  // The cost is just another word for difference
   
 }
 
