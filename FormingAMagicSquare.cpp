@@ -14,23 +14,7 @@ Output: an integer
 
 int formingMagicSquare(vector<vector<int>> s) {
 
-  // This will be a brute force solve
-
-  // Calculate all 8 combinations
-
-  // Rows
-  // (0,0) (0,1) (0,2)
-  // (1,0) (1,1) (1,2)
-  // (2,0) (2,1) (2,2)
-
-  // Columns
-  // (0,0) (1,0) (2,0)
-  // (0,1) (1,1) (2,1)
-  // (0,2) (1,2) (3,2)
-
-  // Diagonals
-  // (0,0) (1,1) (2,2)
-  // (0,2) (1,1) (2,0)
+  // I just realized we don't have to actually "precisely" solve the magic square
   
 }
 
