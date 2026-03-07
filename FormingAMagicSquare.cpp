@@ -32,8 +32,8 @@ int formingMagicSquare(vector<vector<int>> s) {
 
   if I find all the sections that already equal 15, I can build
   the rest off of that
-
-  
+  Using that method I have a better chance to always hit the 
+  cheapest cost
   */
   
   return cost;
