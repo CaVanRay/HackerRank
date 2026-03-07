@@ -26,6 +26,10 @@ int formingMagicSquare(vector<vector<int>> s) {
   */
 
   // I'll finish this at home tonight
+
+  /*
+  maybe set up a marking system of some kind
+  */
   
   return cost;
 }
