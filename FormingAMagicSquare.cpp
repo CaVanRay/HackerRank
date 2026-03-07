@@ -29,6 +29,9 @@ int formingMagicSquare(vector<vector<int>> s) {
 
   /*
   maybe set up a marking system of some kind
+
+  if I find all the sections that already equal 15 already, I can build
+  the rest off of that
   */
   
   return cost;
