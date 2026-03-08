@@ -12,8 +12,9 @@ Output: an integer
 */
 
 int costOfDifference(vector<vector<int>> original, vector<vector<int>> toCompare) {
-  
-  
+  int difference;
+
+  return difference;
 }
 
 int formingMagicSquare(vector<vector<int>> s) {
