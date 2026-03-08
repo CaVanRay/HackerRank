@@ -31,6 +31,12 @@ int formingMagicSquare(vector<vector<int>> s) {
   return the minimum cost found
   */
 
+  vector<vector<int>> magic1 = {
+    {2, 7, 6},
+    {9, 5, 1},
+    {5, 3, 8}
+  };
+  
   // I'll use a seperate function for cost calculation
   
   
