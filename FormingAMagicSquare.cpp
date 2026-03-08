@@ -55,6 +55,12 @@ int formingMagicSquare(vector<vector<int>> s) {
     {6, 7, 2}
   };
   
+  vector<vector<int>> magic1 = {
+    {5, 9, 2},
+    {3, 5, 7},
+    {8, 1, 6}
+  };
+  
   // I'll use a seperate function for cost calculation
   
   
