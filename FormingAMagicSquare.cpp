@@ -75,6 +75,13 @@ int formingMagicSquare(vector<vector<int>> s) {
   // I'll use a seperate function for cost calculation
 
   cost = min(cost, costOfDifference(s, magic1));
+  cost = min(cost, costOfDifference(s, magic2));
+  cost = min(cost, costOfDifference(s, magic3));
+  cost = min(cost, costOfDifference(s, magic4));
+  cost = min(cost, costOfDifference(s, magic5));
+  cost = min(cost, costOfDifference(s, magic6));
+  cost = min(cost, costOfDifference(s, magic7));
+  cost = min(cost, costOfDifference(s, magic8));
   
   return cost;
 }
