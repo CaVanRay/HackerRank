@@ -21,7 +21,8 @@ int formingMagicSquare(vector<vector<int>> s) {
   /*
   there are only 8 possible configurations
 
-  I just need to find the closest and then find the cost difference
+  I just need to find the cost difference from each and 
+  return the minimum cost found
   */
   
   return cost;
