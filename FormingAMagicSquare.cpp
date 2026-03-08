@@ -11,6 +11,11 @@ Input: a vector of integer vectors
 Output: an integer
 */
 
+int costOfDifference(vector<vector<int>> original, vector<vector<int>> toCompare) {
+  
+  
+}
+
 int formingMagicSquare(vector<vector<int>> s) {
   int total = 0, cost = 0;
 
@@ -24,6 +29,9 @@ int formingMagicSquare(vector<vector<int>> s) {
   I just need to find the cost difference from each and 
   return the minimum cost found
   */
+
+  // I'll use a seperate function for cost calculation
+  
   
   return cost;
 }
