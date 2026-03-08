@@ -56,17 +56,17 @@ int formingMagicSquare(vector<vector<int>> s) {
     {3, 5, 7},
     {8, 1, 6}
   };
-  vector<vector<int>> magic1 = {
+  vector<vector<int>> magic6 = {
     {6, 1, 8},
     {7, 5, 3},
     {2, 9, 4}
   };
-  vector<vector<int>> magic1 = {
+  vector<vector<int>> magic7 = {
     {2, 9, 4},
     {7, 5, 3},
     {6, 1, 8}
   };
-  vector<vector<int>> magic1 = {
+  vector<vector<int>> magic8 = {
     {8, 1, 6},
     {3, 5, 7},
     {4, 9, 2}
