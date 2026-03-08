@@ -12,8 +12,12 @@ Output: an integer
 */
 
 int costOfDifference(vector<vector<int>> original, vector<vector<int>> toCompare) {
-  int difference;
-
+  int difference = 0;
+  for(int i = 0; i < original.size(); i++){
+    for(int j = 0; j < original[i].size(); j++){
+      difference += abs(original[i][j] - toCompare[i][j]);
+    }
+  }
   return difference;
 }
 
