@@ -17,6 +17,10 @@ int formingMagicSquare(vector<vector<int>> s) {
   /*
   ok, let's try this again
   */
+
+  /*
+  there are only 8 possible configurations
+  */
   
   return cost;
 }
