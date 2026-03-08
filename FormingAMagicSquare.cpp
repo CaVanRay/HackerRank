@@ -22,7 +22,7 @@ int costOfDifference(vector<vector<int>> original, vector<vector<int>> toCompare
 }
 
 int formingMagicSquare(vector<vector<int>> s) {
-  int total = 0, cost = 0;
+  int cost = INT_MAX;
 
   /*
   ok, let's try this again
