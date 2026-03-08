@@ -34,31 +34,36 @@ int formingMagicSquare(vector<vector<int>> s) {
   vector<vector<int>> magic1 = {
     {2, 7, 6},
     {9, 5, 1},
-    {5, 3, 8}
+    {4, 3, 8}
   };
   
   vector<vector<int>> magic2 = {
     {6, 7, 2},
     {1, 5, 9},
-    {8, 3, 5}
+    {8, 3, 4}
   };
   
   vector<vector<int>> magic3 = {
-    {5, 3, 8},
+    {4, 3, 8},
     {9, 5, 1},
     {2, 7, 6}
   };
   
   vector<vector<int>> magic4 = {
-    {8, 3, 5},
+    {8, 3, 4},
     {1, 5, 9},
     {6, 7, 2}
   };
   
   vector<vector<int>> magic5 = {
-    {5, 9, 2},
+    {4, 9, 2},
     {3, 5, 7},
     {8, 1, 6}
+  };
+  vector<vector<int>> magic1 = {
+    {6, 1, 8},
+    {7, 5, 3},
+    {2, 9, 4}
   };
   
   // I'll use a seperate function for cost calculation
