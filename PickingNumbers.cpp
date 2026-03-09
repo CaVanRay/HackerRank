@@ -15,6 +15,7 @@ Output: returns an integer
 int pickingNumbers(vector<int> a) {
 
   vector<int> itemsFound, amountsFound;
+  int maximumSubArray;
   
   // Buckets and totals
   /*
