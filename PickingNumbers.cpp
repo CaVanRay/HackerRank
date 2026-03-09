@@ -21,7 +21,10 @@ int pickingNumbers(vector<int> a) {
 
   if it reaches the end, you make a new bucket
 
-  in a second array you keep the totals for each bucket
+  in a second array you keep the totals for each bucket, increasing
+  with every match
+  
+  
   */
 
 }
