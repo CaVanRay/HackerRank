@@ -40,6 +40,9 @@ int pickingNumbers(vector<int> a) {
     for(previousItem : itemsFound){
     
     }
+    if(matchFound == false){
+      
+    }
   }
   
   return maximumSubArray;
