@@ -20,6 +20,8 @@ int pickingNumbers(vector<int> a) {
   or reaches the end
 
   if it reaches the end, you make a new bucket
+
+  in a second array you keep the totals for each bucket
   */
 
 }
