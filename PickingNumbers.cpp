@@ -15,6 +15,10 @@ Output: returns an integer
 int pickingNumbers(vector<int> a) {
 
   // Buckets and totals
+  /*
+  each number slides down the buckets till it finds a match
+  or reaches the end
+  */
 
 }
 
