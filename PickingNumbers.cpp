@@ -42,7 +42,7 @@ int pickingNumbers(vector<int> a) {
     }
     if(matchFound == false){
       itemsFound.push_back(currentItem);
-      amountsFound
+      
     }
   }
   
