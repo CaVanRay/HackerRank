@@ -24,7 +24,8 @@ int pickingNumbers(vector<int> a) {
   in a second array you keep the totals for each bucket, increasing
   with every match
   
-  
+  after you're done you take the total of every bucket and compare 
+  to the MAX
   */
 
 }
