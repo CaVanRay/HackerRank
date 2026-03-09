@@ -14,6 +14,8 @@ Output: returns an integer
 
 int pickingNumbers(vector<int> a) {
 
+  vector<int> itemsFound, amountsFound;
+  
   // Buckets and totals
   /*
   each number slides down the buckets till it finds a match
@@ -33,6 +35,8 @@ int pickingNumbers(vector<int> a) {
   once you reach the end, return MAX
   */
 
+  
+  
 }
 
 //************************************************************************
