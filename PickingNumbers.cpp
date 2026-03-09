@@ -18,6 +18,8 @@ int pickingNumbers(vector<int> a) {
   /*
   each number slides down the buckets till it finds a match
   or reaches the end
+
+  if it reaches the end, you make a new bucket
   */
 
 }
