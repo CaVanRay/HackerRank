@@ -37,7 +37,7 @@ int pickingNumbers(vector<int> a) {
   */
 
   
-  
+  return maximumSubArray;
 }
 
 //************************************************************************
