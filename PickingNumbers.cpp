@@ -14,6 +14,8 @@ Output: returns an integer
 
 int pickingNumbers(vector<int> a) {
 
+  // Buckets and totals
+
 }
 
 //************************************************************************
