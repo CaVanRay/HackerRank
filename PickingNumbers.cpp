@@ -35,7 +35,9 @@ int pickingNumbers(vector<int> a) {
   
   once you reach the end, return MAX
   */
-
+  for(currentItem : a){
+    bool matchFound = false;
+  }
   
   return maximumSubArray;
   
