@@ -29,6 +29,8 @@ int pickingNumbers(vector<int> a) {
 
   anytime a bucket has a neighbor with a difference of 1, you combine
   their totals and compare to MAX
+  
+  once you reach the end, return MAX
   */
 
 }
