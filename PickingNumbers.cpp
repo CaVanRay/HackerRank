@@ -40,6 +40,7 @@ int pickingNumbers(vector<int> a) {
     for(int i = 0; i < itemsFound.size(); i++){
       if(currentItem == itemsFound[i]){
         amountsFound[i] = amountsFound[i] + 1;
+        matchFound = true;
       }
     }
     if(matchFound == false){
