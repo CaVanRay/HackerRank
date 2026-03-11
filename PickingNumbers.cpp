@@ -53,6 +53,15 @@ int pickingNumbers(vector<int> a) {
   // Now that the buckets are all filled we just find
   // all the items that are +1 or -1 from each other
   
+  /*
+  total honesty, I know there is a more efficient way to do this
+  but it's late, I'm tired, we're doing a double iterator
+  */
+
+  for(bucket : itemsFound){
+    
+  }
+  
   return maximumSubArray;
   
 }
