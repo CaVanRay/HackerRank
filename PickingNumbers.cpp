@@ -58,8 +58,12 @@ int pickingNumbers(vector<int> a) {
   but it's late, I'm tired, we're doing a double iterator
   */
 
-  for(bucket : itemsFound){
-    
+  for(currentBucket : itemsFound){
+    for(bucketToCompare : itemsFound){
+      if(currentBucket != bucketToCompare && ((currentBucket = (bucketToCompare + 1)) || (currentBucket = (bucketToCompare - 1)))){
+        maximumSubArray = max(maximumSubArray, currentBucket + bucketToCompare);
+      }
+    }
   }
   
   return maximumSubArray;
