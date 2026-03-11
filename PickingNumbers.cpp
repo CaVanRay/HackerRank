@@ -42,7 +42,7 @@ int pickingNumbers(vector<int> a) {
     }
     if(matchFound == false){
       itemsFound.push_back(currentItem);
-      // I need to find a better method for tracking the number of each item found
+      amountsFound.push_back(1);
     }
   }
   
