@@ -38,7 +38,9 @@ int pickingNumbers(vector<int> a) {
   for(currentItem : a){
     bool matchFound = false;
     for(int i = 0; i < itemsFound.size(); i++){
-    
+      if(currentItem == itemsFound[i]){
+        amountsFound[i] = amountsFound[i] + 1;
+      }
     }
     if(matchFound == false){
       itemsFound.push_back(currentItem);
