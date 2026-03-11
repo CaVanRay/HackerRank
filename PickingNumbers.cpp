@@ -49,6 +49,9 @@ int pickingNumbers(vector<int> a) {
       amountsFound.push_back(1);
     }
   }
+
+  // Now that the buckets are all filled we just find
+  // all the items that are +1 or -1 from each other
   
   return maximumSubArray;
   
