@@ -2,6 +2,8 @@
 Title: Climbing The Leaderboard
 Author: Cavan Ray Theiss
 
+Description:
+
  * Complete the 'climbingLeaderboard' function below.
  *
  * The function is expected to return an INTEGER_ARRAY.
