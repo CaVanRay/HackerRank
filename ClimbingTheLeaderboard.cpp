@@ -4,6 +4,8 @@ Author: Cavan Ray Theiss
 
 Description:
 
+Input: 2 integer arrays
+
  * Complete the 'climbingLeaderboard' function below.
  *
  * The function is expected to return an INTEGER_ARRAY.
