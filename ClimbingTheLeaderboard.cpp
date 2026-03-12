@@ -6,7 +6,7 @@ Description: given an array of highscores, and an array of current scores
 we will return an array of where each of the current scores would rank 
 compared to the list of highscores provided.
 
-Input: 2 integer arrays
+Input: 2 integer arrays, the leaderBoard and the current game scores
 Output: 1 integer array
 */
 
