@@ -60,7 +60,7 @@ int pickingNumbers(vector<int> a) {
 
   for(int currentBucket = 0; currentBucket < itemsFound.size(); currentBucket++){
     for(int bucketToCompare = 0; bucketToCompare < itemsFound.size(); bucketToCompare++){
-      if(itemsFound[currentBucket] != itemsFound[bucketToCompare] && ((itemsFound[currentBucket] = (itemsFound[bucketToCompare] + 1)) || (itemsFound[currentBucket] = (itemsFound[bucketToCompare] - 1)))){
+      if(itemsFound[currentBucket] != itemsFound[bucketToCompare] && ((itemsFound[currentBucket] == (itemsFound[bucketToCompare] + 1)) || (itemsFound[currentBucket] == (itemsFound[bucketToCompare] - 1)))){
         maximumSubArray = max(maximumSubArray, amountsFound[currentBucket] + amountsFound[bucketToCompare]);
       }
     }
