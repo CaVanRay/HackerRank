@@ -5,6 +5,7 @@ Author: Cavan Ray Theiss
 Description:
 
 Input: 2 integer arrays
+Output: 1 integer array
 
  * Complete the 'climbingLeaderboard' function below.
  *
