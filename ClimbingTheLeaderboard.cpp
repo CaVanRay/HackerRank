@@ -1,5 +1,6 @@
 /*
 Title: Climbing The Leaderboard
+Author: Cavan Ray Theiss
 
  * Complete the 'climbingLeaderboard' function below.
  *
