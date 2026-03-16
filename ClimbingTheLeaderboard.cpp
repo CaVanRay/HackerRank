@@ -11,7 +11,10 @@ Output: 1 integer array, ranking of current scores compared to leaderboard
 */
 
 vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
+  
   vector<int> rankings;
+  // the rankings vector is for saving the new ranks for the player scores
+  
   int currentRank, lastScore;
   for(int currentScore : player){
     furrentRank = 0;
