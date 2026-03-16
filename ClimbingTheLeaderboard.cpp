@@ -29,7 +29,6 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
       if((previousScore > currentScore) && (previousScore != lastScore)){
         currentRank++;
       }
-      
     }
   }
 }
