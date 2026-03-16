@@ -12,5 +12,7 @@ Output: 1 integer array, ranking of current scores compared to leaderboard
 
 vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   vector<int> rankings;
-
+  for(int currentScore : player){
+    
+  }
 }
