@@ -14,6 +14,9 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   vector<int> rankings;
   int currentRank;
   for(int currentScore : player){
-    
+    furrentRank = 0;
+    for(int previousScore : ranked){
+      
+    }
   }
 }
