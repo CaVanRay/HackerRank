@@ -16,6 +16,10 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   // the rankings vector is for saving the new ranks for the player scores
   
   int currentRank, lastScore;
+  // currentRank is for iterating the current player score to their new rank
+  // and the lastScore integer is for making sure duplicate scores dont get
+  // counted as 2 seperate ranks
+  
   for(int currentScore : player){
     furrentRank = 0;
     for(int previousScore : ranked){
