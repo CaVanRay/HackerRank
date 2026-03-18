@@ -31,7 +31,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
       }
      lastScore = previousScore;   
     }
-    
+    rankings.push_back(currentRank);
   }
   return rankings;
 }
