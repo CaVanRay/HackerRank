@@ -23,22 +23,11 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   // and the lastScore integer is for making sure duplicate scores dont get
   // counted as 2 seperate ranks
   
-  for(int currentScore : player){
-    // for each player score that needs to be ranked
-    currentRank = ranked.size();
-    
-    for(int i = ranked.size(); i >= 0; i--){
-       if(ranked[i] > currentScore){
-         rankings.push_back(currentRank);
-         break;
-       }else if(ranked[i] == currentScore){
-         rankings.push_back(currentRank - 1)
-         break;
-       }else{
-         currentRank--;
-       }
-    }
-    
-  }
+  /*
+  notes for tomorrow:
+
+  
+  */
+  
   return rankings;
 }
