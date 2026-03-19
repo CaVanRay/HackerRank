@@ -27,6 +27,8 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   notes for tomorrow:
   The process I was using initially worked but times out on larger sets, even with breaking early
   the time is still running up close to O(N*M)
+
+  The new process needs to take advantage of some new information I've realized
   
   */
   
