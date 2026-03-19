@@ -30,6 +30,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
 
   The new process needs to take advantage of some new information I've realized
   1. ranked vector is ordered larges to smallest
+  2. the player vector is ordered smallest to largest
   */
   
   return rankings;
