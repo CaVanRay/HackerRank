@@ -23,9 +23,9 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   // and the lastScore integer is for making sure duplicate scores dont get
   // counted as 2 seperate ranks
 
-  while(playerIndex < player){
-    
-  }
+  /*
+  starting at playerIndex = 0 & rankedIndex = MAX
+  */
   
   /*
   notes for tomorrow:
