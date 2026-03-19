@@ -27,9 +27,9 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   starting at playerIndex = 0 & rankedIndex = MAX
 
   if player > ranked
-    ranked++
+    rankedIndex++
   else if player = ranked
-    rankings
+    rankings.pushBack(rankedIndex)
   else if player < ranked
 
   
