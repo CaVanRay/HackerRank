@@ -27,7 +27,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
     // for each player score that needs to be ranked
     currentRank = ranked.size();
     
-    for(int i = ranked.size(); i >= 0; i++){
+    for(int i = ranked.size(); i >= 0; i--){
        
     }
     
