@@ -27,7 +27,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
     for(int previousScore : ranked){
       // we then run through every rank already set and 
       // compare them to each player score
-      if((previousScore > currentScore) && (previousScore != lastScore)){
+      if(previousScore > currentScore){
         currentRank++;
       }
      lastScore = previousScore;   
