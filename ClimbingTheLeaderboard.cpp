@@ -33,7 +33,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
       if(previousScore > currentScore){
         currentRank++;
       }
-     lastScore = previousScore;   
+       
     }
     rankings.push_back(currentRank);
   }
