@@ -28,6 +28,8 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
 
   if player > ranked
   if player = ranked
+  if player < ranked
+  
   */
   
   /*
