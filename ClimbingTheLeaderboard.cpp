@@ -18,7 +18,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   vector<int> rankings;
   // the rankings vector is for saving the new ranks for the player scores
   
-  int currentRank, rankedIndex = ranked.size() - 1;
+  int currentRank, rankedIndex = ranked.size() - 1, playerIndex = 0;
   // currentRank is for iterating the current player score to their new rank
   // and the lastScore integer is for making sure duplicate scores dont get
   // counted as 2 seperate ranks
@@ -31,7 +31,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   The new process needs to take advantage of some new information I've realized
   1. ranked vector is ordered largest to smallest
   2. the player vector is ordered smallest to largest
-  they only need to pass each other once
+  they only need to pass each other once 
   */
   
   return rankings;
