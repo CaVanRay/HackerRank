@@ -35,7 +35,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
          rankings.push_back(currentRank - 1)
          break;
        }else{
-         
+         currentRank--;
        }
     }
     
