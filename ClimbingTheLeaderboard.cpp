@@ -28,10 +28,11 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
     currentRank = ranked.size();
     
     for(int i = ranked.size(); i >= 0; i--){
-       
+       if(ranked[i] > currentScore){
+         rankings.push_back(currentScore);
+         break;
+       }
     }
-    
-    rankings.push_back(currentRank);
     
   }
   return rankings;
