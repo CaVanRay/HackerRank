@@ -31,10 +31,9 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   else if player = ranked
     rankings.pushBack(rankedIndex)
   else if player < ranked
-    
-  
-  
   */
+
+
   
   /*
   notes for tomorrow:
