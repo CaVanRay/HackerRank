@@ -46,16 +46,5 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
     }
   }
   
-  /*
-  notes for tomorrow:
-  The process I was using initially worked but times out on larger sets, even with breaking early
-  the time is still running up close to O(N*M)
-
-  The new process needs to take advantage of some new information I've realized
-  1. ranked vector is ordered largest to smallest
-  2. the player vector is ordered smallest to largest
-  they only need to pass each other once 
-  */
-  
   return rankings;
 }
