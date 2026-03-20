@@ -20,8 +20,11 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   int rankedIndex = ranked.size() - 1, playerIndex = 0;
 
   while(rankings.size() < player.size()){
-    
-    if(player[playerIndex] > ranked[rankedIndex]){
+
+    if(rankedIndex == 0){
+      rankings.push_back(1);
+      playerIndex++;
+    }else if(player[playerIndex] > ranked[rankedIndex]){
       rankedIndex--;
     }else if(player[playerIndex] == ranked[rankedIndex]){
       rankings.push_back(rankedIndex + 1);
