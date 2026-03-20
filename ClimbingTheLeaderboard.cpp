@@ -16,22 +16,8 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   ranked.erase(unique(ranked.begin(), ranked.end()), ranked.end());
   
   vector<int> rankings;
-  // the rankings vector is for saving the new ranks for the player scores
   
   int currentRank, rankedIndex = ranked.size() - 1, playerIndex = 0;
-  // currentRank is for iterating the current player score to their new rank
-  // and the lastScore integer is for making sure duplicate scores dont get
-  // counted as 2 seperate ranks
-
-  /*
-  starting at playerIndex = 0 & rankedIndex = MAX
-
-  if player > ranked
-    rankedIndex++
-  else if player = ranked
-    rankings.pushBack(rankedIndex)
-  else if player < ranked
-  */
 
   while(rankings.size() < player.size()){
     
