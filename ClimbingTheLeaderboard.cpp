@@ -17,7 +17,7 @@ vector<int> climbingLeaderboard(vector<int> ranked, vector<int> player) {
   
   vector<int> rankings;
   
-  int currentRank, rankedIndex = ranked.size() - 1, playerIndex = 0;
+  int rankedIndex = ranked.size() - 1, playerIndex = 0;
 
   while(rankings.size() < player.size()){
     
