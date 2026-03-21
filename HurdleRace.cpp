@@ -10,6 +10,6 @@ of "jump potion"
 
 Input: integer K is current max jump height, integer array HEIGHT is 
 the heights of the upcoming hurdles
-Output:
+Output: a single integer representing the number of doses needed
 
 */
