@@ -17,7 +17,9 @@ Output: a single integer representing the number of doses needed
 int hurdleRace(const int& k, const vector<int>& height) {
   int maxPotionsNeeded = 0;
   for(int hurdle : height){
-    
+    if(k < hurdle){
+      maxPotionsNeeded = max(maxPotionsNeeded, hurdle - k);
+    }
   }
 }
 
