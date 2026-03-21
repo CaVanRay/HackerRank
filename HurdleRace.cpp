@@ -8,7 +8,7 @@ Description: provided with a maximum jump height and a list
 of upcoming hurdle heights, return the number of doses needed 
 of "jump potion"
 
-Input:
+Input: integer K is current max jump height, 
 Output:
 
 */
