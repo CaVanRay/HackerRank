@@ -7,6 +7,6 @@ Author: Cavan Ray Theiss
 Description:
 
 Input: an integer array, & a string
-Output:
+Output: returns an integer
 
 */
