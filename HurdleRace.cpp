@@ -21,5 +21,6 @@ int hurdleRace(const int& k, const vector<int>& height) {
       maxPotionsNeeded = max(maxPotionsNeeded, hurdle - k);
     }
   }
+  return maxPotionsNeeded;
 }
 
