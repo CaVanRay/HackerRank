@@ -6,7 +6,7 @@ Author: Cavan Ray Theiss
 
 Description:
 
-Input:
+Input: an integer array, & a string
 Output:
 
 */
