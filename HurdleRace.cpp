@@ -14,7 +14,7 @@ Output: a single integer representing the number of doses needed
 
 */
 
-int hurdleRace(const int k&, const vector<int> height&) {
+int hurdleRace(const int& k, const vector<int>& height) {
 
 }
 
