@@ -13,3 +13,8 @@ the heights of the upcoming hurdles
 Output: a single integer representing the number of doses needed
 
 */
+
+int hurdleRace(int k, vector<int> height) {
+
+}
+
