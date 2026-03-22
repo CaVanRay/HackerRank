@@ -44,7 +44,14 @@ public:
 };
 
 class Student : public Person{
-
+public:
+    int marks[6];
+    void getdata() override {
+        // read name, age, and 6 marks
+    }
+    void putdata() override {
+        // print the required output
+    }
 };
 
 
