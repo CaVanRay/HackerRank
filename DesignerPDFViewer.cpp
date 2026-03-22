@@ -14,5 +14,9 @@ Output: returns an integer
 int designerPdfViewer(vector<int> h, string word) {
 
 int maxSizeLetter = 0;
+
+  for(int i = 0; i < word.size(); i++){
+    
+  }
   
 }
