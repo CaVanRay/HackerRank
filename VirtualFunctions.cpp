@@ -25,7 +25,10 @@ Output:
 
 class Person {
 public:
-
+    string name;
+    int age;
+    virtual void getdata() = 0;
+    virtual void putdata() = 0;
 
 };
 
