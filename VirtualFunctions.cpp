@@ -36,6 +36,10 @@ class Professor : public Person{
 
 };
 
+class Student : public Person{
+
+};
+
 
 //*****************************************************************************
 
