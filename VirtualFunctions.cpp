@@ -34,10 +34,13 @@ public:
 
 class Professor : public Person{
 public:
-    int publications, ID = 1;
+    static int count;
+    int publications, ID;
     void getdata() override {
         // read name, age, publications
         cin >> name >> age >> publications;
+        count++;
+        ID = count;
     }
     void putdata() override {
         // print the required output
@@ -45,9 +48,12 @@ public:
     }
 };
 
+int Professor::count = 0;
+
 class Student : public Person{
 public:
-    int marks[6], marksSum = 0, ID = 2;
+    static int count;
+    int marks[6], marksSum = 0, ID;
     void getdata() override {
         // read name, age, and 6 marks
         cin >> name >> age;
@@ -55,13 +61,16 @@ public:
             cin >> marks[i];
             marksSum += marks[i];
         }
+        count++;
+        ID = count;
     }
     void putdata() override {
         // print the required output
-        cout << name << " " << age << " " << marksSum << " " << id << endl;
+        cout << name << " " << age << " " << marksSum << " " << ID << endl;
     }
 };
 
+int Student::count = 0;
 
 //*****************************************************************************
 
