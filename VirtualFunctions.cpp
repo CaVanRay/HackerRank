@@ -33,7 +33,14 @@ public:
 };
 
 class Professor : public Person{
-
+public:
+    int publications;
+    void getdata() override {
+        // read name, age, publications
+    }
+    void putdata() override {
+        // print the required output
+    }
 };
 
 class Student : public Person{
