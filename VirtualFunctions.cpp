@@ -27,8 +27,12 @@ class Person {
 public:
     string name;
     int age;
-    virtual void getdata() = 0;
-    virtual void putdata() = 0;
+    virtual void getdata() = 0; // purely virtual
+    virtual void putdata() = 0; // purely virtual
+
+};
+
+class Professor : public Person{
 
 };
 
