@@ -40,6 +40,9 @@ Description: I think I need to write a derived class based on class cache but it
 the original
 
 The derived class needs to be called LRUCache
+
+It needs to use the member functions and variables to implement an LRU cache ("Last Recently Used")
+
 */
 
 
