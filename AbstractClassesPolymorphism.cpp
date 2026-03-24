@@ -39,9 +39,7 @@ Author: Cavan Ray Theiss
 Description: I think I need to write a derived class based on class cache but it needs to expand
 the original
 
-Input:
-Output:
-
+The derived class needs to be called LRUCache
 */
 
 
