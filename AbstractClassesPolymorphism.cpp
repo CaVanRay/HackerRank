@@ -36,7 +36,7 @@ class Cache{
 Title: Abstract Classes Polymorphism
 Author: Cavan Ray Theiss
 
-Description:
+Description: I think I need to write a derived class based on class cache
 
 Input:
 Output:
