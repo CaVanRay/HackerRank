@@ -54,7 +54,10 @@ class LRUCache : public Cache{
       head = NULL;
    }
    virtual void set(int k, int v){
-      
+      auto it = mp.find(k);
+      if(it == mp.end()){
+         
+      }
    }
    virtual void get(){
       
