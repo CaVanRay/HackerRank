@@ -56,7 +56,7 @@ class LRUCache : public Cache{
    virtual void set(int k, int v){
       auto it = mp.find(k);
       if(it == mp.end()){
-         
+         Node *node = new Node(k, v);
       }
    }
    virtual void get(){
