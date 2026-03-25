@@ -53,6 +53,10 @@ class LRUCache : public Cache{
       tail = NULL;
       head = NULL;
    }
+   virtual void set(){
+      
+   }
+
 };
 
 // My code stops here
