@@ -57,7 +57,7 @@ class LRUCache : public Cache{
       auto it = mp.find(k);
       if(it == mp.end()){
          Node *node = new Node(k, v);
-         if(cp ==){
+         if(cp == 0){
             node->next = head;
             head->prev = node;
             head = node;
