@@ -65,6 +65,8 @@ class LRUCache : public Cache{
             mp.erase(temp->key);
             tail = tail->prev;
             delete temp;
+         } else {
+            
          }
       }
    }
