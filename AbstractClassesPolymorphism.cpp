@@ -61,6 +61,7 @@ class LRUCache : public Cache{
             node->next = head;
             head->prev = node;
             head = node;
+            Node *temp = tail;
          }
       }
    }
