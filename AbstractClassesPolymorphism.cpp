@@ -56,7 +56,9 @@ class LRUCache : public Cache{
    virtual void set(){
       
    }
-
+   virtual void get(){
+      
+   }
 };
 
 // My code stops here
