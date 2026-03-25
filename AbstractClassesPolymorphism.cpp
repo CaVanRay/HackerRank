@@ -60,6 +60,7 @@ class LRUCache : public Cache{
          if(cp ==){
             node->next = head;
             head->prev = node;
+            head = node;
          }
       }
    }
