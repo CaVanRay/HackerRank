@@ -62,6 +62,7 @@ class LRUCache : public Cache{
             head->prev = node;
             head = node;
             Node *temp = tail;
+            mp.erase(temp->key);
          }
       }
    }
