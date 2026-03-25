@@ -66,7 +66,7 @@ class LRUCache : public Cache{
             tail = tail->prev;
             delete temp;
          } else {
-            
+            cp--;
          }
       }
    }
