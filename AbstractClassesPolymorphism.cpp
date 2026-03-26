@@ -86,6 +86,8 @@ class LRUCache : public Cache{
                temp->prev->next = NULL;
                temp->prev = NULL;
                temp->next = head;
+               head->prev = temp;
+               
             }
          }
       }
