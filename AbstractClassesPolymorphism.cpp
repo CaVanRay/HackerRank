@@ -80,6 +80,9 @@ class LRUCache : public Cache{
          mp[k] = node;
       } else {
          Node *temp = it->second;
+         if(temp != head){
+            
+         }
       }
    }
 
