@@ -70,6 +70,8 @@ class LRUCache : public Cache{
             if(head == NULL){
                head = node;
                tail = node;
+            } else {
+            
             }
          }
       }
