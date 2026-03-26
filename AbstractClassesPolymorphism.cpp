@@ -67,6 +67,9 @@ class LRUCache : public Cache{
             delete temp;
          } else {
             cp--;
+            if(head == NULL){
+               
+            }
          }
       }
    }
