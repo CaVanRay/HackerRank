@@ -53,6 +53,7 @@ class LRUCache : public Cache{
       tail = NULL;
       head = NULL;
    }
+
    virtual void set(int k, int v){
       auto it = mp.find(k);
       if(it == mp.end()){
@@ -78,9 +79,10 @@ class LRUCache : public Cache{
          }
          mp[k] = node;
       } else {
-         
+         Node *temp = it->second;
       }
    }
+
    virtual void get(){
       
    }
