@@ -82,6 +82,7 @@ class LRUCache : public Cache{
          Node *temp = it->second;
          if(temp != head){
             if(temp == tail){
+               tail = temp->prev;
                
             }
          }
