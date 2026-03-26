@@ -77,6 +77,8 @@ class LRUCache : public Cache{
             }
          }
          mp[k] = node;
+      } else {
+         
       }
    }
    virtual void get(){
