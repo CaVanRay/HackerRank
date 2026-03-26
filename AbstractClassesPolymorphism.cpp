@@ -88,6 +88,8 @@ class LRUCache : public Cache{
                temp->next = head;
                head->prev = temp;
                head = temp;
+            } else {
+               
             }
          }
       }
