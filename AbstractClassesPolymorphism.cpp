@@ -68,7 +68,7 @@ class LRUCache : public Cache{
          } else {
             cp--;
             if(head == NULL){
-               
+               head = node;
             }
          }
       }
