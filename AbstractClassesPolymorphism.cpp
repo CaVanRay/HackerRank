@@ -103,6 +103,9 @@ class LRUCache : public Cache{
 
    virtual int get(int k){
       auto it = mp.find(k);
+      if( it != mp.end()){
+         return it->second->value;
+      }
    }
 };
 
