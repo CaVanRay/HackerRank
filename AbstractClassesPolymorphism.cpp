@@ -93,7 +93,7 @@ class LRUCache : public Cache{
                temp->next->prev = temp->prev;
                temp->prev = NULL;
                temp->next = head;
-               
+               head->prev = temp;
             }
          }
       }
