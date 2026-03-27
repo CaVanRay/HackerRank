@@ -97,6 +97,7 @@ class LRUCache : public Cache{
                head = temp;
             }
          }
+         head->value = v;
       }
    }
 
