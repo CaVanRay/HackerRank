@@ -101,7 +101,7 @@ class LRUCache : public Cache{
       }
    }
 
-   virtual void get(){
+   virtual int get(int k){
       
    }
 };
