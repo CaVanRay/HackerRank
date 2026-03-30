@@ -106,6 +106,7 @@ class LRUCache : public Cache{
       if( it != mp.end()){
          return it->second->value;
       }
+      return -1;
    }
 };
 
