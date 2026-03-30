@@ -73,7 +73,7 @@ class LRUCache : public Cache{
             } else {
                node->next = head;
                head->prev = node;
-               head = node
+               head = node;
             }
          }
          mp[k] = node;
