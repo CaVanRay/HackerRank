@@ -61,6 +61,9 @@ class LRUCache : public Cache{
       while(current != NULL && current->key != keyID){
          current = current->next;
       }
+      if(current == NULL){
+         
+      }
    
    }
 
