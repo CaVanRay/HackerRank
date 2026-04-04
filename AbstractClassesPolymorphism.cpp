@@ -66,6 +66,7 @@ class LRUCache : public Cache{
          if(capacity > 0){
             head->prev = current;
             current->next = head;
+            head = current;
          }
       }
    
