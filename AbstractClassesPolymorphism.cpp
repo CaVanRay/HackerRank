@@ -55,8 +55,8 @@ class LRUCache : public Cache{
       head = NULL
    }
 
-   virtual void set(int k, int v){
-
+   virtual void set(int keyID, int keyValue){
+      
 
    
    }
