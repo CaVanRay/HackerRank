@@ -59,7 +59,7 @@ class LRUCache : public Cache{
       
       Node* current = head;
       while(current != NULL && current->key != keyID){
-         
+         current = current->next;
       }
    
    }
