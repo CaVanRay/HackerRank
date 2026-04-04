@@ -47,8 +47,10 @@ It needs to use the member functions and variables to implement an LRU cache ("L
 
 class LRUCache : public Cache{
 
-   LRUCache(){
-      
+   LRUCache(int l){
+      cp = l;
+      tail = NULL;
+      head = NULL
    }
 
    virtual void set(int k, int v){
