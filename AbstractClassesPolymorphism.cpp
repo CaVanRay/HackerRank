@@ -69,6 +69,8 @@ class LRUCache : public Cache{
             head = current;
          }else if(capacity == 0){
             
+         }else{
+            cout << endl << "ERROR: Capacity not valid!" << endl; 
          }
       }
    
