@@ -61,9 +61,9 @@ class LRUCache : public Cache{
       while(current != NULL && current->key != keyID){
          current = current->next;
       }
-      if(current == NULL){
+      if(current == NULL){ // The provided Key and Value do not already exist in the list
          current = new Node(keyID, keyValue);
-         if(capacity > 0){
+         if(capacity > 0){ // There is still space in the list for new items
             head->prev = current;
             current->next = head;
             head = current;
