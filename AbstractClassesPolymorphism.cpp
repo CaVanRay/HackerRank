@@ -47,6 +47,8 @@ It needs to use the member functions and variables to implement an LRU cache ("L
 
 class LRUCache : public Cache{
 
+   public:
+
    LRUCache(int l){
       cp = l;
       tail = NULL;
