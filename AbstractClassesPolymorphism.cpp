@@ -62,7 +62,7 @@ class LRUCache : public Cache{
          current = current->next;
       }
       if(current == NULL){
-         
+         current = Node(keyID, keyValue);
       }
    
    }
