@@ -63,6 +63,7 @@ class LRUCache : public Cache{
       }
       if(current == NULL){
          current = Node(keyID, keyValue);
+         head->prev = current;
       }
    
    }
