@@ -61,15 +61,15 @@ class LRUCache : public Cache{
       while(current != NULL && current->key != keyID){
          current = current->next;
       }
-      if(current == NULL){ // The provided Key and Value do not already exist in the list
+      if(current == NULL){ // If the provided Key and Value do not already exist in the list
          current = new Node(keyID, keyValue);
-         if(capacity > 0){ // There is still space in the list for new items
+         if(capacity > 0){ // If there is still space in the list for new items
             head->prev = current;
             current->next = head;
             head = current;
-         }else if(capacity == 0){
+         }else if(capacity == 0){ // Else/If the list is completely full
             
-         }else{
+         }else{ // This shouldnt trigger, but if somehow the list capacity hits negative an error is displayed
             cout << endl << "ERROR: Capacity not valid!" << endl; 
          }
       }
