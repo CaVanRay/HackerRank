@@ -73,6 +73,7 @@ class LRUCache : public Cache{
          }else if(capacity == 0){ // Else/If the list is completely full
             head->prev = current;
             current->next = head;
+            head = current;
          }else{ // This shouldnt trigger, but if somehow the list capacity hits negative an error is displayed
             cout << endl << "ERROR: Capacity not valid!" << endl; 
          }
