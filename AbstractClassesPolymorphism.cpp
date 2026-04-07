@@ -51,6 +51,7 @@ class LRUCache : public Cache{
 
    LRUCache(int l){
       cp = l;
+      int capacity = cp;
       tail = NULL;
       head = NULL
    }
