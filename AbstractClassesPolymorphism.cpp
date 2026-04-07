@@ -63,7 +63,7 @@ class LRUCache : public Cache{
       }
       if(current == NULL){ // If the provided Key and Value do not already exist in the list
          current = new Node(keyID, keyValue);
-         if(capacity == cp){
+         if(capacity == cp){ // If capacity is still at starting value, this is the first item added to list
             head = current;
          }else if(capacity > 0){ // If there is still space in the list for new items
             head->prev = current;
