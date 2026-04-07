@@ -65,8 +65,7 @@ class LRUCache : public Cache{
          current = new Node(keyID, keyValue);
          if(capacity == cp){
             
-         }
-         if(capacity > 0){ // If there is still space in the list for new items
+         }else if(capacity > 0){ // If there is still space in the list for new items
             head->prev = current;
             current->next = head;
             head = current;
