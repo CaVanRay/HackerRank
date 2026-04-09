@@ -95,7 +95,7 @@ class LRUCache : public Cache{
       }
       if(current == NULL){ // if the item we are searching for isnt in the list, return -1
          return -1;
-      }else if(current->key == keyID){
+      }else if(current->key == keyID){ // if the item we are searching for is found, we return the associated value
          return current->value;
       }
       
