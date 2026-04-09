@@ -93,6 +93,8 @@ class LRUCache : public Cache{
       }
       if(current == NULL){
          return -1;
+      }else if(current->key == keyID){
+         
       }
       
    }
