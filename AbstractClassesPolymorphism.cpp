@@ -86,7 +86,7 @@ class LRUCache : public Cache{
    
    }
 
-   virtual int get(int k){
+   virtual int get(int keyID){
 
 
    
