@@ -93,7 +93,7 @@ class LRUCache : public Cache{
       while(current != NULL && current->key != keyID){
          current = current->next;
       }
-      if(current == NULL){
+      if(current == NULL){ // if the item we are searching for isnt in the list, return -1
          return -1;
       }else if(current->key == keyID){
          return current->value;
