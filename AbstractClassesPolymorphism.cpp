@@ -80,7 +80,7 @@ class LRUCache : public Cache{
          }
          mp[keyID] = current;
       }else if(current->key == keyID){
-         
+         // addToFront
       }
    
    }
