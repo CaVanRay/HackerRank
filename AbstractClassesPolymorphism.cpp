@@ -78,7 +78,7 @@ class LRUCache : public Cache{
          }else{ // This shouldnt trigger, but if somehow the list capacity hits negative an error is displayed
             cout << endl << "ERROR: Capacity not valid!" << endl; 
          }
-         mp[k] = current;
+         mp[keyID] = current;
       }else if(current->key == keyID){
          
       }
