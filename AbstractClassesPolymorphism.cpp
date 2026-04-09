@@ -82,6 +82,8 @@ class LRUCache : public Cache{
       }else if(current->key == keyID){
          // removeFromList
          // addToFront
+      }else{
+         cout << endl << "ERROR: set() key search broken";
       }
    
    }
