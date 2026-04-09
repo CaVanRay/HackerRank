@@ -97,7 +97,7 @@ class LRUCache : public Cache{
          return -1;
       }else if(current->key == keyID){ // if the item we are searching for is found, we return the associated value
          return current->value;
-      }else{
+      }else{ // Again, shouldnt trigger, but in case the search returns something not expected
          cout << endl << "ERROR: get() key search broken";
       }
       
