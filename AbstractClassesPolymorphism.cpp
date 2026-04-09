@@ -88,7 +88,9 @@ class LRUCache : public Cache{
 
    virtual int get(int keyID){
       Node* current = head;
-
+      while(current != NULL && current->key != keyID){
+         
+      }
    
    }
 
