@@ -98,7 +98,7 @@ class LRUCache : public Cache{
       }else if(current->key == keyID){ // if the item we are searching for is found, we return the associated value
          return current->value;
       }else{
-         
+         cout << endl << "ERROR: get() key search broken";
       }
       
    }
