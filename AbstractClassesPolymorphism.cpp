@@ -84,6 +84,8 @@ class LRUCache : public Cache{
          // removeFromList
          if(head == current){
             // if the current node is already at the head, do nothing
+         }else if(tail == current){
+            // if the current node is not head but is tail
          }
          // addToFront
       }else{ // This shouldnt trigger, but if somehow we don't reach the end of the list but the current item doesnt match, this will trigger
