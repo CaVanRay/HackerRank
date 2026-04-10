@@ -102,7 +102,7 @@ class LRUCache : public Cache{
             current->next = head;
             head = current;
          }
-         
+         mp[keyID] = current;
          
       }else{ // This shouldnt trigger, but if somehow we don't reach the end of the list but the current item doesnt match, this will trigger
          cout << endl << "ERROR: set() key search broken";
