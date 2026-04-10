@@ -71,6 +71,7 @@ class LRUCache : public Cache{
             head->prev = current;
             current->next = head;
             head = current;
+            capacity--;
          }else if(capacity == 0){ // Else/If the list is completely full
             head->prev = current;
             current->next = head;
