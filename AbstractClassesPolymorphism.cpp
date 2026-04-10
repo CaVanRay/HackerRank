@@ -98,6 +98,7 @@ class LRUCache : public Cache{
          if(head != current){
          // addToFront
          current = new Node(keyID, keyValue);
+         head->prev = current;
          }
          
       }else{ // This shouldnt trigger, but if somehow we don't reach the end of the list but the current item doesnt match, this will trigger
