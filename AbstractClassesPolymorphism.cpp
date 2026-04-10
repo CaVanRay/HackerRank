@@ -93,6 +93,7 @@ class LRUCache : public Cache{
          }else{
             // if the curren node is not head, not tail, we can just
             // join either side and remove the current node
+            current->prev->next = current->next;
          }
          // addToFront
       }else{ // This shouldnt trigger, but if somehow we don't reach the end of the list but the current item doesnt match, this will trigger
