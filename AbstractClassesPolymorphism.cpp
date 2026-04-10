@@ -98,6 +98,7 @@ class LRUCache : public Cache{
             delete current;
          }
          // addToFront
+         
       }else{ // This shouldnt trigger, but if somehow we don't reach the end of the list but the current item doesnt match, this will trigger
          cout << endl << "ERROR: set() key search broken";
       }
