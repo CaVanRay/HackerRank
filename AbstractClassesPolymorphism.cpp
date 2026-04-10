@@ -53,7 +53,7 @@ class LRUCache : public Cache{
       cp = l;
       int capacity = cp;
       tail = NULL;
-      head = NULL
+      head = NULL;
    }
 
    virtual void set(int keyID, int keyValue){
