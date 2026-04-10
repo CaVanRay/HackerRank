@@ -89,6 +89,7 @@ class LRUCache : public Cache{
             // that it is safe to remove
             current->prev->next = NULL;
             tail = current->prev;
+            delete current;
          }else{
             // if the curren node is not head, not tail, we can just
             // join either side and remove the current node
