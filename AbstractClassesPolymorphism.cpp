@@ -82,7 +82,7 @@ class LRUCache : public Cache{
          mp[keyID] = current;
       }else if(current->key == keyID){
          // removeFromList
-         if(tail == current){
+         if(head != current && tail == current){
             // if the current node is not head but is tail, we can infer
             // that it is safe to remove
             current->prev->next = NULL;
@@ -95,7 +95,10 @@ class LRUCache : public Cache{
             current->next->prev = current->prev;
             delete current;
          }
+         if(head != current){
          // addToFront
+
+         }
          
       }else{ // This shouldnt trigger, but if somehow we don't reach the end of the list but the current item doesnt match, this will trigger
          cout << endl << "ERROR: set() key search broken";
