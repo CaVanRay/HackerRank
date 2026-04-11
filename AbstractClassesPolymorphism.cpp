@@ -78,6 +78,7 @@ class LRUCache : public Cache{
             head->prev = current;
             current->next = head;
             head = current;
+            tail->prev->next = NULL;
          }else{ // This shouldnt trigger, but if somehow the list capacity hits negative an error is displayed
             cout << endl << "ERROR: Capacity not valid!" << endl; 
          }
