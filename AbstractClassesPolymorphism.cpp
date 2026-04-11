@@ -50,8 +50,8 @@ class LRUCache : public Cache{
    public:
 
    LRUCache(int l){
-      cp = l;
-      capacity = cp;
+      cp = l; // base class int that I cannot change the name of
+      capacity = cp; // more readable and easily understood alias for cp takes over from here
       tail = NULL;
       head = NULL;
    }
@@ -62,7 +62,7 @@ class LRUCache : public Cache{
       while(current != NULL && current->key != keyID){
          current = current->next;
       }
-      if(current == NULL){ // If the provided Key and Value do not already exist in the list
+      if(current == NULL){ // ******************************* NOT IN LIST ALREADY ********************************
          current = new Node(keyID, keyValue);
          if(head == NULL){ // If head equals NULL, this is the first item added to list
             head = current;
@@ -86,34 +86,52 @@ class LRUCache : public Cache{
             cout << endl << "ERROR: Capacity not valid!" << endl; 
          }
          mp[keyID] = current;
-      }else if(current->key == keyID){
-         // removeFromList
-         if(head != current && tail == current){
-            // if the current node is not head but is tail, we can infer
-            // that it is safe to remove
-            Node* toRemove = current;
-            current->prev->next = NULL;
-            tail = current->prev;
-            mp.erase(toRemove->key);
-            delete toRemove;
-         }else if (head != current && tail != current){
-            // if the curren node is not head, not tail, we can just
-            // join either side and remove the current node
-            Node* toRemove = current;
-            current->prev->next = current->next;
-            current->next->prev = current->prev;
-            mp.erase(toRemove->key);
-            delete toRemove;
+      }else if(current->key == keyID){ //**************** ALREADY EXISTS IN LIST **********************************
+         
+         if(current->prev == NULL && current->next == NULL){ // only item in list
+
+            head = NULL;
+            tail = NULL;
+
+         }else if(current->prev != NULL && current->next != NULL){ // somewhere in the middle
+
+               current->prev->next = current->next;
+               current->next->prev = current->prev;
+
+         }else if(current->prev == NULL && current->next != NULL){ // located at the head
+
+               current->next->prev = NULL;
+               head = current->next;
+
+         }else if(current->prev != NULL && current->next == NULL){ // located at the tail
+
+               current->prev->next = NULL;
+               tail = current->prev;
+
+         }else{ //something has seriously gone wrong
+
+            cout << endl << "The Fuck did I do?" << endl;
+
          }
-         if(head != current){
-            // addToFront
-            current = new Node(keyID, keyValue);
+
+         // Remove vestigial map values and current node
+
+         mp.erase(current->key);
+         delete current;
+
+         // Create new Node with given values and add to front
+
+         current = new Node(keyID, keyValue);
+
+         if(head == NULL){
+            head = current;
+            tail = current;
+         } else {
             head->prev = current;
             current->next = head;
             head = current;
          }
          mp[keyID] = current;
-         
       }else{ // This shouldnt trigger, but if somehow we don't reach the end of the list but the current item doesnt match, this will trigger
          cout << endl << "ERROR: set() key search broken";
       }
@@ -137,74 +155,6 @@ class LRUCache : public Cache{
    }
 
 };
-
-/*
-   
-class LRUCache : public Cache{
-   public:
-   LRUCache(int l){
-      cp = l;
-      tail = NULL;
-      head = NULL;
-   }
-
-   virtual void set(int k, int v){
-      auto it = mp.find(k);
-      if(it == mp.end()){
-         Node *node = new Node(k, v);
-         if(cp == 0){
-            node->next = head;
-            head->prev = node;
-            head = node;
-            Node *temp = tail;
-            mp.erase(temp->key);
-            tail = tail->prev;
-            delete temp;
-         } else {
-            cp--;
-            if(head == NULL){
-               head = node;
-               tail = node;
-            } else {
-               node->next = head;
-               head->prev = node;
-               head = node;
-            }
-         }
-         mp[k] = node;
-      } else {
-         Node *temp = it->second;
-         if(temp != head){
-            if(temp == tail){
-               tail = temp->prev;
-               temp->prev->next = NULL;
-               temp->prev = NULL;
-               temp->next = head;
-               head->prev = temp;
-               head = temp;
-            } else {
-               temp->prev->next = temp->next;
-               temp->next->prev = temp->prev;
-               temp->prev = NULL;
-               temp->next = head;
-               head->prev = temp;
-               head = temp;
-            }
-         }
-         head->value = v;
-      }
-   }
-
-   virtual int get(int k){
-      auto it = mp.find(k);
-      if( it != mp.end()){
-         return it->second->value;
-      }
-      return -1;
-   }
-};
-
-*/
 
 // My code stops here
 //************************************************************************************************
