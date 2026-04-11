@@ -46,7 +46,7 @@ It needs to use the member functions and variables to implement an LRU cache ("L
 */
 
 class LRUCache : public Cache{
-
+   int capacity;
    public:
 
    LRUCache(int l){
@@ -57,7 +57,7 @@ class LRUCache : public Cache{
 
    virtual void set(int keyID, int keyValue){
 
-      int capacity = cp;
+      capacity = cp;
       Node* current = head;
       while(current != NULL && current->key != keyID){
          current = current->next;
