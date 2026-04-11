@@ -80,7 +80,7 @@ class LRUCache : public Cache{
             head = current;
             tail->prev->next = NULL;
             tail = tail->prev;
-            mp.erase(toRemove->keyID);
+            mp.erase(toRemove->key);
             delete toRemove;
          }else{ // This shouldnt trigger, but if somehow the list capacity hits negative an error is displayed
             cout << endl << "ERROR: Capacity not valid!" << endl; 
@@ -94,7 +94,7 @@ class LRUCache : public Cache{
             Node* toRemove = current;
             current->prev->next = NULL;
             tail = current->prev;
-            mp.erase(toRemove->keyID);
+            mp.erase(toRemove->key);
             delete toRemove;
          }else if (head != current && tail != current){
             // if the curren node is not head, not tail, we can just
@@ -102,7 +102,7 @@ class LRUCache : public Cache{
             Node* toRemove = current;
             current->prev->next = current->next;
             current->next->prev = current->prev;
-            mp.erase(toRemove->keyID);
+            mp.erase(toRemove->key);
             delete toRemove;
          }
          if(head != current){
