@@ -58,14 +58,14 @@ class LRUCache : public Cache{
 
    virtual void set(int keyID, int keyValue){
 
-      auto iter == mp.find(keyID);
+      auto iter = mp.find(keyID);
       Node* current = (iter != mp.end()) ? iter->second : NULL;
      
 if(current == NULL){ // ******************************* NOT IN LIST ALREADY ********************************
  
       current = new Node(keyID, keyValue);
 
-      if(capacity == 0){
+      if(capacity == 0){ // If list is full, remove the tail
 
          Node* toRemove = tail;
          tail = toRemove->prev;
@@ -73,20 +73,20 @@ if(current == NULL){ // ******************************* NOT IN LIST ALREADY ****
          mp.erase(toRemove->key);
          delete toRemove;
 
-      }else{
+      }else{ // If list is not full, decrement the capacity
 
          capacity--;
 
       }
 
-      if(head != NULL){
+      if(head != NULL){ // If the head exists, add prev and next pointers to connect it to the new head
          head->prev = current;
          current->next = head;
       }
 
       head = current;
 
-      if(tail == NULL){
+      if(tail == NULL){ // If the tail doesnt exists, the list is empty and set it to the new Node
          tail = current;
       }
 
