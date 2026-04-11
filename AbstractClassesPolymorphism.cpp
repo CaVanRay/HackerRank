@@ -74,6 +74,7 @@ class LRUCache : public Cache{
             head = current;
             capacity--;
          }else if(capacity == 0){ // Else/If the list is completely full
+            Node* spillOver = tail;
             head->prev = current;
             current->next = head;
             head = current;
