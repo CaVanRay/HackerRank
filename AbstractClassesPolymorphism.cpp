@@ -92,7 +92,7 @@ if(current == NULL){ // ******************************* NOT IN LIST ALREADY ****
 
       mp[keyID] = current;
       
-      }else if(current->key == keyID){ //**************** ALREADY EXISTS IN LIST **********************************
+      }else{ //**************** ALREADY EXISTS IN LIST **********************************
          
          if(current->prev == NULL && current->next == NULL){ // only item in list
 
@@ -138,8 +138,6 @@ if(current == NULL){ // ******************************* NOT IN LIST ALREADY ****
             head = current;
          }
          mp[keyID] = current;
-      }else{ // This shouldnt trigger, but if somehow we don't reach the end of the list but the current item doesnt match, this will trigger
-         cout << endl << "ERROR: set() key search broken";
       }
    
    }
