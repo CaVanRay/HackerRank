@@ -145,19 +145,11 @@ if(current == NULL){ // ******************************* NOT IN LIST ALREADY ****
    }
 
    virtual int get(int keyID){
-      Node* current = head;
-      while(current != NULL && current->key != keyID){
-         current = current->next;
-      }
-      if(current == NULL){ // if the item we are searching for isnt in the list, return -1
-         return -1;
-      }else if(current->key == keyID){ // if the item we are searching for is found, we return the associated value
-         return current->value;
-      }else{ // Again, shouldnt trigger, but in case the search returns something not expected
-         cout << endl << "ERROR: get() key search broken";
-         return -1;
-      }
+
+      auto iter == mp.find(keyID);
       
+      iter != mp.end() ? return iter->second->key : return -1;
+
    }
 
 };
