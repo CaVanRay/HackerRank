@@ -61,30 +61,37 @@ class LRUCache : public Cache{
       auto iter == mp.find(keyID);
       Node* current = (iter != mp.end()) ? iter->second : NULL;
      
-      if(current == NULL){ // ******************************* NOT IN LIST ALREADY ********************************
-         current = new Node(keyID, keyValue);
-         if(head == NULL){ // If head equals NULL, this is the first item added to list
-            head = current;
-            tail = current;
-            capacity--;
-         }else if(capacity > 0){ // If there is still space in the list for new items
-            head->prev = current;
-            current->next = head;
-            head = current;
-            capacity--;
-         }else if(capacity == 0){ // Else/If the list is completely full
-            Node* toRemove = tail;
-            head->prev = current;
-            current->next = head;
-            head = current;
-            tail->prev->next = NULL;
-            tail = tail->prev;
-            mp.erase(toRemove->key);
-            delete toRemove;
-         }else{ // This shouldnt trigger, but if somehow the list capacity hits negative an error is displayed
-            cout << endl << "ERROR: Capacity not valid!" << endl; 
-         }
-         mp[keyID] = current;
+if(current == NULL){ // ******************************* NOT IN LIST ALREADY ********************************
+ 
+      current = new Node(keyID, keyValue);
+
+      if(capacity == 0){
+
+         Node* toRemove = tail;
+         tail = toRemove->prev;
+         tail->next = NULL;
+         mp.erase(toRemove->key);
+         delete toRemove;
+
+      }else{
+
+         capacity--;
+
+      }
+
+      if(head != NULL){
+         head->prev = current;
+         current->next = head;
+      }
+
+      head = current;
+
+      if(tail == NULL){
+         tail = current;
+      }
+
+      mp[keyID] = current;
+      
       }else if(current->key == keyID){ //**************** ALREADY EXISTS IN LIST **********************************
          
          if(current->prev == NULL && current->next == NULL){ // only item in list
