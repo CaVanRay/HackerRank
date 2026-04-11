@@ -146,9 +146,8 @@ if(current == NULL){ // ******************************* NOT IN LIST ALREADY ****
 
    virtual int get(int keyID){
 
-      auto iter == mp.find(keyID);
-      
-     return iter != mp.end() ? iter->second->value : -1;
+      auto iter = mp.find(keyID);
+      return iter != mp.end() ? iter->second->value : -1;
 
    }
 
