@@ -58,10 +58,9 @@ class LRUCache : public Cache{
 
    virtual void set(int keyID, int keyValue){
 
-      Node* current = head;
-      while(current != NULL && current->key != keyID){
-         current = current->next;
-      }
+      auto iter == mp.find(keyID);
+      Node* current = (iter != mp.end()) ? iter->second : NULL;
+     
       if(current == NULL){ // ******************************* NOT IN LIST ALREADY ********************************
          current = new Node(keyID, keyValue);
          if(head == NULL){ // If head equals NULL, this is the first item added to list
