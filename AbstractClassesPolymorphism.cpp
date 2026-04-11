@@ -102,7 +102,8 @@ class LRUCache : public Cache{
             Node* toRemove = current;
             current->prev->next = current->next;
             current->next->prev = current->prev;
-            delete current;
+            mp.erase(toRemove->keyID);
+            delete toRemove;
          }
          if(head != current){
             // addToFront
