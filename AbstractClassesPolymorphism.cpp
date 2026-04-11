@@ -99,6 +99,7 @@ class LRUCache : public Cache{
          }else if (head != current && tail != current){
             // if the curren node is not head, not tail, we can just
             // join either side and remove the current node
+            Node* toRemove = current;
             current->prev->next = current->next;
             current->next->prev = current->prev;
             delete current;
