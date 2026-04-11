@@ -90,9 +90,11 @@ class LRUCache : public Cache{
          if(head != current && tail == current){
             // if the current node is not head but is tail, we can infer
             // that it is safe to remove
+            Node* toRemove = current;
             current->prev->next = NULL;
             tail = current->prev;
-            delete current;
+            mp.erase(toRemove->keyID);
+            delete toRemove;
          }else if (head != current && tail != current){
             // if the curren node is not head, not tail, we can just
             // join either side and remove the current node
