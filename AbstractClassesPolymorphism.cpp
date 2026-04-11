@@ -36,12 +36,9 @@ class Cache{
 Title: Abstract Classes Polymorphism
 Author: Cavan Ray Theiss
 
-Description: I think I need to write a derived class based on class cache but it needs to expand
-the original
-
-The derived class needs to be called LRUCache
-
-It needs to use the member functions and variables to implement an LRU cache ("Last Recently Used")
+Description: A derived class built on the provided Cache class, it includes a set() and get() function
+the purpose is to create & maintain a list of least recently used values. the size of the list is 
+determined at the start and once the list fills up, any future additions will cause the tail to fall off
 
 */
 
@@ -56,12 +53,12 @@ class LRUCache : public Cache{
       head = NULL;
    }
 
-   virtual void set(int keyID, int keyValue){
+virtual void set(int keyID, int keyValue){
 
-      auto iter = mp.find(keyID);
-      Node* current = (iter != mp.end()) ? iter->second : NULL;
+   auto iter = mp.find(keyID);
+   Node* current = (iter != mp.end()) ? iter->second : NULL;
      
-if(current == NULL){ // ******************************* NOT IN LIST ALREADY ********************************
+   if(current == NULL){ // ******************************* NOT IN LIST ALREADY ********************************
  
       current = new Node(keyID, keyValue);
 
@@ -92,63 +89,63 @@ if(current == NULL){ // ******************************* NOT IN LIST ALREADY ****
 
       mp[keyID] = current;
       
-      }else{ //**************** ALREADY EXISTS IN LIST **********************************
+   }else{ //**************** ALREADY EXISTS IN LIST **********************************
          
-         if(current->prev == NULL && current->next == NULL){ // only item in list
+      if(current->prev == NULL && current->next == NULL){ // only item in list
 
-            head = NULL;
-            tail = NULL;
+         head = NULL;
+         tail = NULL;
 
-         }else if(current->prev != NULL && current->next != NULL){ // somewhere in the middle
+      }else if(current->prev != NULL && current->next != NULL){ // somewhere in the middle
 
-               current->prev->next = current->next;
-               current->next->prev = current->prev;
+         current->prev->next = current->next;
+         current->next->prev = current->prev;
 
-         }else if(current->prev == NULL && current->next != NULL){ // located at the head
+      }else if(current->prev == NULL && current->next != NULL){ // located at the head
 
-               current->next->prev = NULL;
-               head = current->next;
+         current->next->prev = NULL;
+         head = current->next;
 
-         }else if(current->prev != NULL && current->next == NULL){ // located at the tail
+      }else if(current->prev != NULL && current->next == NULL){ // located at the tail
 
-               current->prev->next = NULL;
-               tail = current->prev;
+         current->prev->next = NULL;
+         tail = current->prev;
 
-         }else{ //something has seriously gone wrong
+      }else{ //something has seriously gone wrong
 
-            cout << endl << "The Fuck did I do?" << endl;
+         cout << endl << "The Fuck did I do?" << endl;
 
-         }
+      }
 
-         // Remove vestigial map values and current node
+      // Remove vestigial map values and current node
 
-         mp.erase(current->key);
-         delete current;
+      mp.erase(current->key);
+      delete current;
 
-         // Create new Node with given values and add to front
+      // Create new Node with given values and add to front
 
-         current = new Node(keyID, keyValue);
+      current = new Node(keyID, keyValue);
 
-         if(head == NULL){
-            head = current;
-            tail = current;
-         } else {
-            head->prev = current;
-            current->next = head;
-            head = current;
-         }
-         mp[keyID] = current;
+      if(head == NULL){
+         head = current;
+         tail = current;
+      }else{
+         head->prev = current;
+         current->next = head;
+         head = current;
+      }
+      mp[keyID] = current;
       }
    
-   }
+}
 
-   virtual int get(int keyID){
+virtual int get(int keyID){
 
-      auto iter = mp.find(keyID);
-      return iter != mp.end() ? iter->second->value : -1;
+   auto iter = mp.find(keyID);
+   return iter != mp.end() ? iter->second->value : -1;
 
-   }
-
+}
+   
 };
 
 // My code stops here
