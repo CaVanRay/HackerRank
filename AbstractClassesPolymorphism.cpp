@@ -80,6 +80,7 @@ class LRUCache : public Cache{
             head = current;
             tail->prev->next = NULL;
             tail = tail->prev;
+            delete spillOver;
          }else{ // This shouldnt trigger, but if somehow the list capacity hits negative an error is displayed
             cout << endl << "ERROR: Capacity not valid!" << endl; 
          }
