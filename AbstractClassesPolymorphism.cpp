@@ -121,6 +121,7 @@ class LRUCache : public Cache{
          return current->value;
       }else{ // Again, shouldnt trigger, but in case the search returns something not expected
          cout << endl << "ERROR: get() key search broken";
+         return -1;
       }
       
    }
