@@ -51,13 +51,13 @@ class LRUCache : public Cache{
 
    LRUCache(int l){
       cp = l;
+      capacity = cp;
       tail = NULL;
       head = NULL;
    }
 
    virtual void set(int keyID, int keyValue){
 
-      capacity = cp;
       Node* current = head;
       while(current != NULL && current->key != keyID){
          current = current->next;
