@@ -148,7 +148,7 @@ if(current == NULL){ // ******************************* NOT IN LIST ALREADY ****
 
       auto iter == mp.find(keyID);
       
-      iter != mp.end() ? return iter->second->key : return -1;
+     return iter != mp.end() ? iter->second->value : -1;
 
    }
 
