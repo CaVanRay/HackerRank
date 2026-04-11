@@ -74,13 +74,13 @@ class LRUCache : public Cache{
             head = current;
             capacity--;
          }else if(capacity == 0){ // Else/If the list is completely full
-            Node* spillOver = tail;
+            Node* toRemove = tail;
             head->prev = current;
             current->next = head;
             head = current;
             tail->prev->next = NULL;
             tail = tail->prev;
-            delete spillOver;
+            delete toRemove;
          }else{ // This shouldnt trigger, but if somehow the list capacity hits negative an error is displayed
             cout << endl << "ERROR: Capacity not valid!" << endl; 
          }
