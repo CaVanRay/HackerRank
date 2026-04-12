@@ -2,7 +2,7 @@
 // My code starts here
 
 /*
-
+Title: Accessing Inherited Functions
 */
 
 class D 
