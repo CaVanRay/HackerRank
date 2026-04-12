@@ -11,6 +11,8 @@ We are given three classes A, B and C. All three classes implement their own ver
 
 In class A, func multiplies the value passed as a parameter by 2
 
+In class B, func multiplies the value passed as a parameter by 3
+
 
 
 */
