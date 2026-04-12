@@ -6,7 +6,13 @@ Title: Accessing Inherited Functions
 Author: Cavan Ray Theiss
 
 Description:
+
 We are given three classes A, B and C. All three classes implement their own version of func.
+
+In class A, func multiplies the value passed as a parameter by 2
+
+
+
 */
 
 class D 
