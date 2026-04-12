@@ -3,6 +3,7 @@
 
 /*
 Title: Accessing Inherited Functions
+Author:
 */
 
 class D 
