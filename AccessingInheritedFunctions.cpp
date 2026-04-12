@@ -17,7 +17,8 @@ In class C, func multiplies the value passed as a parameter by 5
 
 We are given a class D
 
-
+We need to modify the class D and implement the function update_val which sets D's val to new_val 
+by manipulating the value by only calling the func defined in classes A, B and C.
 
 */
 
