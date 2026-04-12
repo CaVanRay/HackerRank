@@ -3,7 +3,7 @@
 
 /*
 Title: Accessing Inherited Functions
-Author:
+Author: Cavan Ray Theiss
 */
 
 class D 
