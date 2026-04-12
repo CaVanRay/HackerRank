@@ -15,6 +15,8 @@ In class B, func multiplies the value passed as a parameter by 3
 
 In class C, func multiplies the value passed as a parameter by 5
 
+We are given a class D
+
 
 
 */
