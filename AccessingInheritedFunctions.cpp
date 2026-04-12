@@ -1,7 +1,7 @@
 //************************************************************************************************
 // My code starts here
 
-class D : public A, public B, public C
+class D 
 {
 
 	int val;
