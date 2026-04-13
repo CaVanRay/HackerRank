@@ -11,6 +11,10 @@ write a program to compute the total resistance for any number of parallel resis
 */
 
 #include <iostream>
+#include <string>
+
+
+
 
 int main()
 {
@@ -19,14 +23,15 @@ int main()
     std::string input;
 
     do {
-        cout << "How many resistors are working in parallel? :";
-        cin >> numberOfResistors;
+        std::cout << "How many resistors are working in parallel? :";
+        std::cin >> numberOfResistors;
+        std::cin.ignore();
 
         for (int i = 0; i < numberOfResistors; i++) {
         }
 
-        cout << "Would you like to continue? (Y/N):";
-        getline(cin, input);
+        std::cout << "Would you like to continue? (Y/N):";
+        std::getline(std::cin, input);
         if (input.length() == 1) {
             char c = std::tolower(input[0]);
 
