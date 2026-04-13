@@ -1,6 +1,7 @@
 /*
+Source: Book Challenge
 Title: Console CheckerBoard
-
+Author: Cavan Ray Theiss
 */
 
 #include<iostream>
