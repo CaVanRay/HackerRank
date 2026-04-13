@@ -2,16 +2,40 @@
 
 using namespace std;
 
-void horizontal(int& count){
+void horizontal(const int& edges){
   cout << "+";
-  while(int i = 0; i < count; i++){
+  for(int i = 0; i < edges; i++){
     cout << "-----+";
   }
   cout << endl;
 }
 
-void verticle
+void vertical(const int& spaces){
+  cout << "|";
+  for(int i = 0; i < spaces; i++){
+    cout << "     |";
+  }
+  cout << endl;
+}
 
 int main(){
-  
+ char cont = 'Y';
+  do{
+    int boardSize = 8;
+    cout << "What size board? :";
+    cin >> boardSize;
+    cout << endl << endl;
+    horizontal(boardSize);
+    for(int s = 0; s < boardSize; s++){
+      for(int t = 0; t < 3; t++){
+        vertical(boardSize);
+      }
+      horizontal(boardSize);
+    }
+    cout << endl << endl;
+    cout << "Would you like another board? (Y/N)";
+    cin >> cont;
+  }while(cont == 'Y');
+
+  return 0;
 }
