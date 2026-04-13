@@ -20,7 +20,7 @@ by manipulating the value by only calling the func defined in classes A, B and C
 
 */
 
-class D 
+class D : public A, public B, public C
 {
 
 	int val;
