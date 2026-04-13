@@ -12,14 +12,11 @@ write a program to compute the total resistance for any number of parallel resis
 
 #include <iostream>
 
-
-
-
 int main()
 {
     int numberOfResistors;
     bool cont = true;
-    string input;
+    std::string input;
 
     do {
         cout << "How many resistors are working in parallel? :";
