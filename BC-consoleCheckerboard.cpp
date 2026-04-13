@@ -39,9 +39,9 @@ void vertical(const int& spaces){
 }
 
 int main(){
- char cont = 'Y';
+char cont = 'Y';
+int boardSize = 8;
   do{
-    int boardSize = 8;
     cout << "What size board? :";
     cin >> boardSize;
     cout << endl << endl;
