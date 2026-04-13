@@ -13,7 +13,7 @@ In class A, func multiplies the value passed as a parameter by 2
 In class B, func multiplies the value passed as a parameter by 3
 In class C, func multiplies the value passed as a parameter by 5
 
-We are given a class D
+We are given a class D to edit to use each of the previous classes through inheritance
 
 We need to modify the class D and implement the function update_val which sets D's val to new_val 
 by manipulating the value by only calling the func defined in classes A, B and C.
