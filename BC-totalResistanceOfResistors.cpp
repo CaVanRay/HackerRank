@@ -13,9 +13,6 @@ write a program to compute the total resistance for any number of parallel resis
 #include <iostream>
 #include <string>
 
-
-
-
 int main()
 {
     int numberOfResistors;
