@@ -2,6 +2,20 @@
 Source: Book Challenge
 Title: Console CheckerBoard
 Author: Cavan Ray Theiss
+Description: Print a checkerboard (8X8 grid). 
+Each square should be five by three characters wide. 
+A 2X2 example follows
+    +-----+-----+
+    |     |     |
+    |     |     |
+    |     |     |
+    +-----+-----+
+    |     |     |
+    |     |     |
+    |     |     |
+    +-----+-----+
+
+
 */
 
 #include<iostream>
