@@ -10,9 +10,7 @@ Description:
 We are given three classes A, B and C. All three classes implement their own version of func.
 
 In class A, func multiplies the value passed as a parameter by 2
-
 In class B, func multiplies the value passed as a parameter by 3
-
 In class C, func multiplies the value passed as a parameter by 5
 
 We are given a class D
