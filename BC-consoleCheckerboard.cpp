@@ -1,5 +1,6 @@
 /*
-Title: 
+Title: Console CheckerBoard
+
 */
 
 #include<iostream>
