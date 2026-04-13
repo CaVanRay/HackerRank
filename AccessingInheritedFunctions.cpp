@@ -35,7 +35,7 @@ class D : public A, public B, public C
 		 //Implement this function
 		 void update_val(int new_val)
 		 {
-            val = new_val;
+            
 			
 		 }
 		 //For Checking Purpose
