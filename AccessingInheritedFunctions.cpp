@@ -35,6 +35,10 @@ class D : public A, public B, public C
 		 //Implement this function
 		 void update_val(int new_val)
 		 {
+
+			 while(new_val % 2 == 0){
+				 
+			 }
             
 			
 		 }
