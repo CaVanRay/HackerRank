@@ -19,7 +19,7 @@ int main()
     int numberOfResistors;
     bool cont = true;
     std::string input;
-    std::vector<float> resistors;
+    std::vector<double> resistors;
 
     do {
         std::cout << "How many resistors are working in parallel? :";
@@ -27,10 +27,19 @@ int main()
         std::cout << endl << "Starting from the first resistor, please input the value of each resistor in the sequence." << endl << endl;
         for (int i = 0; i < numberOfResistors; i++) {
             std::cout << "        Resistor #" << i+1 << ":";
-            float temp;
+            double temp;
             std::cin >> temp;
             resistors.push_back(temp);
+            std::cout << endl << endl;
         }
+        double total = 0;
+        for(int j = 0; j < numberOfResistors; j++){
+            if(!resistors.empty()){
+                total += (1/resistors.back());
+                resistors.pop_back();
+            }
+        }
+        std::cout << "Total resistance of series: " << total << endl << endl;
 
         std::cin.ignore();
         std::cout << "Would you like to continue? (Y/N):";
