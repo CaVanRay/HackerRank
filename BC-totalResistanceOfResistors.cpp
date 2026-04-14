@@ -24,22 +24,22 @@ int main()
     do {
         std::cout << "How many resistors are working in parallel? :";
         std::cin >> numberOfResistors;
-        std::cout << endl << "Starting from the first resistor, please input the value of each resistor in the sequence." << endl << endl;
+        std::cout << std::endl << "Starting from the first resistor, please input the value of each resistor in the sequence." << std::endl << std::endl;
         for (int i = 0; i < numberOfResistors; i++) {
-            std::cout << "        Resistor #" << i+1 << ":";
+            std::cout << "        Resistor #" << i + 1 << ":";
             double temp;
             std::cin >> temp;
             resistors.push_back(temp);
-            std::cout << endl << endl;
+            std::cout << std::endl << std::endl;
         }
         double total = 0;
-        for(int j = 0; j < numberOfResistors; j++){
-            if(!resistors.empty()){
-                total += (1/resistors.back());
+        for (int j = 0; j < numberOfResistors; j++) {
+            if (!resistors.empty()) {
+                total += (1 / resistors.back());
                 resistors.pop_back();
             }
         }
-        std::cout << "Total resistance of series: " << total << endl << endl;
+        std::cout << "Total resistance of series: " << 1.0/total << std::endl << std::endl;
 
         std::cin.ignore();
         std::cout << "Would you like to continue? (Y/N):";
@@ -57,4 +57,3 @@ int main()
 
     } while (cont);
 }
-
