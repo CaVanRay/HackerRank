@@ -46,6 +46,8 @@ class D : public A, public B, public C
 				 }else if(new_val % 5 == 0){
 					 new_val /= 5;
 					 C::func(val);
+				 }else{
+					 break; // to prevent infinite loop
 				 }
 				 
 			 }
