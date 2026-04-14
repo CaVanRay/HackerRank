@@ -12,21 +12,27 @@ write a program to compute the total resistance for any number of parallel resis
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 int main()
 {
     int numberOfResistors;
     bool cont = true;
     std::string input;
+    std::vector<float> resistors;
 
     do {
         std::cout << "How many resistors are working in parallel? :";
         std::cin >> numberOfResistors;
-        std::cin.ignore();
-
+        std::cout << endl << "Starting from the first resistor, please input the value of each resistor in the sequence." << endl << endl;
         for (int i = 0; i < numberOfResistors; i++) {
+            std::cout << "        Resistor #" << i+1 << ":";
+            float temp;
+            std::cin >> temp;
+            resistors.push_back(temp);
         }
 
+        std::cin.ignore();
         std::cout << "Would you like to continue? (Y/N):";
         std::getline(std::cin, input);
         if (input.length() == 1) {
