@@ -36,7 +36,17 @@ class D : public A, public B, public C
 		 void update_val(int new_val)
 		 {
 
-			 while(new_val % 2 == 0){
+			 while(new_val != 1){
+				 if(new_val % 2 == 0){
+					 new_val /= 2;
+					 A::func(val);
+				 }else if(new_val % 3 == 0){
+					 new_val /= 3;
+					 B::func(val);
+				 }else if(new_val % 5 == 0){
+					 new_val /= 5;
+					 C::func(val);
+				 }
 				 
 			 }
             
