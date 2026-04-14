@@ -60,11 +60,11 @@ class SpellJournal {
 }; 
 string SpellJournal::journal = "";
 
-void counterspell(Spell *spell) {
+void counterspell(Spell *spell) { //************************************************
 
   /* Enter your code here */
 
-}
+} //********************************************************************************
 
 class Wizard {
     public:
