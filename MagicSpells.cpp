@@ -4,8 +4,10 @@ Author: Cavan Ray Theiss
 
 Description:
 
+Input -
 The wizard will read t scrolls, which are hidden from you.
 Every time he casts a spell, it's passed as an argument to your counterspell function.
+
 
 ***********************************************************************************************/
 
