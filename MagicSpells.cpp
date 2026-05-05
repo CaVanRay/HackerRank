@@ -13,6 +13,9 @@ Description:
         If it is a generic spell, find a subsequence of letters that are contained in both the spell 
         name and your spell journal. Among all such subsequences, find and print the length of the 
         longest one on a new line.
+
+    Basically, write a function that uses the input provided to call on the correct variable in the
+        correct class of spell
         
 ***********************************************************************************************/
 
