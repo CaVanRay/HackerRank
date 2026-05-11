@@ -74,9 +74,11 @@ class SpellJournal {
 string SpellJournal::journal = "";
 
 void counterspell(Spell *spell) { //************************************************
-
-  /* Enter your code here */
-
+        
+        if(Fireball *fb = dynamic_cast<Fireball*>(spell)){
+                
+        }
+        
 } //********************************************************************************
 
 class Wizard {
