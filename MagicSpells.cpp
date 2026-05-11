@@ -21,6 +21,8 @@ void counterspell(Spell *spell) { //********************************************
                 ts->revealThunderpower();
         }else if(Waterbolt *wb = dynamic_cast<Waterbold*>(spell){
                 wb->revealWaterpower();
+        }else{
+                
         }
         
 } //********************************************************************************
