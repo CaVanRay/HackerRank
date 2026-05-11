@@ -15,6 +15,8 @@ void counterspell(Spell *spell) { //********************************************
         
         if(Fireball *fb = dynamic_cast<Fireball*>(spell)){
                 fb ->revealFirepower();
+        }else if(Frostbite *fb = dynamic_cast<Frostbite*>(spell){
+                
         }
         
 } //********************************************************************************
