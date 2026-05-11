@@ -14,11 +14,11 @@ journal must be counted and output
 void counterspell(Spell *spell) { //************************************************
         
         if(Fireball *fb = dynamic_cast<Fireball*>(spell)){
-                fb ->revealFirepower();
+                fb->revealFirepower();
         }else if(Frostbite *fb = dynamic_cast<Frostbite*>(spell){
-                fb ->revealFrostpower();
+                fb->revealFrostpower();
         }else if(Thunderstorm *ts = dynamic_cast<Thunderstorm*>(spell){
-                
+                ts->revealThunderpower();
         }
         
 } //********************************************************************************
