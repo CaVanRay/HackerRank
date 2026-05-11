@@ -24,6 +24,8 @@ void counterspell(Spell *spell) { //********************************************
         }else{
                 string strA = spell->revealScrollName();
                 string strB = spellJournal::read();
+
+                int m = strA.length();
         }
         
 } //********************************************************************************
