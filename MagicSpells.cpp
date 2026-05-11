@@ -22,11 +22,11 @@ void counterspell(Spell *spell) {
                 fb->revealFrostpower();
         }else if(Thunderstorm *ts = dynamic_cast<Thunderstorm*>(spell)){
                 ts->revealThunderpower();
-        }else if(Waterbolt *wb = dynamic_cast<Waterbold*>(spell)){
+        }else if(Waterbolt *wb = dynamic_cast<Waterbolt*>(spell)){
                 wb->revealWaterpower();
         }else{
                 string strA = spell->revealScrollName();
-                string strB = spellJournal::read();
+                string strB = SpellJournal::read();
 
                 int m = strA.length();
                 int n = strB.length();
