@@ -11,7 +11,7 @@ journal must be counted and output
         
 ***********************************************************************************************/
 
-void counterspell(Spell *spell) { //************************************************
+void counterspell(Spell *spell) { 
         
         if(Fireball *fb = dynamic_cast<Fireball*>(spell)){
                 fb->revealFirepower();
