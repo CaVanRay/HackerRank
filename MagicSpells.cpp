@@ -22,7 +22,7 @@ void counterspell(Spell *spell) { //********************************************
         }else if(Waterbolt *wb = dynamic_cast<Waterbold*>(spell){
                 wb->revealWaterpower();
         }else{
-                
+             string strA = spell->revealScrollName();
         }
         
 } //********************************************************************************
