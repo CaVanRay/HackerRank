@@ -20,7 +20,7 @@ void counterspell(Spell *spell) { //********************************************
         }else if(Thunderstorm *ts = dynamic_cast<Thunderstorm*>(spell){
                 ts->revealThunderpower();
         }else if(Waterbolt *wb = dynamic_cast<Waterbold*>(spell){
-                
+                wb->revealWaterpower();
         }
         
 } //********************************************************************************
