@@ -26,6 +26,7 @@ void counterspell(Spell *spell) { //********************************************
                 string strB = spellJournal::read();
 
                 int m = strA.length();
+                int n = strB.length();
         }
         
 } //********************************************************************************
