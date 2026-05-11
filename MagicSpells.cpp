@@ -18,11 +18,11 @@ void counterspell(Spell *spell) {
         
         if(Fireball *fb = dynamic_cast<Fireball*>(spell)){
                 fb->revealFirepower();
-        }else if(Frostbite *fb = dynamic_cast<Frostbite*>(spell){
+        }else if(Frostbite *fb = dynamic_cast<Frostbite*>(spell)){
                 fb->revealFrostpower();
-        }else if(Thunderstorm *ts = dynamic_cast<Thunderstorm*>(spell){
+        }else if(Thunderstorm *ts = dynamic_cast<Thunderstorm*>(spell)){
                 ts->revealThunderpower();
-        }else if(Waterbolt *wb = dynamic_cast<Waterbold*>(spell){
+        }else if(Waterbolt *wb = dynamic_cast<Waterbold*>(spell)){
                 wb->revealWaterpower();
         }else{
                 string strA = spell->revealScrollName();
