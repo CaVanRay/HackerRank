@@ -29,6 +29,10 @@ void counterspell(Spell *spell) { //********************************************
                 int n = strB.length();
 
                 vector<vector<int>> vLCSMatrix(m + 1, vector<int>(n + 1));
+
+                for(int i = 1; i <= m; i++){
+                        
+                }
         }
         
 } //********************************************************************************
