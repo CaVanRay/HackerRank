@@ -1,6 +1,8 @@
 /********************************************
 Difficulty: Hard
 Title: Bit Array
+Author: Cavan Ray Theiss
+
 
 ********************************************/
 
