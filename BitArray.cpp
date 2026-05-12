@@ -37,28 +37,6 @@ For example:
 #include <algorithm>
 using namespace std;
 
-/*
-
-I don't know why they call this a bit array, this is a series...
-
-Though, with the abacus array it probably makes this easier? maybe? even if that isnt the array they had in mind
-*****
-9/16/25 - I'm focusing on the whole abacus multiplication thing tomorrow, but this is a close 2nd goal
-*****
-
-I hate when they make questions more convoluted than they need to be on purpose. 
-Just because a question is easy to answer doesnt mean you should go out of your way to make it difficult to understand.
-
-I got chatgpt to translate what they want:
-
-
-
-It’s just a way of keeping all the numbers inside the range 0 … 2147483647 (like wrapping around once you hit the max).
-
-*/
-
-// Jeeezus christ, ok, I think I have what I need to start.
-
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
     return 0;
