@@ -23,7 +23,9 @@ int main() {
         }else{
             current = (((previous * P) + Q) % MULT);
         }
-        // possible break goes here if looping
+        if(alreadySeen->test(current)){
+            break;
+        }
         alreadySeen->set(current);
         previous = current;
     }
