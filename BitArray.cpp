@@ -30,14 +30,23 @@ For example:
 2147483649 mod 2^31 = 1.
 ********************************************/
 
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
-using namespace std;
+#include <unordered_set>
+#define MULT 2147483648
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    return 0;
+ 
+    int previous = 0, current = 0;
+    std::unordered_set<int> distinctMembers;
+    for(int i = 0; i < N; i++){
+        if(i == 0){
+            current = (S % MULT);
+        }else{
+            current = (((previous * P) + Q) % MULT);
+        }
+        if(!distinctMembers.contains(current)){
+            distinctMembers.insert(current);
+        }
+    }
+    return distinctMembers.size();
 }
