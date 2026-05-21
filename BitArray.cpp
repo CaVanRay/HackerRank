@@ -10,27 +10,35 @@ four integers N, S, P, & Q
 ********************************************/
 
 #include <iostream>
-#include <bitset>
-#define MULT 2147483648
 
 int main() {
-    long long previous = 0, current = 0, totalDistinct = 0, N, S, P, Q;
-    std::cin >> N >> S >> P >> Q;
-    std::bitset<MULT>* alreadySeen = new std::bitset<MULT>();
-    for(int i = 0; i < N; i++){
-        if(i == 0){
-            current = (S % MULT);
-        }else{
-            current = (((previous * P) + Q) % MULT);
-        }
-        if(alreadySeen->test(current)){
+    // Optimize standard I/O operations for speed
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
+    long long N, S, P, Q;
+    if (!(std::cin >> N >> S >> P >> Q)) return 0;
+
+    const long long MOD = 2147483648LL; // 2^31
+
+    // Establish the first element
+    long long first = S % MOD;
+    long long previous = first;
+    long long current = 0;
+    long long totalDistinct = 1;
+
+    for (int i = 1; i < N; i++) {
+        current = (previous * P + Q) % MOD;
+        
+        // Stop early if a cycle is detected
+        if (current == first || current == previous) {
             break;
         }
-        alreadySeen->set(current);
+        
         totalDistinct++;
         previous = current;
     }
-    std::cout << totalDistinct << std::endl;
-    delete alreadySeen;
+
+    std::cout << totalDistinct << "\n";
     return 0;
 }
