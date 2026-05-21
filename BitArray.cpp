@@ -24,9 +24,9 @@ int main() {
             current = (((previous * P) + Q) % MULT);
         }
         // possible break goes here if looping
-        alreadySeen.set(current);
+        alreadySeen->set(current);
         previous = current;
     }
-    std::cout << alreadySeen.count() << std::endl;
+    std::cout << alreadySeen->count() << std::endl;
     return 0;
 }
