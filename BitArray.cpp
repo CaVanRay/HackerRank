@@ -30,7 +30,7 @@ int main() {
         totalDistinct++;
         previous = current;
     }
-    std::cout << alreadySeen->count() << std::endl;
+    std::cout << totalDistinct << std::endl;
     delete alreadySeen;
     return 0;
 }
