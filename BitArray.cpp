@@ -11,7 +11,7 @@ four integers N, S, P, & Q
 
 #include <iostream>
 #include <bitset>
-#define MULT 2147483648LL
+#define MULT 2147483648
 
 int main() {
     long long previous = 0, current = 0, N, S, P, Q;
