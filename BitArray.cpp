@@ -35,8 +35,8 @@ For example:
 #define MULT 2147483648
 
 int main() {
- 
-    int previous = 0, current = 0;
+    int previous = 0, current = 0, N, S, P, Q;
+    std::cin >> N >> S >> P >> Q;
     std::unordered_set<int> distinctMembers;
     for(int i = 0; i < N; i++){
         if(i == 0){
@@ -44,9 +44,11 @@ int main() {
         }else{
             current = (((previous * P) + Q) % MULT);
         }
-        if(!distinctMembers.contains(current)){
+        if(!distinctMembers.count(current)){
             distinctMembers.insert(current);
         }
+     previous = current;
     }
-    return distinctMembers.size();
+    std::cout << distinctMembers.size() << std::endl;
+    return 0
 }
