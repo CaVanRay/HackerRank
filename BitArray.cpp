@@ -16,14 +16,14 @@ four integers N, S, P, & Q
 int main() {
     long long previous = 0, current = 0, N, S, P, Q;
     std::cin >> N >> S >> P >> Q;
-    std::unordered_set<int> distinctMembers;
+    std::bitset<MULT> alreadySeen;
     for(int i = 0; i < N; i++){
         if(i == 0){
             current = (S % MULT);
         }else{
             current = (((previous * P) + Q) % MULT);
         }
-        distinctMembers.insert(current);
+        alreadySeen.set(current);
         previous = current;
     }
     std::cout << distinctMembers.size() << std::endl;
