@@ -28,5 +28,6 @@ int main() {
         previous = current;
     }
     std::cout << alreadySeen->count() << std::endl;
+    delete alreadySeen;
     return 0;
 }
