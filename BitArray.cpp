@@ -10,7 +10,7 @@ four integers N, S, P, & Q
 ********************************************/
 
 #include <iostream>
-#include <unordered_set>
+#include <bitset>
 #define MULT 2147483648LL
 
 int main() {
