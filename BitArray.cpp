@@ -23,6 +23,7 @@ int main() {
         }else{
             current = (((previous * P) + Q) % MULT);
         }
+        // possible break goes here if looping
         alreadySeen.set(current);
         previous = current;
     }
