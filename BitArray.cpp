@@ -26,6 +26,6 @@ int main() {
         alreadySeen.set(current);
         previous = current;
     }
-    std::cout << distinctMembers.size() << std::endl;
+    std::cout << alreadySeen.count() << std::endl;
     return 0;
 }
