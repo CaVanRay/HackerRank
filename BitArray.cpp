@@ -14,7 +14,7 @@ four integers N, S, P, & Q
 #define MULT 2147483648
 
 int main() {
-    long long previous = 0, current = 0, totalCount = 0, N, S, P, Q;
+    long long previous = 0, current = 0, totalDistinct = 0, N, S, P, Q;
     std::cin >> N >> S >> P >> Q;
     std::bitset<MULT>* alreadySeen = new std::bitset<MULT>();
     for(int i = 0; i < N; i++){
