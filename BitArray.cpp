@@ -32,10 +32,10 @@ For example:
 
 #include <iostream>
 #include <unordered_set>
-#define MULT 2147483648
+#define MULT 2147483648LL
 
 int main() {
-    int previous = 0, current = 0, N, S, P, Q;
+    long long previous = 0, current = 0, N, S, P, Q;
     std::cin >> N >> S >> P >> Q;
     std::unordered_set<int> distinctMembers;
     for(int i = 0; i < N; i++){
@@ -44,10 +44,8 @@ int main() {
         }else{
             current = (((previous * P) + Q) % MULT);
         }
-        if(!distinctMembers.count(current)){
-            distinctMembers.insert(current);
-        }
-     previous = current;
+        distinctMembers.insert(current);
+        previous = current;
     }
     std::cout << distinctMembers.size() << std::endl;
     return 0
