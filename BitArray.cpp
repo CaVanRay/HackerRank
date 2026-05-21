@@ -27,6 +27,7 @@ int main() {
             break;
         }
         alreadySeen->set(current);
+        totalDistinct++;
         previous = current;
     }
     std::cout << alreadySeen->count() << std::endl;
