@@ -16,7 +16,7 @@ four integers N, S, P, & Q
 int main() {
     long long previous = 0, current = 0, N, S, P, Q;
     std::cin >> N >> S >> P >> Q;
-    std::bitset<MULT> alreadySeen;
+    std::bitset<MULT>* alreadySeen = new std::bitset<MULT>();
     for(int i = 0; i < N; i++){
         if(i == 0){
             current = (S % MULT);
