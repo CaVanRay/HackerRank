@@ -22,7 +22,20 @@ void printMaxK(int arr[], int n, int k){
 
 int main() {
 
+int numOfTestCases;
+std::cin >> numOfTestCases;
+
+    while(numOfTestCases > 0){
+        numOfTestCases--;
+        
+        int n, k;
+        std::cin >> n >> k;
+        int arr[n];
+        for(int i = 0; i < n; i++){
+            std::cin >> arr[i];
+        }
+        printMaxK(arr, n, k);    
+    }      
     
-      
     return 0;
 }
