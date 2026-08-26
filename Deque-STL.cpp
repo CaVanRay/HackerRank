@@ -15,6 +15,7 @@ subarray
 
 #include <iostream>
 #include <deque>
+#include <vector>
 
 void printMaxK(std::vector<int>& arr, int n, int k){
     
@@ -47,11 +48,12 @@ std::cin >> numOfTestCases;
         
         int n, k;
         std::cin >> n >> k;
-        vector<int> arr(n);
+        std::vector<int> arr(n);
         for(int i = 0; i < n; i++){
             std::cin >> arr[i];
         }
-        printMaxK(arr, n, k);    
+        printMaxK(arr, n, k); 
+        std::cout << endl;
     }      
     
     return 0;
