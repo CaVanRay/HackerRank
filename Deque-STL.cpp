@@ -20,22 +20,20 @@ subarray
 void printMaxK(std::vector<int>& arr, int n, int k){
     
     std::deque<int> mahDeque;
-    int i = 0;
 
-    while(i < n){
-        while(mahDeque.size() < k){
-            mahDeque.push_back(arr[i]);
-            i++;
+    for(int i; i < n; i++){
+        while(!mahDeque.empty() && mahDeque.front() < (i - k + 1)){
+            mahDeque.pop_front();
         }
+        while(!mahDeque.empty() && arr[mahDeque.back()] < arr[i]){
+            mahDeque.pop_back();
+        }
+        mahDeque.push_back(i);
+        if(i >= k - 1){
+            std::cout << arr[mahDeque.front()] << " ";
+        }
+    }
     
-        int largest = 0;
-        for(int card : mahDeque){
-            if(card > largest)
-                largest = card;
-        }
-        std::cout << largest << " ";
-        mahDeque.pop_front();
-    }    
 }
 
 int main() {
