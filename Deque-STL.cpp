@@ -16,12 +16,12 @@ subarray
 #include <iostream>
 #include <deque>
 
-void printMaxK(int arr[], int n, int k){
+void printMaxK(std::vector<int>& arr, int n, int k){
     
     std::deque<int> mahDeque;
     int i = 0;
 
-    while(i <= arr.size()){
+    while(i < n){
         while(mahDeque.size() < k){
             mahDeque.push_back(arr[i]);
             i++;
@@ -32,7 +32,7 @@ void printMaxK(int arr[], int n, int k){
             if(card > largest)
                 largest = card;
         }
-        std::cout << largest;
+        std::cout << largest << " ";
         mahDeque.pop_front();
     }    
 }
@@ -47,7 +47,7 @@ std::cin >> numOfTestCases;
         
         int n, k;
         std::cin >> n >> k;
-        int arr[n];
+        vector<int> arr(n);
         for(int i = 0; i < n; i++){
             std::cin >> arr[i];
         }
