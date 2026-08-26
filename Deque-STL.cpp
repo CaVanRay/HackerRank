@@ -53,7 +53,7 @@ std::cin >> numOfTestCases;
             std::cin >> arr[i];
         }
         printMaxK(arr, n, k); 
-        std::cout << endl;
+        std::cout << std::endl;
     }      
     
     return 0;
