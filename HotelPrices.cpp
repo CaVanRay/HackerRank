@@ -11,6 +11,10 @@ the problem is
 
 **********************************************/
 
+//
+// PROVIDED CODE BELOW - NOT MY WORK
+//
+
 #include <iostream>
 #include <vector>
 
