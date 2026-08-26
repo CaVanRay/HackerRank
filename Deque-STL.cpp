@@ -17,7 +17,7 @@ subarray
 #include <deque>
 
 void printMaxK(int arr[], int n, int k){
-    
+    std::deque<int> mahDeque;
 }
 
 int main() {
