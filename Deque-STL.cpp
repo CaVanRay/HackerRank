@@ -15,6 +15,10 @@ subarray
 #include <iostream>
 #include <deque>
 
+void printMaxK(int arr[], int n, int k){
+    
+}
+
 int main() {
     
     int numOfCases = 0, sizeOfDeque = 0, sizeOfSub = 0; 
