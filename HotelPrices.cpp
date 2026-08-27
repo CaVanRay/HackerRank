@@ -39,7 +39,7 @@ private:
 };
 
 //**************************************************************
-// after testing, it seems this class is never even getting called
+
 class HotelApartment : public HotelRoom {
 public:
     HotelApartment(int bedrooms, int bathrooms) 
@@ -67,7 +67,7 @@ int main() {
             rooms.push_back(new HotelApartment(bedrooms, bathrooms));
         }
     }
-    // I think the problem is down here
+
     int total_profit = 0;
     for (auto room : rooms) {
         total_profit += room->get_price();
