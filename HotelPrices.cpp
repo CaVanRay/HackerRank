@@ -20,6 +20,7 @@ proble: sometimes calculated profits are lower than they should be
 #include <iostream>
 #include <vector>
 
+// I dislike when "using namespace" is used but I don't know why
 using namespace std;
 
 class HotelRoom {
