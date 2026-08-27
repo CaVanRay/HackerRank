@@ -67,7 +67,7 @@ int main() {
             rooms.push_back(new HotelApartment(bedrooms, bathrooms));
         }
     }
-
+    // I think the problem is down here
     int total_profit = 0;
     for (auto room : rooms) {
         total_profit += room->get_price();
