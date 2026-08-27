@@ -39,7 +39,7 @@ private:
 };
 
 //**************************************************************
-
+// after testing, it seems this class is never even getting called
 class HotelApartment : public HotelRoom {
 public:
     HotelApartment(int bedrooms, int bathrooms) 
