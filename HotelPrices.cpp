@@ -9,7 +9,7 @@ rather than write the code, it seems I need to
 go through the existing code and fix whatever 
 the problem is
 
-proble: sometimes calculated profits are lower than they should be
+problem: sometimes calculated profits are lower than they should be
 
 *******************************************************************/
 
