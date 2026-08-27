@@ -46,7 +46,8 @@ public:
     HotelApartment(int bedrooms, int bathrooms) 
     : HotelRoom(bedrooms, bathrooms) {}
 
-    int get_price() {
+// derived class function needed to be labeled "override"
+    int get_price() override {
         return HotelRoom::get_price() + 100;
     }
 };
