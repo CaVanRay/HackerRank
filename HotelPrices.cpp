@@ -24,6 +24,7 @@ proble: sometimes calculated profits are lower than they should be
 using namespace std;
 
 //**************************************************************
+
 class HotelRoom {
 public:
     HotelRoom(int bedrooms, int bathrooms) 
@@ -36,7 +37,9 @@ private:
     int bedrooms_;
     int bathrooms_;
 };
+
 //**************************************************************
+
 class HotelApartment : public HotelRoom {
 public:
     HotelApartment(int bedrooms, int bathrooms) 
@@ -46,6 +49,8 @@ public:
         return HotelRoom::get_price() + 100;
     }
 };
+
+//**************************************************************
 
 int main() {
     int n;
