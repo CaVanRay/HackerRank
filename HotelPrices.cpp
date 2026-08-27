@@ -23,6 +23,7 @@ proble: sometimes calculated profits are lower than they should be
 // I dislike when "using namespace" is used but I don't know why
 using namespace std;
 
+//**************************************************************
 class HotelRoom {
 public:
     HotelRoom(int bedrooms, int bathrooms) 
@@ -35,7 +36,7 @@ private:
     int bedrooms_;
     int bathrooms_;
 };
-
+//**************************************************************
 class HotelApartment : public HotelRoom {
 public:
     HotelApartment(int bedrooms, int bathrooms) 
