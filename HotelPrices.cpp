@@ -29,8 +29,9 @@ class HotelRoom {
 public:
     HotelRoom(int bedrooms, int bathrooms) 
     : bedrooms_(bedrooms), bathrooms_(bathrooms) {}
-    
-    int get_price() {
+
+// base class funtion needed to be labeled "virtual"
+   virtual int get_price() {
         return 50*bedrooms_ + 100*bathrooms_;
     }
 private:
