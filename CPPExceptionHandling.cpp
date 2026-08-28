@@ -20,7 +20,10 @@ std::invalid_argument exception properly.
 #include <iostream>
 #include <stdexcept>
 
+// HATE THIS
 using namespace std;
+
+//****************************************************************************************
 
 int largest_proper_divisor(int n) {
     if (n == 0) {
