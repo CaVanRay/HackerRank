@@ -4,7 +4,12 @@ Title: CPP Exception Handling
 Difficulty: Medium
 Author: Cavan Ray Theiss
 
-Description: In this challenge, the task is to debug the existing 
+Description: 
+
+In this challenge, the task is to debug the existing 
 code to successfully execute all provided test files.
+
+You are required to extend the existing code so that it handles 
+std::invalid_argument exception properly.
 
 *******************************************************************/
