@@ -40,6 +40,8 @@ int largest_proper_divisor(int n) {
     return -1; // will never happen
 }
 
+//****************************************************************************************
+
 void process_input(int n) {
     int d = largest_proper_divisor(n);
     cout << "result=" << d << endl;
