@@ -44,6 +44,7 @@ int largest_proper_divisor(int n) {
 
 /*
  *  Solution Implementation:
+ *    1.
  */
 
 void process_input(int n) {
