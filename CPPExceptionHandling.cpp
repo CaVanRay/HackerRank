@@ -46,7 +46,7 @@ int largest_proper_divisor(int n) {
  *  Solution Implementation:
  *    1. Try to compute the largest proper divisor.
  *    2. If successful, print "result=d".
- *    3.
+ *    3. If std::invalid_argument is caught, print the exception message via e.what().
  */
 
 void process_input(int n) {
