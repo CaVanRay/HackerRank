@@ -46,6 +46,7 @@ int largest_proper_divisor(int n) {
  *  Solution Implementation:
  *    1. Try to compute the largest proper divisor.
  *    2. If successful, print "result=d".
+ *    3.
  */
 
 void process_input(int n) {
