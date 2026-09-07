@@ -57,7 +57,7 @@ void process_input(int n) {
     } catch () {
         
     }
-    cout
+    cout << "returning control flow to caller" << endl;
 }
 
 //****************************************************************************************
