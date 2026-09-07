@@ -52,8 +52,8 @@ int largest_proper_divisor(int n) {
 
 void process_input(int n) {
     try {
-    int d = largest_proper_divisor(n);
-    cout << "result=" << d << endl;
+        int d = largest_proper_divisor(n);
+        cout << "result=" << d << endl;
     } catch () {
         
     }
