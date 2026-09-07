@@ -54,7 +54,7 @@ void process_input(int n) {
     try {
         int d = largest_proper_divisor(n);
         cout << "result=" << d << endl;
-    } catch () {
+    } catch (const invalid_argument& e) {
         
     }
     cout << "returning control flow to caller" << endl;
