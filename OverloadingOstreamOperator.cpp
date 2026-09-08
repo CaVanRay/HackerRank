@@ -11,5 +11,7 @@ std::cout << p << " " << <some_string_value> << std::endl;
 
 produces the following output:
 
+first_name=<first_name>,last_name=<last_name> <some_string_value>
+
 
 ******************************************************************/
