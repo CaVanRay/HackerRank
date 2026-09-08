@@ -45,7 +45,7 @@ private:
 // THIS IS MY CODE:
 
 std::ostream& operator<<(std::ostream& os, const Person& p) {
-    os << "Name: " << p.name_ << ", Age: " << p.age_;
+    os << "first_name_: " << p.name_ << ", last_name_: " << p.age_;
     return os; 
 }
 
