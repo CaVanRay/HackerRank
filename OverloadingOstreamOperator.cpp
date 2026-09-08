@@ -9,5 +9,7 @@ way that for p being an instance of class Person the result of:
 
 std::cout << p << " " << <some_string_value> << std::endl;
 
+produces the following output:
+
 
 ******************************************************************/
