@@ -44,6 +44,11 @@ private:
 //*****************************************************************
 // THIS IS MY CODE:
 
+std::ostream& operator<<(std::ostream& os, const Person& p) {
+    os << "Name: " << p.name_ << ", Age: " << p.age_;
+    return os; 
+}
+
 //*****************************************************************
 
 int main() {
