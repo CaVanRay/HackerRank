@@ -21,6 +21,8 @@ where:
 
 ******************************************************************/
 
+// BELOW IS THE PROVIDED CODE:
+
 include <iostream>
 
 using namespace std;
