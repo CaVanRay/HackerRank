@@ -10,7 +10,12 @@
  * std::string and provide a public getter const string& 
  * get_text() which is expected to return this text value.
  *
- *
+ * Class MessageFactory is required to have an empty 
+ * constructor, and implement a method Message 
+ * create_message(const string& text) that is expected to 
+ * return a Message object storing the value of text 
+ * argument.
+ * 
  *************************************************************/
 
 // PROVIDED CODE BELOW
