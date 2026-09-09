@@ -4,7 +4,7 @@
  * Author: Cavan Ray Theiss
  * 
  * Description:
- *
+ * The task is to implement classes Message and MessageFactory
  * 
  *************************************************************/
 
