@@ -6,6 +6,11 @@
  * Description:
  * The task is to implement classes Message and MessageFactory
  * 
+ * Class Message is required to store a text value of type 
+ * std::string and provide a public getter const string& 
+ * get_text() which is expected to return this text value.
+ *
+ *
  *************************************************************/
 
 // PROVIDED CODE BELOW
