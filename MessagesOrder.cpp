@@ -33,6 +33,7 @@ using namespace std;
 class Message {
 private:
     string text;
+    static int id;
 public: 
     Message() {}
     const string& get_text() {
