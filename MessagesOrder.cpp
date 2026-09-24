@@ -38,8 +38,9 @@ private:
 public: 
     Message() { current_id= ++id; }
     Message(string t) {  current_id = ++id; text = t; }
+
     const string& get_text() {
-        
+        return text;       
     }
 };
 
