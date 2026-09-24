@@ -49,7 +49,7 @@ public:
     }
 };
 
-//****************************
+int Message::id = 0;
 
 class MessageFactory {
 public:
