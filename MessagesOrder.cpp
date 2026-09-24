@@ -42,6 +42,9 @@ public:
     const string& get_text() {
         return text;       
     }
+
+    // Overload < operator for sorting by creation order
+
 };
 
 class MessageFactory {
