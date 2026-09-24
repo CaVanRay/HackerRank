@@ -44,7 +44,9 @@ public:
     }
 
     // Overload < operator for sorting by creation order
-
+    bool operator < (const Message& M2) {
+        
+    }
 };
 
 class MessageFactory {
