@@ -34,6 +34,7 @@ class Message {
 private:
     string text;
     static int id;
+    int current_id;
 public: 
     Message() {}
     const string& get_text() {
