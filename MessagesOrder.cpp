@@ -31,6 +31,7 @@ using namespace std;
 //*************************************************************
 
 class Message {
+private:
 public: 
     Message() {}
     const string& get_text() {
