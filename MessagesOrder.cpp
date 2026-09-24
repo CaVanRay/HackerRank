@@ -55,6 +55,7 @@ class MessageFactory {
 public:
     MessageFactory() {}
     Message create_message(const string& text) {
+        Message m = Message(text);
         
     }
 };
