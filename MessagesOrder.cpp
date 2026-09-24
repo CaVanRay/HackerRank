@@ -36,7 +36,7 @@ private:
     static int id;
     int current_id;
 public: 
-    Message() {}
+    Message() { current_id= ++id; }
     const string& get_text() {
         
     }
