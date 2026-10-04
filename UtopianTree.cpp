@@ -31,6 +31,11 @@ int utopianTree (int n) {
     // each round starts in spring, then 
     // alternates between spring and summer
     bool isSpring
+
+    cin >> numOfTestCases;
+    for (int i = 0; i < numOfTestCases; i++){
+        
+    }
   
 }
 
