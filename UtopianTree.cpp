@@ -35,5 +35,6 @@ int main()
 
     for (int t_itr = 0; t_itr < t; t_itr++){
         string n_temp;
+        getline(cin, n_temp);
     }
 }
