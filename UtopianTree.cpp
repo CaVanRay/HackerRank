@@ -25,8 +25,10 @@ string rtrim(const string &);
 
 int utopianTree (int n) {
 
-  int numOfTestCases, numOfCycles;
-  bool isSpring
+    // for tracking how many inputs
+    // and the input sizes
+    int numOfTestCases, numOfCycles;
+    bool isSpring
   
 }
 
