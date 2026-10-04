@@ -43,4 +43,6 @@ int main()
 
         fout << result << "\n";
     }
+
+    fout.close();
 }
