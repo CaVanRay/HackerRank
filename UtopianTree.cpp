@@ -69,4 +69,6 @@ string rtrim(const string &str) {
         (isspace))).base(),
         s.end()
     );
+
+    return s;
 }
