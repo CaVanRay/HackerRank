@@ -51,4 +51,6 @@ int main()
 
 string ltrim(const string &str) {
     string s(str);
+
+    s.erase()
 }
