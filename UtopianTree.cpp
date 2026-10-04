@@ -26,5 +26,5 @@ int utopianTree (int n) {
 
 int main()
 {
-  
+    ofstream fout(getenv("OUTPUT_PATH"));
 }
