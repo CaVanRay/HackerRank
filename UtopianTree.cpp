@@ -18,3 +18,4 @@ spring. How tall will the tree be after  growth cycles?
 using namespace std;
 
 string ltrim(const string &);
+string rtrim(const string &);
