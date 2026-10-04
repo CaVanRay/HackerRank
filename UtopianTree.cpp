@@ -38,5 +38,7 @@ int main()
         getline(cin, n_temp);
 
         int n = stoi(ltrim(rtrim(n_temp)));
+
+        int result = utopianTree(n);
     }
 }
