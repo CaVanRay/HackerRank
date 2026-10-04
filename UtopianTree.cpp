@@ -20,6 +20,9 @@ using namespace std;
 string ltrim(const string &);
 string rtrim(const string &);
 
+//*****************************************************************************
+//  MY CODE STARTS HERE
+
 int utopianTree (int n) {
 
   int numOfTestCases, numOfCycles;
