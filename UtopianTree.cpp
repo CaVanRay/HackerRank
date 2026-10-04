@@ -40,5 +40,7 @@ int main()
         int n = stoi(ltrim(rtrim(n_temp)));
 
         int result = utopianTree(n);
+
+        fout << result << "\n";
     }
 }
