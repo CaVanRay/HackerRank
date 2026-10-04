@@ -64,5 +64,8 @@ string ltrim(const string &str) {
 string rtrim(const string &str) {
     string s(str);
 
-    s.erase();
+    s.erase(
+        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>
+      )
+    );
 }
