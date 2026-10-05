@@ -27,16 +27,16 @@ int utopianTree (int n) {
 
     // for tracking how many inputs
     // and the input sizes
-    int numOfTestCases, numOfCycles, totalGrowth = 0;
-    // each round starts in spring, then 
-    // alternates between spring and summer
-    bool isSpring = true;
+    int numOfTestCases, numOfCycles;
 
     cin >> numOfTestCases;
     for (int i = 0; i < numOfTestCases; i++){
-        // Reset at start and input cycles
+        // Reset at start
         int totalGrowth = 0;
+        // each round starts in spring, then 
+        // alternates between spring and summer
         bool isSprint = true;
+        // collect number of growth cycles
         cin >> numOfCycles;
         
         
