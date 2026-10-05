@@ -35,19 +35,17 @@ string ltrim(const string &);
 string rtrim(const string &);
 vector<string> split(const string &);
 
-/*
- * Complete the 'beautifulDays' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts following parameters:
- *  1. INTEGER i
- *  2. INTEGER j
- *  3. INTEGER k
- */
+//*****************************************************************************
+//  MY CODE STARTS HERE
 
 int beautifulDays(int i, int j, int k) {
 
+    
+    
 }
+
+// MY CODE ENDS HERE
+//*****************************************************************************
 
 int main()
 {
