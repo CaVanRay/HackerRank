@@ -34,6 +34,7 @@ int utopianTree (int n) {
 
     cin >> numOfTestCases;
     for (int i = 0; i < numOfTestCases; i++){
+        cin >> numOfCycles;
         
     }
   
