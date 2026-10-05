@@ -30,10 +30,17 @@ int utopianTree (int n) {
     int  totalHeight = 1;
 
     for( int i = 0; i < n; i++){
-
-        
+        if(isSpring){
+            totalHeight += totalHeight;
+            isSpring = false;
+        }else{
+            totalHeight += 1;
+            isSpring = true;
+        }
         
     }
+
+    return totalHeight;
     
 }
 
