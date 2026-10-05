@@ -25,23 +25,16 @@ string rtrim(const string &);
 
 int utopianTree (int n) {
 
-    // for tracking how many inputs
-    // and the input sizes
-    int numOfTestCases, numOfCycles;
+    // n is the number of cycles
+    bool isSpring = true;
+    int  totalHeight = 1;
 
-    cin >> numOfTestCases;
-    for (int i = 0; i < numOfTestCases; i++){
-        // Reset at start
-        int totalGrowth = 0;
-        // each round starts in spring, then 
-        // alternates between spring and summer
-        bool isSprint = true;
-        // collect number of growth cycles
-        cin >> numOfCycles;
+    for( int i = 0; i < n; i++){
+
         
         
     }
-  
+    
 }
 
 // MY CODE ENDS HERE
