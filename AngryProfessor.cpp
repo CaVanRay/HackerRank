@@ -39,7 +39,17 @@ vector<string> split(const string &);
 // MY CODE STARTS HERE
 
 string angryProfessor(int k, vector<int> a) {
-
+  
+  for( student : a){
+      if(student <= 0){
+        k--;
+        if(k <= 0)
+          return "YES";
+      }
+    }
+  if(k > 0)
+    return "NO";
+  
 }
 
 // MY CODE ENDS HERE
