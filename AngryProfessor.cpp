@@ -20,4 +20,10 @@ Description:
   The first 3 students arrived on time. The last 2 were late. The threshold is  
   3 students, so class will go on. Return YES.
 
+Input: 
+  int k = number of students required
+  int array a = list of student arrival times
+Output: 
+  string = "YES" or "NO"
+
 ******************************************************************************/
