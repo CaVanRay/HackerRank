@@ -44,11 +44,11 @@ string angryProfessor(int k, vector<int> a) {
       if(student <= 0){
         k--;
         if(k <= 0)
-          return "YES";
+          return "NO";
       }
     }
   if(k > 0)
-    return "NO";
+    return "YES";
   
 }
 
