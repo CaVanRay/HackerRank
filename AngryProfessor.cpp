@@ -24,7 +24,7 @@ Input:
   int k = number of students required
   int array a = list of student arrival times
 Output: 
-  string = "YES" or "NO"
+  string = "YES" if class is cancelled or "NO" if not cancelled
 
 ******************************************************************************/
 #include <bits/stdc++.h>
