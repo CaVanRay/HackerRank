@@ -42,6 +42,9 @@ string angryProfessor(int k, vector<int> a) {
 
 }
 
+// MY CODE ENDS HERE
+//***************************************************************************
+
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
