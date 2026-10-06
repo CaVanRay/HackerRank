@@ -41,6 +41,7 @@ vector<string> split(const string &);
 int beautifulDays(int i, int j, int k) {
 
     int count = 0;
+    string numToFlip;
     for(int start = i; start <= j; start++){
         
     }
