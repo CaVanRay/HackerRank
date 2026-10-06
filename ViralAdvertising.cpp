@@ -48,7 +48,7 @@ string rtrim(const string &);
 int viralAdvertising(int n) {
 
     int day = 1, shared = 5, liked = 2, cumulative = 2;
-    if (n = 1)
+    if (n == 1)
         return cumulative;
     for (;day <= n; day++){
         shared = liked*3;
