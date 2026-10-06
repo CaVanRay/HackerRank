@@ -42,6 +42,7 @@ int beautifulDays(int i, int j, int k) {
 
     int count = 0;
     string numToFlip;
+    vector<int> digits;
     for(int start = i; start <= j; start++){
         
     }
