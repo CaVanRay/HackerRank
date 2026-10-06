@@ -30,4 +30,8 @@ Day Shared Liked Cumulative
 The progression is shown above. The cumulative number of likes on the 5th day 
 is 24
 
+if the input was 3, the output would be 9
+2 liked it on day 1, 3 people liked it on day 2, and 4 people liked it on day 3
+so the answer is 2 + 3 + 4 = 9
+
 ******************************************************************************/
