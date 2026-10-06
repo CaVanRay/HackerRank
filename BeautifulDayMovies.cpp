@@ -42,10 +42,11 @@ int beautifulDays(int i, int j, int k) {
 
     int count = 0, flippedCurrent;
     string numToFlip;
-    vector<int> digits;
+    
     for(int current = i; current <= j; current++){
         numToFlip = to_string(current);
-        
+        reverse(numToFlip.begin(), numToFlip.end());
+        flippedCurrent = stoi(numToFlip);
     }
     
 }
