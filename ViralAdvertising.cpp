@@ -48,7 +48,7 @@ string rtrim(const string &);
 
 int viralAdvertising(int n) {
 
-    int day, shared, liked, cumulative;
+    int day = 1, shared = 5, liked = 2, cumulative = 2;
 
     
 }
