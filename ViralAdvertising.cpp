@@ -43,12 +43,8 @@ using namespace std;
 string ltrim(const string &);
 string rtrim(const string &);
 
-/*
- * Complete the 'viralAdvertising' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts INTEGER n as parameter.
- */
+/******************************************************************************/
+// MY CODE STARTS HERE
 
 int viralAdvertising(int n) {
 
