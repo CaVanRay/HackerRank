@@ -48,6 +48,9 @@ string rtrim(const string &);
 
 int viralAdvertising(int n) {
 
+    int day;
+
+    
 }
 
 // MY CODE STOPS HERE
