@@ -40,10 +40,11 @@ vector<string> split(const string &);
 
 int beautifulDays(int i, int j, int k) {
 
-    int count = 0;
+    int count = 0, flippedCurrent;
     string numToFlip;
     vector<int> digits;
-    for(int start = i; start <= j; start++){
+    for(int current = i; current <= j; current++){
+        numToFlip = to_string(current);
         
     }
     
