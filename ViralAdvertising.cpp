@@ -50,6 +50,9 @@ int viralAdvertising(int n) {
 
 }
 
+// MY CODE STOPS HERE
+/******************************************************************************/
+
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
