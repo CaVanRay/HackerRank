@@ -45,14 +45,18 @@ string rtrim(const string &);
 
 /******************************************************************************/
 // MY CODE STARTS HERE
-
 int viralAdvertising(int n) {
 
     int day = 1, shared = 5, liked = 2, cumulative = 2;
-
-    
+    if (n = 1)
+        return cumulative;
+    for (;day <= n; day++){
+        shared = liked*3;
+        liked = shared/2;
+        cumulative += liked;
+    }
+    return cumulative;    
 }
-
 // MY CODE STOPS HERE
 /******************************************************************************/
 
