@@ -22,7 +22,9 @@ vector<string> split(const string &);
 //**********************************************************************
 // MY CODE STARTS HERE
 
-
+int saveThePrisoner(int n, int m, int s) {
+  
+}
 
 // MY CODE ENDS HERE
 //**********************************************************************
