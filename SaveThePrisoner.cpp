@@ -14,3 +14,5 @@ determine who will recieve the last piece of candy
 #include <bits/stdc++.h>
 
 using namespace std;
+
+string ltrim(const string &);
