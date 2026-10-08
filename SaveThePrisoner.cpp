@@ -33,4 +33,5 @@ int main() {
     ofstream fout(getenv("OUTPUT_PATH"));
 
     string t_temp;
+    getline(cin, t_temp);
 }
