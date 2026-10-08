@@ -16,3 +16,4 @@ determine who will recieve the last piece of candy
 using namespace std;
 
 string ltrim(const string &);
+string rtrim(const string &);
