@@ -31,4 +31,6 @@ int saveThePrisoner(int n, int m, int s) {
 
 int main() {
     ofstream fout(getenv("OUTPUT_PATH"));
+
+    string t_temp;
 }
