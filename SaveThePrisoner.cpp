@@ -28,3 +28,7 @@ int saveThePrisoner(int n, int m, int s) {
 
 // MY CODE ENDS HERE
 //**********************************************************************
+
+int main() {
+  
+}
