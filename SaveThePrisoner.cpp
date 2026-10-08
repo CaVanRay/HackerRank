@@ -11,3 +11,4 @@ handed out to them in order, starting at a random point on the circle.
 determine who will recieve the last piece of candy
 
 ***********************************************************************/
+#include <bits/stdc++.h>
