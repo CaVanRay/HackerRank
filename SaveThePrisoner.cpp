@@ -38,6 +38,6 @@ int main() {
     int t = stoi(ltrim(rtrim(t_temp)));
 
     for (int t_itr = 0; t_itr < t; t_itr++) {
-      
+        string first_multiple_input_temp;
     }
 }
