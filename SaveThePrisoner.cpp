@@ -34,4 +34,6 @@ int main() {
 
     string t_temp;
     getline(cin, t_temp);
+
+    int t = stoi(ltrim(rtrim(t_temp)));
 }
