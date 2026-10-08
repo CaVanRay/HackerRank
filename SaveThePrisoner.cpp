@@ -46,5 +46,7 @@ int main() {
         int n = stoi(first_multiple_input[0]);
 
         int m = stoi(first_multiple_input[1]);
+
+        int s = stoi(first_multiple_input[2]);
     }
 }
